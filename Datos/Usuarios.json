@@ -1,0 +1,12 @@
+[
+  {
+    "Usuario": "admin",
+    "Contraseña": "admin",
+    "Rol": "administrador"
+  },
+  {
+    "Usuario": "user",
+    "Contraseña": "user",
+    "Rol": "operador"
+  }
+]
