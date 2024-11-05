@@ -75,7 +75,7 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void PaginaPrincipal_Load(object sender, EventArgs e)
         {
-           
+            label2.Text = this.usuario;
             
 
         }
@@ -275,6 +275,11 @@ namespace Parcial2_SistemaDeFacturacion
             splitContainer2.Panel2.Controls.Add(facturacion);
 
             facturacion.Dock = DockStyle.Fill;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

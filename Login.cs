@@ -21,8 +21,14 @@ namespace Parcial2_SistemaDeFacturacion
         {
             PaginaPrincipal Dashboard = new PaginaPrincipal();
 
+            Dashboard.usuario = "arianna";
             Dashboard.Show();
             this.Hide();
+
+        }
+
+        private void LoginPanel_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
