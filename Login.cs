@@ -17,17 +17,31 @@ namespace Parcial2_SistemaDeFacturacion
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void LoginPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void IniciarSesionBtn_Click(object sender, EventArgs e)
         {
             PaginaPrincipal Dashboard = new PaginaPrincipal();
 
             Dashboard.usuario = "arianna";
             Dashboard.Show();
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void LoginPanel_Paint(object sender, PaintEventArgs e)
+        private void textBoxRedondo1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxRedondo1_Load_1(object sender, EventArgs e)
         {
 
         }

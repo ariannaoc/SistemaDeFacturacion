@@ -32,33 +32,33 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.btnOrdenes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.btnReportes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panelClientes = new System.Windows.Forms.Panel();
-            this.btnCliente = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panelFacturacion = new System.Windows.Forms.Panel();
-            this.btnVerFacturas = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.btnIniciarVenta = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.btnFacturacion = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelProductos = new System.Windows.Forms.Panel();
-            this.btnAnadirCategoria = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.btnInventario = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.btnProductos = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnUsuarios = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btnDashboard = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.imagenLogo = new System.Windows.Forms.PictureBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.botonRectanguloRedondo1 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.baseReal = new System.Windows.Forms.Panel();
+            this.btnOrdenes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnReportes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnCliente = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnVerFacturas = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnIniciarVenta = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnFacturacion = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnAnadirCategoria = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnInventario = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnProductos = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnUsuarios = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnDashboard = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.botonRectanguloRedondo1 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -153,31 +153,6 @@
             this.panel12.Size = new System.Drawing.Size(357, 20);
             this.panel12.TabIndex = 29;
             // 
-            // btnOrdenes
-            // 
-            this.btnOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnOrdenes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnOrdenes.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnOrdenes.BorderRadius = 25;
-            this.btnOrdenes.BorderSize = 0;
-            this.btnOrdenes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOrdenes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnOrdenes.FlatAppearance.BorderSize = 0;
-            this.btnOrdenes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnOrdenes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnOrdenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrdenes.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrdenes.ForeColor = System.Drawing.Color.Gray;
-            this.btnOrdenes.Location = new System.Drawing.Point(0, 778);
-            this.btnOrdenes.Margin = new System.Windows.Forms.Padding(4);
-            this.btnOrdenes.Name = "btnOrdenes";
-            this.btnOrdenes.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnOrdenes.Size = new System.Drawing.Size(357, 65);
-            this.btnOrdenes.TabIndex = 28;
-            this.btnOrdenes.Text = "Ordenes de Producto";
-            this.btnOrdenes.TextColor = System.Drawing.Color.Gray;
-            this.btnOrdenes.UseVisualStyleBackColor = false;
-            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Transparent;
@@ -188,31 +163,6 @@
             this.panel10.Size = new System.Drawing.Size(357, 18);
             this.panel10.TabIndex = 27;
             // 
-            // btnReportes
-            // 
-            this.btnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnReportes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnReportes.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnReportes.BorderRadius = 25;
-            this.btnReportes.BorderSize = 0;
-            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReportes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnReportes.FlatAppearance.BorderSize = 0;
-            this.btnReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportes.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.ForeColor = System.Drawing.Color.White;
-            this.btnReportes.Location = new System.Drawing.Point(0, 695);
-            this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnReportes.Size = new System.Drawing.Size(357, 65);
-            this.btnReportes.TabIndex = 26;
-            this.btnReportes.Text = "Reportes";
-            this.btnReportes.TextColor = System.Drawing.Color.White;
-            this.btnReportes.UseVisualStyleBackColor = false;
-            // 
             // panelClientes
             // 
             this.panelClientes.BackColor = System.Drawing.Color.Transparent;
@@ -222,31 +172,6 @@
             this.panelClientes.Name = "panelClientes";
             this.panelClientes.Size = new System.Drawing.Size(357, 18);
             this.panelClientes.TabIndex = 25;
-            // 
-            // btnCliente
-            // 
-            this.btnCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnCliente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnCliente.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnCliente.BorderRadius = 25;
-            this.btnCliente.BorderSize = 0;
-            this.btnCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnCliente.FlatAppearance.BorderSize = 0;
-            this.btnCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCliente.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCliente.ForeColor = System.Drawing.Color.White;
-            this.btnCliente.Location = new System.Drawing.Point(0, 612);
-            this.btnCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnCliente.Size = new System.Drawing.Size(357, 65);
-            this.btnCliente.TabIndex = 24;
-            this.btnCliente.Text = "Clientes ";
-            this.btnCliente.TextColor = System.Drawing.Color.White;
-            this.btnCliente.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -270,83 +195,6 @@
             this.panelFacturacion.Size = new System.Drawing.Size(357, 142);
             this.panelFacturacion.TabIndex = 19;
             // 
-            // btnVerFacturas
-            // 
-            this.btnVerFacturas.BackColor = System.Drawing.Color.Transparent;
-            this.btnVerFacturas.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnVerFacturas.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnVerFacturas.BorderRadius = 25;
-            this.btnVerFacturas.BorderSize = 0;
-            this.btnVerFacturas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVerFacturas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnVerFacturas.FlatAppearance.BorderSize = 0;
-            this.btnVerFacturas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnVerFacturas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnVerFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerFacturas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerFacturas.ForeColor = System.Drawing.Color.Gray;
-            this.btnVerFacturas.Location = new System.Drawing.Point(0, 65);
-            this.btnVerFacturas.Margin = new System.Windows.Forms.Padding(4);
-            this.btnVerFacturas.Name = "btnVerFacturas";
-            this.btnVerFacturas.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnVerFacturas.Size = new System.Drawing.Size(357, 65);
-            this.btnVerFacturas.TabIndex = 9;
-            this.btnVerFacturas.Text = "Ver Facturas";
-            this.btnVerFacturas.TextColor = System.Drawing.Color.Gray;
-            this.btnVerFacturas.UseVisualStyleBackColor = false;
-            // 
-            // btnIniciarVenta
-            // 
-            this.btnIniciarVenta.BackColor = System.Drawing.Color.Transparent;
-            this.btnIniciarVenta.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnIniciarVenta.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnIniciarVenta.BorderRadius = 25;
-            this.btnIniciarVenta.BorderSize = 0;
-            this.btnIniciarVenta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnIniciarVenta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnIniciarVenta.FlatAppearance.BorderSize = 0;
-            this.btnIniciarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnIniciarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnIniciarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIniciarVenta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciarVenta.ForeColor = System.Drawing.Color.Gray;
-            this.btnIniciarVenta.Location = new System.Drawing.Point(0, 0);
-            this.btnIniciarVenta.Margin = new System.Windows.Forms.Padding(4);
-            this.btnIniciarVenta.Name = "btnIniciarVenta";
-            this.btnIniciarVenta.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnIniciarVenta.Size = new System.Drawing.Size(357, 65);
-            this.btnIniciarVenta.TabIndex = 8;
-            this.btnIniciarVenta.Text = "Iniciar Venta";
-            this.btnIniciarVenta.TextColor = System.Drawing.Color.Gray;
-            this.btnIniciarVenta.UseVisualStyleBackColor = false;
-            this.btnIniciarVenta.Click += new System.EventHandler(this.btnIniciarVenta_Click);
-            // 
-            // btnFacturacion
-            // 
-            this.btnFacturacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnFacturacion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnFacturacion.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnFacturacion.BorderRadius = 25;
-            this.btnFacturacion.BorderSize = 0;
-            this.btnFacturacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFacturacion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnFacturacion.FlatAppearance.BorderSize = 0;
-            this.btnFacturacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnFacturacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacturacion.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFacturacion.ForeColor = System.Drawing.Color.White;
-            this.btnFacturacion.Location = new System.Drawing.Point(0, 387);
-            this.btnFacturacion.Margin = new System.Windows.Forms.Padding(4);
-            this.btnFacturacion.Name = "btnFacturacion";
-            this.btnFacturacion.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnFacturacion.Size = new System.Drawing.Size(357, 65);
-            this.btnFacturacion.TabIndex = 18;
-            this.btnFacturacion.Text = "Facturación ↓";
-            this.btnFacturacion.TextColor = System.Drawing.Color.White;
-            this.btnFacturacion.UseVisualStyleBackColor = false;
-            this.btnFacturacion.Click += new System.EventHandler(this.btnFacturacion_Click);
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -369,83 +217,6 @@
             this.panelProductos.Size = new System.Drawing.Size(357, 138);
             this.panelProductos.TabIndex = 7;
             // 
-            // btnAnadirCategoria
-            // 
-            this.btnAnadirCategoria.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnadirCategoria.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnAnadirCategoria.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAnadirCategoria.BorderRadius = 25;
-            this.btnAnadirCategoria.BorderSize = 0;
-            this.btnAnadirCategoria.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAnadirCategoria.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnAnadirCategoria.FlatAppearance.BorderSize = 0;
-            this.btnAnadirCategoria.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnAnadirCategoria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnAnadirCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnadirCategoria.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnadirCategoria.ForeColor = System.Drawing.Color.Gray;
-            this.btnAnadirCategoria.Location = new System.Drawing.Point(0, 65);
-            this.btnAnadirCategoria.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAnadirCategoria.Name = "btnAnadirCategoria";
-            this.btnAnadirCategoria.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnAnadirCategoria.Size = new System.Drawing.Size(357, 65);
-            this.btnAnadirCategoria.TabIndex = 8;
-            this.btnAnadirCategoria.Text = "Añadir Categoría";
-            this.btnAnadirCategoria.TextColor = System.Drawing.Color.Gray;
-            this.btnAnadirCategoria.UseVisualStyleBackColor = false;
-            this.btnAnadirCategoria.Click += new System.EventHandler(this.btnAnadirCategoria_Click);
-            // 
-            // btnInventario
-            // 
-            this.btnInventario.BackColor = System.Drawing.Color.Transparent;
-            this.btnInventario.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnInventario.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnInventario.BorderRadius = 25;
-            this.btnInventario.BorderSize = 0;
-            this.btnInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInventario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnInventario.FlatAppearance.BorderSize = 0;
-            this.btnInventario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnInventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInventario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInventario.ForeColor = System.Drawing.Color.Gray;
-            this.btnInventario.Location = new System.Drawing.Point(0, 0);
-            this.btnInventario.Margin = new System.Windows.Forms.Padding(4);
-            this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnInventario.Size = new System.Drawing.Size(357, 65);
-            this.btnInventario.TabIndex = 7;
-            this.btnInventario.Text = "Ver Inventario";
-            this.btnInventario.TextColor = System.Drawing.Color.Gray;
-            this.btnInventario.UseVisualStyleBackColor = false;
-            // 
-            // btnProductos
-            // 
-            this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnProductos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnProductos.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnProductos.BorderRadius = 25;
-            this.btnProductos.BorderSize = 0;
-            this.btnProductos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProductos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnProductos.FlatAppearance.BorderSize = 0;
-            this.btnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductos.ForeColor = System.Drawing.Color.White;
-            this.btnProductos.Location = new System.Drawing.Point(0, 166);
-            this.btnProductos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnProductos.Size = new System.Drawing.Size(357, 65);
-            this.btnProductos.TabIndex = 6;
-            this.btnProductos.Text = "Productos  ↓";
-            this.btnProductos.TextColor = System.Drawing.Color.White;
-            this.btnProductos.UseVisualStyleBackColor = false;
-            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click_1);
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
@@ -456,32 +227,6 @@
             this.panel7.Size = new System.Drawing.Size(357, 18);
             this.panel7.TabIndex = 5;
             // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnUsuarios.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnUsuarios.BorderRadius = 25;
-            this.btnUsuarios.BorderSize = 0;
-            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUsuarios.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnUsuarios.Location = new System.Drawing.Point(0, 83);
-            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(4);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnUsuarios.Size = new System.Drawing.Size(357, 65);
-            this.btnUsuarios.TabIndex = 4;
-            this.btnUsuarios.Text = "Usuarios";
-            this.btnUsuarios.TextColor = System.Drawing.Color.White;
-            this.btnUsuarios.UseVisualStyleBackColor = false;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
@@ -491,32 +236,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(357, 18);
             this.panel6.TabIndex = 3;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnDashboard.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnDashboard.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDashboard.BorderRadius = 25;
-            this.btnDashboard.BorderSize = 0;
-            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.btnDashboard.Size = new System.Drawing.Size(357, 65);
-            this.btnDashboard.TabIndex = 2;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextColor = System.Drawing.Color.White;
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // panel2
             // 
@@ -597,6 +316,297 @@
             this.panel11.Size = new System.Drawing.Size(2068, 72);
             this.panel11.TabIndex = 0;
             // 
+            // baseReal
+            // 
+            this.baseReal.Controls.Add(this.label2);
+            this.baseReal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.baseReal.Location = new System.Drawing.Point(0, 0);
+            this.baseReal.Margin = new System.Windows.Forms.Padding(4);
+            this.baseReal.Name = "baseReal";
+            this.baseReal.Size = new System.Drawing.Size(2068, 1204);
+            this.baseReal.TabIndex = 0;
+            // 
+            // btnOrdenes
+            // 
+            this.btnOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnOrdenes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnOrdenes.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnOrdenes.BorderRadius = 25;
+            this.btnOrdenes.BorderSize = 0;
+            this.btnOrdenes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrdenes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnOrdenes.FlatAppearance.BorderSize = 0;
+            this.btnOrdenes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnOrdenes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnOrdenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenes.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenes.ForeColor = System.Drawing.Color.Gray;
+            this.btnOrdenes.Location = new System.Drawing.Point(0, 778);
+            this.btnOrdenes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOrdenes.Name = "btnOrdenes";
+            this.btnOrdenes.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnOrdenes.Size = new System.Drawing.Size(357, 65);
+            this.btnOrdenes.TabIndex = 28;
+            this.btnOrdenes.Text = "Ordenes de Producto";
+            this.btnOrdenes.TextColor = System.Drawing.Color.Gray;
+            this.btnOrdenes.UseVisualStyleBackColor = false;
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnReportes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnReportes.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnReportes.BorderRadius = 25;
+            this.btnReportes.BorderSize = 0;
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.Color.White;
+            this.btnReportes.Location = new System.Drawing.Point(0, 695);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnReportes.Size = new System.Drawing.Size(357, 65);
+            this.btnReportes.TabIndex = 26;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.TextColor = System.Drawing.Color.White;
+            this.btnReportes.UseVisualStyleBackColor = false;
+            // 
+            // btnCliente
+            // 
+            this.btnCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnCliente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnCliente.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCliente.BorderRadius = 25;
+            this.btnCliente.BorderSize = 0;
+            this.btnCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnCliente.FlatAppearance.BorderSize = 0;
+            this.btnCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCliente.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.ForeColor = System.Drawing.Color.White;
+            this.btnCliente.Location = new System.Drawing.Point(0, 612);
+            this.btnCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnCliente.Size = new System.Drawing.Size(357, 65);
+            this.btnCliente.TabIndex = 24;
+            this.btnCliente.Text = "Clientes ";
+            this.btnCliente.TextColor = System.Drawing.Color.White;
+            this.btnCliente.UseVisualStyleBackColor = false;
+            // 
+            // btnVerFacturas
+            // 
+            this.btnVerFacturas.BackColor = System.Drawing.Color.Transparent;
+            this.btnVerFacturas.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnVerFacturas.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnVerFacturas.BorderRadius = 25;
+            this.btnVerFacturas.BorderSize = 0;
+            this.btnVerFacturas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVerFacturas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnVerFacturas.FlatAppearance.BorderSize = 0;
+            this.btnVerFacturas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnVerFacturas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnVerFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerFacturas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerFacturas.ForeColor = System.Drawing.Color.Gray;
+            this.btnVerFacturas.Location = new System.Drawing.Point(0, 65);
+            this.btnVerFacturas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerFacturas.Name = "btnVerFacturas";
+            this.btnVerFacturas.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnVerFacturas.Size = new System.Drawing.Size(357, 65);
+            this.btnVerFacturas.TabIndex = 9;
+            this.btnVerFacturas.Text = "Ver Facturas";
+            this.btnVerFacturas.TextColor = System.Drawing.Color.Gray;
+            this.btnVerFacturas.UseVisualStyleBackColor = false;
+            // 
+            // btnIniciarVenta
+            // 
+            this.btnIniciarVenta.BackColor = System.Drawing.Color.Transparent;
+            this.btnIniciarVenta.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnIniciarVenta.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnIniciarVenta.BorderRadius = 25;
+            this.btnIniciarVenta.BorderSize = 0;
+            this.btnIniciarVenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIniciarVenta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnIniciarVenta.FlatAppearance.BorderSize = 0;
+            this.btnIniciarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnIniciarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnIniciarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIniciarVenta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarVenta.ForeColor = System.Drawing.Color.Gray;
+            this.btnIniciarVenta.Location = new System.Drawing.Point(0, 0);
+            this.btnIniciarVenta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIniciarVenta.Name = "btnIniciarVenta";
+            this.btnIniciarVenta.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnIniciarVenta.Size = new System.Drawing.Size(357, 65);
+            this.btnIniciarVenta.TabIndex = 8;
+            this.btnIniciarVenta.Text = "Iniciar Venta";
+            this.btnIniciarVenta.TextColor = System.Drawing.Color.Gray;
+            this.btnIniciarVenta.UseVisualStyleBackColor = false;
+            this.btnIniciarVenta.Click += new System.EventHandler(this.btnIniciarVenta_Click);
+            // 
+            // btnFacturacion
+            // 
+            this.btnFacturacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnFacturacion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnFacturacion.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnFacturacion.BorderRadius = 25;
+            this.btnFacturacion.BorderSize = 0;
+            this.btnFacturacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFacturacion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnFacturacion.FlatAppearance.BorderSize = 0;
+            this.btnFacturacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnFacturacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturacion.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturacion.ForeColor = System.Drawing.Color.White;
+            this.btnFacturacion.Location = new System.Drawing.Point(0, 387);
+            this.btnFacturacion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFacturacion.Name = "btnFacturacion";
+            this.btnFacturacion.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnFacturacion.Size = new System.Drawing.Size(357, 65);
+            this.btnFacturacion.TabIndex = 18;
+            this.btnFacturacion.Text = "Facturación ↓";
+            this.btnFacturacion.TextColor = System.Drawing.Color.White;
+            this.btnFacturacion.UseVisualStyleBackColor = false;
+            this.btnFacturacion.Click += new System.EventHandler(this.btnFacturacion_Click);
+            // 
+            // btnAnadirCategoria
+            // 
+            this.btnAnadirCategoria.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnadirCategoria.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAnadirCategoria.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAnadirCategoria.BorderRadius = 25;
+            this.btnAnadirCategoria.BorderSize = 0;
+            this.btnAnadirCategoria.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAnadirCategoria.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnAnadirCategoria.FlatAppearance.BorderSize = 0;
+            this.btnAnadirCategoria.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnAnadirCategoria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnAnadirCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnadirCategoria.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnadirCategoria.ForeColor = System.Drawing.Color.Gray;
+            this.btnAnadirCategoria.Location = new System.Drawing.Point(0, 65);
+            this.btnAnadirCategoria.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAnadirCategoria.Name = "btnAnadirCategoria";
+            this.btnAnadirCategoria.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnAnadirCategoria.Size = new System.Drawing.Size(357, 65);
+            this.btnAnadirCategoria.TabIndex = 8;
+            this.btnAnadirCategoria.Text = "Añadir Categoría";
+            this.btnAnadirCategoria.TextColor = System.Drawing.Color.Gray;
+            this.btnAnadirCategoria.UseVisualStyleBackColor = false;
+            this.btnAnadirCategoria.Click += new System.EventHandler(this.btnAnadirCategoria_Click);
+            // 
+            // btnInventario
+            // 
+            this.btnInventario.BackColor = System.Drawing.Color.Transparent;
+            this.btnInventario.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnInventario.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnInventario.BorderRadius = 25;
+            this.btnInventario.BorderSize = 0;
+            this.btnInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInventario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnInventario.FlatAppearance.BorderSize = 0;
+            this.btnInventario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnInventario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInventario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventario.ForeColor = System.Drawing.Color.Gray;
+            this.btnInventario.Location = new System.Drawing.Point(0, 0);
+            this.btnInventario.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInventario.Name = "btnInventario";
+            this.btnInventario.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnInventario.Size = new System.Drawing.Size(357, 65);
+            this.btnInventario.TabIndex = 7;
+            this.btnInventario.Text = "Ver Inventario";
+            this.btnInventario.TextColor = System.Drawing.Color.Gray;
+            this.btnInventario.UseVisualStyleBackColor = false;
+            // 
+            // btnProductos
+            // 
+            this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnProductos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnProductos.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnProductos.BorderRadius = 25;
+            this.btnProductos.BorderSize = 0;
+            this.btnProductos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProductos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.ForeColor = System.Drawing.Color.White;
+            this.btnProductos.Location = new System.Drawing.Point(0, 166);
+            this.btnProductos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnProductos.Size = new System.Drawing.Size(357, 65);
+            this.btnProductos.TabIndex = 6;
+            this.btnProductos.Text = "Productos  ↓";
+            this.btnProductos.TextColor = System.Drawing.Color.White;
+            this.btnProductos.UseVisualStyleBackColor = false;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click_1);
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnUsuarios.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnUsuarios.BorderRadius = 25;
+            this.btnUsuarios.BorderSize = 0;
+            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsuarios.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.btnUsuarios.Location = new System.Drawing.Point(0, 83);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnUsuarios.Size = new System.Drawing.Size(357, 65);
+            this.btnUsuarios.TabIndex = 4;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.TextColor = System.Drawing.Color.White;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnDashboard.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnDashboard.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDashboard.BorderRadius = 25;
+            this.btnDashboard.BorderSize = 0;
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.btnDashboard.Size = new System.Drawing.Size(357, 65);
+            this.btnDashboard.TabIndex = 2;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextColor = System.Drawing.Color.White;
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
             // botonRectanguloRedondo1
             // 
             this.botonRectanguloRedondo1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -617,25 +627,14 @@
             this.botonRectanguloRedondo1.TextColor = System.Drawing.Color.White;
             this.botonRectanguloRedondo1.UseVisualStyleBackColor = false;
             // 
-            // baseReal
-            // 
-            this.baseReal.Controls.Add(this.label2);
-            this.baseReal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.baseReal.Location = new System.Drawing.Point(0, 0);
-            this.baseReal.Margin = new System.Windows.Forms.Padding(4);
-            this.baseReal.Name = "baseReal";
-            this.baseReal.Size = new System.Drawing.Size(2068, 1204);
-            this.baseReal.TabIndex = 0;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(178, 133);
+            this.label2.Location = new System.Drawing.Point(244, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 16);
+            this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 0;
-            this.label2.Text = "labe";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Text = "label2";
             // 
             // PaginaPrincipal
             // 
