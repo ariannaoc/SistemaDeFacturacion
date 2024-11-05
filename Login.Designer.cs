@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.LoginPanel = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
-            //this.UserTxt = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.TextBoxRedondo();
             this.IniciarSesionLabel = new System.Windows.Forms.Label();
             this.IniciarSesionBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.PasswordTxt = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.TextBoxRedondo();
             this.LoginPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +44,7 @@
             this.LoginPanel.BorderColor = System.Drawing.Color.Transparent;
             this.LoginPanel.BorderRadius = 20;
             this.LoginPanel.BorderSize = 0;
-            //this.LoginPanel.Controls.Add(this.UserTxt);
+            this.LoginPanel.Controls.Add(this.PasswordTxt);
             this.LoginPanel.Controls.Add(this.IniciarSesionLabel);
             this.LoginPanel.Controls.Add(this.IniciarSesionBtn);
             this.LoginPanel.Location = new System.Drawing.Point(550, 200);
@@ -52,30 +52,6 @@
             this.LoginPanel.Size = new System.Drawing.Size(800, 600);
             this.LoginPanel.TabIndex = 1;
             this.LoginPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LoginPanel_Paint);
-            // 
-            // UserTxt
-            // 
-            //this.UserTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            //| System.Windows.Forms.AnchorStyles.Right)));
-            //this.UserTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(55)))));
-            //this.UserTxt.BorderColor = System.Drawing.Color.Transparent;
-            //this.UserTxt.BorderFocusColor = System.Drawing.Color.DarkOrange;
-            //this.UserTxt.BorderRadius = 15;
-            //this.UserTxt.BorderSize = 1;
-            //this.UserTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            //this.UserTxt.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.UserTxt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            //this.UserTxt.Location = new System.Drawing.Point(165, 184);
-            //this.UserTxt.Multiline = true;
-            //this.UserTxt.Name = "UserTxt";
-            //this.UserTxt.Padding = new System.Windows.Forms.Padding(20, 10, 10, 10);
-            //this.UserTxt.PasswordChar = false;
-            //this.UserTxt.PlaceholderColor = System.Drawing.Color.DarkGray;
-            //this.UserTxt.PlaceholderText = "";
-            //this.UserTxt.Size = new System.Drawing.Size(500, 60);
-            //this.UserTxt.TabIndex = 3;
-            //this.UserTxt.Texts = "";
-            //this.UserTxt.UnderlinedStyle = false;
             // 
             // IniciarSesionLabel
             // 
@@ -113,6 +89,31 @@
             this.IniciarSesionBtn.UseVisualStyleBackColor = false;
             this.IniciarSesionBtn.Click += new System.EventHandler(this.IniciarSesionBtn_Click);
             // 
+            // PasswordTxt
+            // 
+            this.PasswordTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PasswordTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(55)))));
+            this.PasswordTxt.BorderColor = System.Drawing.Color.Transparent;
+            this.PasswordTxt.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.PasswordTxt.BorderRadius = 20;
+            this.PasswordTxt.BorderSize = 2;
+            this.PasswordTxt.CustomPasswordChar = '\0';
+            this.PasswordTxt.Font = new System.Drawing.Font("Arial Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTxt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.PasswordTxt.Location = new System.Drawing.Point(159, 163);
+            this.PasswordTxt.Multiline = true;
+            this.PasswordTxt.Name = "PasswordTxt";
+            this.PasswordTxt.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.PasswordTxt.PasswordChar = false;
+            this.PasswordTxt.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.PasswordTxt.PlaceholderText = "";
+            this.PasswordTxt.Size = new System.Drawing.Size(500, 60);
+            this.PasswordTxt.TabIndex = 2;
+            this.PasswordTxt.Texts = "";
+            this.PasswordTxt.UnderlinedStyle = false;
+            this.PasswordTxt.Load += new System.EventHandler(this.textBoxRedondo2_Load);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -125,6 +126,7 @@
             this.Name = "Login";
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Login_Load);
             this.LoginPanel.ResumeLayout(false);
             this.LoginPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -135,6 +137,7 @@
         private BotonesCustomizados.RoundedPanel LoginPanel;
         private BotonesCustomizados.botonRectanguloRedondo IniciarSesionBtn;
         private System.Windows.Forms.Label IniciarSesionLabel;
+        private BotonesCustomizados.TextBoxRedondo PasswordTxt;
         //private BotonesCustomizados.TextBoxRedondo UserTxt;
     }
 }

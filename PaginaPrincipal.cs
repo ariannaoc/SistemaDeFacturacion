@@ -281,5 +281,15 @@ namespace Parcial2_SistemaDeFacturacion
         {
             
         }
+
+        private void PaginaPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void baseReal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

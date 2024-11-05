@@ -56,5 +56,10 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
+        public char CustomPasswordChar
+        {
+            get { return textBox1.PasswordChar; }
+            set { textBox1.PasswordChar = value; }
+        }
     }
 }

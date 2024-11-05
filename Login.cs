@@ -28,7 +28,7 @@ namespace Parcial2_SistemaDeFacturacion
 
             Dashboard.usuario = "arianna";
             Dashboard.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -44,6 +44,17 @@ namespace Parcial2_SistemaDeFacturacion
         private void textBoxRedondo1_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBoxRedondo2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            PasswordTxt.CustomPasswordChar = '*';
+            PasswordTxt.Multiline = false;
         }
     }
 }
