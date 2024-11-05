@@ -55,6 +55,9 @@ namespace Parcial2_SistemaDeFacturacion
         {
             PasswordTxt.CustomPasswordChar = '*';
             PasswordTxt.Multiline = false;
+            UserTxt.Multiline = false;
         }
+
+        
     }
 }
