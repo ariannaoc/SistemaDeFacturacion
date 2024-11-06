@@ -14,27 +14,29 @@ namespace Parcial2_SistemaDeFacturacion
 {
 
    
-    public partial class Inventario : UserControl
+    public partial class Inventario : BaseActualizarPanel
     {
-        private static Inventario instance;
+        private static Inventario _instance;
+        private static readonly object _lock = new object();
         public Inventario()
         {
             InitializeComponent();
 
-            // ... (in your form or control)
-
-          
         }
 
         public static Inventario Instance
         {
+
             get
             {
-                if (instance == null)
+                lock (_lock)
                 {
-                    instance = new Inventario();
+                    if (_instance == null)
+                    {
+                        _instance = new Inventario();
+                    }
+                    return _instance;
                 }
-                return instance;
             }
         }
 

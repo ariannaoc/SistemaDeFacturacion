@@ -11,9 +11,10 @@ using System.Windows.Forms;
 
 namespace Parcial2_SistemaDeFacturacion
 {
-    public partial class Facturacion : UserControl
+    public partial class Facturacion : BaseActualizarPanel
     {
-        private static Facturacion instance;
+        private static Facturacion _instance;
+        private static readonly object _lock = new object();
         public Facturacion()
         {
             InitializeComponent();
@@ -21,13 +22,17 @@ namespace Parcial2_SistemaDeFacturacion
 
         public static Facturacion Instance
         {
+
             get
             {
-                if (instance == null)
+                lock (_lock)
                 {
-                    instance = new Facturacion();
+                    if (_instance == null)
+                    {
+                        _instance = new Facturacion();
+                    }
+                    return _instance;
                 }
-                return instance;    
             }
         }
 
@@ -36,6 +41,10 @@ namespace Parcial2_SistemaDeFacturacion
             
         }
 
-     
+        private void botonRectanguloRedondo1_Click(object sender, EventArgs e)
+        {
+            Inventario facturacion = Inventario.Instance;
+            ActualizarPanelPrincipal(facturacion);
+        }
     }
 }
