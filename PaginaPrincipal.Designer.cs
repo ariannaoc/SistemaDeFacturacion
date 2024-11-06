@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.MenuBar = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.btnOrdenes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
@@ -56,15 +56,14 @@
             this.imagenLogo = new System.Windows.Forms.PictureBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.botonRectanguloRedondo1 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.baseReal = new System.Windows.Forms.Panel();
+            this.botonRectanguloRedondo1 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.MenuBar.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelFacturacion.SuspendLayout();
             this.panelProductos.SuspendLayout();
@@ -74,8 +73,6 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.baseReal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +88,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.splitContainer1.Panel1.Controls.Add(this.panel1);
+            this.splitContainer1.Panel1.Controls.Add(this.MenuBar);
             this.splitContainer1.Panel1.ForeColor = System.Drawing.Color.Transparent;
             this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
@@ -104,18 +101,18 @@
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
-            // panel1
+            // MenuBar
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(465, 1281);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.MenuBar.Controls.Add(this.panel3);
+            this.MenuBar.Controls.Add(this.panel2);
+            this.MenuBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MenuBar.Location = new System.Drawing.Point(0, 0);
+            this.MenuBar.Margin = new System.Windows.Forms.Padding(4);
+            this.MenuBar.Name = "MenuBar";
+            this.MenuBar.Size = new System.Drawing.Size(465, 1281);
+            this.MenuBar.TabIndex = 0;
+            this.MenuBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel3
             // 
@@ -554,7 +551,7 @@
             // splitContainer2
             // 
             this.splitContainer2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer2.Location = new System.Drawing.Point(-2, 0);
+            this.splitContainer2.Location = new System.Drawing.Point(-4, 0);
             this.splitContainer2.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -577,48 +574,17 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.panel11);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(2068, 72);
             this.panel5.TabIndex = 0;
-            // 
-            // panel11
-            // 
-            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel11.Controls.Add(this.botonRectanguloRedondo1);
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(2068, 72);
-            this.panel11.TabIndex = 0;
-            // 
-            // botonRectanguloRedondo1
-            // 
-            this.botonRectanguloRedondo1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.botonRectanguloRedondo1.BackColor = System.Drawing.Color.MediumBlue;
-            this.botonRectanguloRedondo1.BackgroundColor = System.Drawing.Color.MediumBlue;
-            this.botonRectanguloRedondo1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.botonRectanguloRedondo1.BorderRadius = 22;
-            this.botonRectanguloRedondo1.BorderSize = 2;
-            this.botonRectanguloRedondo1.FlatAppearance.BorderSize = 0;
-            this.botonRectanguloRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonRectanguloRedondo1.ForeColor = System.Drawing.Color.White;
-            this.botonRectanguloRedondo1.Location = new System.Drawing.Point(1967, 7);
-            this.botonRectanguloRedondo1.Margin = new System.Windows.Forms.Padding(4);
-            this.botonRectanguloRedondo1.Name = "botonRectanguloRedondo1";
-            this.botonRectanguloRedondo1.Size = new System.Drawing.Size(60, 55);
-            this.botonRectanguloRedondo1.TabIndex = 6;
-            this.botonRectanguloRedondo1.Text = "User";
-            this.botonRectanguloRedondo1.TextColor = System.Drawing.Color.White;
-            this.botonRectanguloRedondo1.UseVisualStyleBackColor = false;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // baseReal
             // 
+            this.baseReal.Controls.Add(this.botonRectanguloRedondo1);
             this.baseReal.Controls.Add(this.label2);
             this.baseReal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.baseReal.Location = new System.Drawing.Point(0, 0);
@@ -628,12 +594,37 @@
             this.baseReal.TabIndex = 0;
             this.baseReal.Paint += new System.Windows.Forms.PaintEventHandler(this.baseReal_Paint);
             // 
+            // botonRectanguloRedondo1
+            // 
+            this.botonRectanguloRedondo1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.botonRectanguloRedondo1.BackColor = System.Drawing.Color.Transparent;
+            this.botonRectanguloRedondo1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.botonRectanguloRedondo1.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.user_b;
+            this.botonRectanguloRedondo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.botonRectanguloRedondo1.BorderColor = System.Drawing.Color.Black;
+            this.botonRectanguloRedondo1.BorderRadius = 25;
+            this.botonRectanguloRedondo1.BorderSize = 2;
+            this.botonRectanguloRedondo1.FlatAppearance.BorderSize = 0;
+            this.botonRectanguloRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonRectanguloRedondo1.ForeColor = System.Drawing.Color.White;
+            this.botonRectanguloRedondo1.Location = new System.Drawing.Point(633, 323);
+            this.botonRectanguloRedondo1.Margin = new System.Windows.Forms.Padding(4);
+            this.botonRectanguloRedondo1.Name = "botonRectanguloRedondo1";
+            this.botonRectanguloRedondo1.Size = new System.Drawing.Size(55, 55);
+            this.botonRectanguloRedondo1.TabIndex = 6;
+            this.botonRectanguloRedondo1.TextColor = System.Drawing.Color.White;
+            this.botonRectanguloRedondo1.UseVisualStyleBackColor = false;
+            this.botonRectanguloRedondo1.Click += new System.EventHandler(this.botonRectanguloRedondo1_Click_1);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(244, 165);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(114, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(85, 29);
             this.label2.TabIndex = 0;
             this.label2.Text = "label2";
             // 
@@ -656,7 +647,7 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.MenuBar.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panelFacturacion.ResumeLayout(false);
             this.panelProductos.ResumeLayout(false);
@@ -667,8 +658,6 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
             this.baseReal.ResumeLayout(false);
             this.baseReal.PerformLayout();
             this.ResumeLayout(false);
@@ -678,7 +667,7 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel MenuBar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox imagenLogo;
@@ -686,7 +675,6 @@
         private BotonesCustomizados.botonRectanguloRedondo btnDashboard;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel11;
         private BotonesCustomizados.botonRectanguloRedondo botonRectanguloRedondo1;
         private BotonesCustomizados.botonRectanguloRedondo btnUsuarios;
         private System.Windows.Forms.Panel panel6;
@@ -708,10 +696,10 @@
         private System.Windows.Forms.Panel panelClientes;
         private BotonesCustomizados.botonRectanguloRedondo btnCliente;
         private System.Windows.Forms.Panel baseReal;
+        private System.Windows.Forms.Label label2;
 
 
         public string usuario = "";
-        private System.Windows.Forms.Label label2;
     }
 }
 

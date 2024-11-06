@@ -61,7 +61,7 @@
             this.LoginPanel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.LoginPanel.Location = new System.Drawing.Point(550, 200);
             this.LoginPanel.Name = "LoginPanel";
-            this.LoginPanel.Size = new System.Drawing.Size(800, 600);
+            this.LoginPanel.Size = new System.Drawing.Size(776, 526);
             this.LoginPanel.TabIndex = 1;
             this.LoginPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LoginPanel_Paint);
             // 
@@ -70,7 +70,7 @@
             this.PasswordImg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PasswordImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources._lock;
             this.PasswordImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PasswordImg.Location = new System.Drawing.Point(156, 348);
+            this.PasswordImg.Location = new System.Drawing.Point(156, 344);
             this.PasswordImg.Name = "PasswordImg";
             this.PasswordImg.Size = new System.Drawing.Size(35, 35);
             this.PasswordImg.TabIndex = 8;
@@ -80,7 +80,7 @@
             this.UserImg.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.UserImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.user_w;
             this.UserImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.UserImg.Location = new System.Drawing.Point(156, 207);
+            this.UserImg.Location = new System.Drawing.Point(156, 200);
             this.UserImg.Name = "UserImg";
             this.UserImg.Size = new System.Drawing.Size(35, 35);
             this.UserImg.TabIndex = 7;
@@ -104,7 +104,7 @@
             this.UserTxt.PasswordChar = false;
             this.UserTxt.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.UserTxt.PlaceholderText = "";
-            this.UserTxt.Size = new System.Drawing.Size(415, 60);
+            this.UserTxt.Size = new System.Drawing.Size(1029, 60);
             this.UserTxt.TabIndex = 6;
             this.UserTxt.Texts = "";
             this.UserTxt.UnderlinedStyle = false;
@@ -149,7 +149,7 @@
             this.PasswordTxt.PasswordChar = false;
             this.PasswordTxt.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.PasswordTxt.PlaceholderText = "";
-            this.PasswordTxt.Size = new System.Drawing.Size(415, 60);
+            this.PasswordTxt.Size = new System.Drawing.Size(1029, 60);
             this.PasswordTxt.TabIndex = 2;
             this.PasswordTxt.Texts = "";
             this.PasswordTxt.UnderlinedStyle = false;
@@ -176,13 +176,13 @@
             this.IniciarSesionBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(167)))), ((int)(((byte)(36)))));
             this.IniciarSesionBtn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(167)))), ((int)(((byte)(36)))));
             this.IniciarSesionBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.IniciarSesionBtn.BorderRadius = 20;
+            this.IniciarSesionBtn.BorderRadius = 15;
             this.IniciarSesionBtn.BorderSize = 0;
             this.IniciarSesionBtn.FlatAppearance.BorderSize = 0;
             this.IniciarSesionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IniciarSesionBtn.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IniciarSesionBtn.ForeColor = System.Drawing.Color.Black;
-            this.IniciarSesionBtn.Location = new System.Drawing.Point(535, 448);
+            this.IniciarSesionBtn.Location = new System.Drawing.Point(1149, 602);
             this.IniciarSesionBtn.Name = "IniciarSesionBtn";
             this.IniciarSesionBtn.Size = new System.Drawing.Size(180, 60);
             this.IniciarSesionBtn.TabIndex = 0;
@@ -195,11 +195,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1262, 753);
             this.Controls.Add(this.LoginPanel);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(2554, 1318);
-            this.MinimumSize = new System.Drawing.Size(1918, 1028);
+            this.MinimumSize = new System.Drawing.Size(1280, 800);
             this.Name = "Login";
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -220,6 +220,5 @@
         private BotonesCustomizados.TextBoxRedondo UserTxt;
         private System.Windows.Forms.Panel UserImg;
         private System.Windows.Forms.Panel PasswordImg;
-        //private BotonesCustomizados.TextBoxRedondo UserTxt;
     }
 }

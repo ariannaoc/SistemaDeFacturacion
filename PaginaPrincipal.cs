@@ -291,5 +291,15 @@ namespace Parcial2_SistemaDeFacturacion
         {
 
         }
+
+        private void botonRectanguloRedondo1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -24,6 +24,7 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void IniciarSesionBtn_Click(object sender, EventArgs e)
         {
+
             PaginaPrincipal Dashboard = new PaginaPrincipal();
 
             Dashboard.usuario = "arianna";

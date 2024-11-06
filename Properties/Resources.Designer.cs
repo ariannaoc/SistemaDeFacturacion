@@ -73,6 +73,16 @@ namespace Parcial2_SistemaDeFacturacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap user_b {
+            get {
+                object obj = ResourceManager.GetObject("user_b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user_w {
             get {
                 object obj = ResourceManager.GetObject("user_w", resourceCulture);
