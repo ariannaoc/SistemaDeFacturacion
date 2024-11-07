@@ -63,6 +63,16 @@ namespace Parcial2_SistemaDeFacturacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _lock {
+            get {
+                object obj = ResourceManager.GetObject("lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AnadirCategoria {
             get {
                 object obj = ResourceManager.GetObject("AnadirCategoria", resourceCulture);
@@ -176,6 +186,16 @@ namespace Parcial2_SistemaDeFacturacion.Properties {
         internal static System.Drawing.Bitmap user_b {
             get {
                 object obj = ResourceManager.GetObject("user_b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_w {
+            get {
+                object obj = ResourceManager.GetObject("user_w", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

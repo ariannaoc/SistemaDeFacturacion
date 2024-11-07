@@ -684,6 +684,8 @@
         private System.Windows.Forms.Panel panelClientes;
         private BotonesCustomizados.botonRectanguloRedondo btnCliente;
         private BotonesCustomizados.botonRectanguloRedondo UserBtn;
+
+        public string usuario = "";
     }
 }
 
