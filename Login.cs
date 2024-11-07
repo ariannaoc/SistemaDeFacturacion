@@ -24,7 +24,6 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void IniciarSesionBtn_Click(object sender, EventArgs e)
         {
-
             PaginaPrincipal Dashboard = new PaginaPrincipal();
 
             Dashboard.usuario = "arianna";
@@ -59,6 +58,9 @@ namespace Parcial2_SistemaDeFacturacion
             UserTxt.Multiline = false;
         }
 
-        
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
