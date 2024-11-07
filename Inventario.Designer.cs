@@ -38,7 +38,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Helvetica", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(344, 348);
+            this.label1.Location = new System.Drawing.Point(18, 192);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 25);
             this.label1.TabIndex = 0;
@@ -51,10 +51,10 @@
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
             this.roundedPanel1.Controls.Add(this.readOnlyRichTextBox1);
-            this.roundedPanel1.Location = new System.Drawing.Point(405, 896);
+            this.roundedPanel1.Location = new System.Drawing.Point(414, 159);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Padding = new System.Windows.Forms.Padding(12, 9, 12, 9);
-            this.roundedPanel1.Size = new System.Drawing.Size(179, 221);
+            this.roundedPanel1.Size = new System.Drawing.Size(179, 72);
             this.roundedPanel1.TabIndex = 1;
             // 
             // readOnlyRichTextBox1
@@ -64,7 +64,7 @@
             this.readOnlyRichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.readOnlyRichTextBox1.Location = new System.Drawing.Point(12, 9);
             this.readOnlyRichTextBox1.Name = "readOnlyRichTextBox1";
-            this.readOnlyRichTextBox1.Size = new System.Drawing.Size(155, 203);
+            this.readOnlyRichTextBox1.Size = new System.Drawing.Size(155, 54);
             this.readOnlyRichTextBox1.TabIndex = 0;
             this.readOnlyRichTextBox1.Text = "hola aqui hay una prueba\npara que puedan usar esto en\nel resto del codigo\n";
             // 
@@ -72,13 +72,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
             this.Name = "Inventario";
-            this.Size = new System.Drawing.Size(1551, 978);
+            this.Size = new System.Drawing.Size(1549, 515);
             this.Load += new System.EventHandler(this.Inventario_Load);
             this.roundedPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

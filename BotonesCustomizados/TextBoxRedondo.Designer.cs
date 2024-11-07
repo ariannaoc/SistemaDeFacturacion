@@ -40,6 +40,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(230, 16);
             this.textBox1.TabIndex = 0;
+            //this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // TextBoxRedondo
             // 
@@ -56,5 +57,10 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
+        public char CustomPasswordChar
+        {
+            get { return textBox1.PasswordChar; }
+            set { textBox1.PasswordChar = value; }
+        }
     }
 }
