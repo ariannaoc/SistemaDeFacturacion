@@ -222,5 +222,10 @@ namespace Parcial2_SistemaDeFacturacion
 
             añadirCatgProducto.Dock = DockStyle.Fill;
         }
+
+        private void UserBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

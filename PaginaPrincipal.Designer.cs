@@ -42,9 +42,9 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.imagenLogo = new System.Windows.Forms.PictureBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.imagenLogo = new System.Windows.Forms.PictureBox();
             this.btnOrdenes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.btnReportes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.btnCliente = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
@@ -56,6 +56,7 @@
             this.btnProductos = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.btnUsuarios = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.btnDashboard = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.UserBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -65,10 +66,11 @@
             this.panelFacturacion.SuspendLayout();
             this.panelProductos.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -78,7 +80,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -106,7 +108,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(366, 863);
             this.panel1.TabIndex = 0;
@@ -132,7 +134,7 @@
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.btnDashboard);
             this.panel3.Location = new System.Drawing.Point(39, 169);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(357, 1040);
             this.panel3.TabIndex = 1;
@@ -143,7 +145,7 @@
             this.panel12.BackColor = System.Drawing.Color.Transparent;
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 843);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(357, 20);
             this.panel12.TabIndex = 29;
@@ -153,7 +155,7 @@
             this.panel10.BackColor = System.Drawing.Color.Transparent;
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 760);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(357, 18);
             this.panel10.TabIndex = 27;
@@ -163,7 +165,7 @@
             this.panelClientes.BackColor = System.Drawing.Color.Transparent;
             this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelClientes.Location = new System.Drawing.Point(0, 677);
-            this.panelClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelClientes.Margin = new System.Windows.Forms.Padding(4);
             this.panelClientes.Name = "panelClientes";
             this.panelClientes.Size = new System.Drawing.Size(357, 18);
             this.panelClientes.TabIndex = 25;
@@ -173,7 +175,7 @@
             this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 594);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(357, 18);
             this.panel8.TabIndex = 20;
@@ -185,7 +187,7 @@
             this.panelFacturacion.Controls.Add(this.btnIniciarVenta);
             this.panelFacturacion.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelFacturacion.Location = new System.Drawing.Point(0, 452);
-            this.panelFacturacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelFacturacion.Margin = new System.Windows.Forms.Padding(4);
             this.panelFacturacion.Name = "panelFacturacion";
             this.panelFacturacion.Size = new System.Drawing.Size(357, 142);
             this.panelFacturacion.TabIndex = 19;
@@ -195,7 +197,7 @@
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 369);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(357, 18);
             this.panel4.TabIndex = 8;
@@ -207,7 +209,7 @@
             this.panelProductos.Controls.Add(this.btnInventario);
             this.panelProductos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelProductos.Location = new System.Drawing.Point(0, 231);
-            this.panelProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelProductos.Margin = new System.Windows.Forms.Padding(4);
             this.panelProductos.Name = "panelProductos";
             this.panelProductos.Size = new System.Drawing.Size(357, 138);
             this.panelProductos.TabIndex = 7;
@@ -217,7 +219,7 @@
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 148);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(357, 18);
             this.panel7.TabIndex = 5;
@@ -227,7 +229,7 @@
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 65);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(357, 18);
             this.panel6.TabIndex = 3;
@@ -239,7 +241,7 @@
             this.panel2.Controls.Add(this.imagenLogo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(366, 161);
             this.panel2.TabIndex = 0;
@@ -255,15 +257,6 @@
             this.label1.Size = new System.Drawing.Size(83, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "LOGO AQUI";
-            // 
-            // imagenLogo
-            // 
-            this.imagenLogo.Location = new System.Drawing.Point(16, 15);
-            this.imagenLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.imagenLogo.Name = "imagenLogo";
-            this.imagenLogo.Size = new System.Drawing.Size(424, 62);
-            this.imagenLogo.TabIndex = 0;
-            this.imagenLogo.TabStop = false;
             // 
             // splitContainer2
             // 
@@ -293,12 +286,22 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.UserBtn);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(1);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1611, 48);
             this.panel5.TabIndex = 0;
+            // 
+            // imagenLogo
+            // 
+            this.imagenLogo.Location = new System.Drawing.Point(16, 15);
+            this.imagenLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.imagenLogo.Name = "imagenLogo";
+            this.imagenLogo.Size = new System.Drawing.Size(424, 62);
+            this.imagenLogo.TabIndex = 0;
+            this.imagenLogo.TabStop = false;
             // 
             // btnOrdenes
             // 
@@ -597,17 +600,39 @@
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
+            // UserBtn
+            // 
+            this.UserBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.UserBtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.UserBtn.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.UserBtn.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.user_b;
+            this.UserBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.UserBtn.BorderColor = System.Drawing.Color.Black;
+            this.UserBtn.BorderRadius = 17;
+            this.UserBtn.BorderSize = 1;
+            this.UserBtn.FlatAppearance.BorderSize = 0;
+            this.UserBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UserBtn.ForeColor = System.Drawing.Color.White;
+            this.UserBtn.Location = new System.Drawing.Point(998, 3);
+            this.UserBtn.Name = "UserBtn";
+            this.UserBtn.Size = new System.Drawing.Size(45, 45);
+            this.UserBtn.TabIndex = 0;
+            this.UserBtn.TextColor = System.Drawing.Color.White;
+            this.UserBtn.UseVisualStyleBackColor = false;
+            this.UserBtn.Click += new System.EventHandler(this.UserBtn_Click);
+            // 
             // PaginaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1422, 853);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1440, 900);
             this.Name = "PaginaPrincipal";
             this.Text = "Sistema de Ventas";
             this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PaginaPrincipal_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -619,10 +644,11 @@
             this.panelProductos.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenLogo)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imagenLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -657,6 +683,7 @@
         private BotonesCustomizados.botonRectanguloRedondo btnReportes;
         private System.Windows.Forms.Panel panelClientes;
         private BotonesCustomizados.botonRectanguloRedondo btnCliente;
+        private BotonesCustomizados.botonRectanguloRedondo UserBtn;
     }
 }
 
