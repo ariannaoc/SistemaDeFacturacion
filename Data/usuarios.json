@@ -1,0 +1,20 @@
+[
+  {
+    "Username": "develop",
+    "Password": "sudev",
+    "Name" :  "Dev",
+    "Rol": "su"
+  },
+  {
+    "Usuario": "admin",
+    "Password": "admin",
+    "Name": "admin",
+    "Rol": "administrador"
+  },
+  {
+    "Username": "user",
+    "Password": "user",
+    "Name": "operador",
+    "Rol": "operador"
+  }
+]

@@ -686,6 +686,8 @@
         private BotonesCustomizados.botonRectanguloRedondo UserBtn;
 
         public string usuario = "";
+        public string rolU = "";
+        public string nombreU = "";
     }
 }
 
