@@ -36,11 +36,8 @@ namespace Parcial2_SistemaDeFacturacion
             try
             {
                 // Leer archivo JSON
-                //string json = File.ReadAllText("C:\\Users\\Arianna\\Desktop\\PR2\\SistemaDeFacturacion\\Data\\usuarios.json");
-                string json = @"[
-                { 'Username': 'admin', 'Password': 'admin', 'Name': 'Juan Pérez', 'Rol': 'Administrador' },
-                { 'Username': 'user', 'Password': 'user', 'Name': 'María López', 'Rol': 'Usuario' }
-            ]";
+                string json = File.ReadAllText("C:\\Users\\Arianna\\Desktop\\PR2\\SistemaDeFacturacion\\Data\\usuarios.json");
+                
                 // Deserializar JSON en una lista
                 userList = JsonConvert.DeserializeObject<List<Usuario>>(json);
 
@@ -70,12 +67,6 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void IniciarSesionBtn_Click(object sender, EventArgs e)
         {
-            string mensaje = "";
-            foreach (Usuario u in userList)
-            {
-                mensaje += $"UN: {u.Name}\n";
-            }
-            MessageBox.Show(mensaje, "Contenido de userList");
 
             string username = UserTxt.Texts;
             string password = PasswordTxt.Texts;
