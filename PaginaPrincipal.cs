@@ -56,8 +56,6 @@ namespace Parcial2_SistemaDeFacturacion
         private void PaginaPrincipal_Load(object sender, EventArgs e)
         {
 
-
-
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -225,7 +223,22 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void UserBtn_Click(object sender, EventArgs e)
         {
+            InfoUser.Visible= true;
+            UserLabel.Text = usuario; 
+            UserLabelName.Text = nombreU; 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
+
+        private void CerrarSesionBtn_Click(object sender, EventArgs e)
+        {
+            Login loginForm = new Login();
+            loginForm.Show();
+            this.Close();
+        }
+
     }
 }

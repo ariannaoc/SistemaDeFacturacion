@@ -104,6 +104,7 @@
             this.UserTxt.TabIndex = 6;
             this.UserTxt.Texts = "";
             this.UserTxt.UnderlinedStyle = false;
+            this.UserTxt.TextChanged += new System.EventHandler(this.HabilitarBotonIniciarSesion);
             // 
             // UsuarioLabel
             // 
@@ -149,6 +150,7 @@
             this.PasswordTxt.TabIndex = 2;
             this.PasswordTxt.Texts = "";
             this.PasswordTxt.UnderlinedStyle = false;
+            this.PasswordTxt.TextChanged += new System.EventHandler(this.HabilitarBotonIniciarSesion);
             this.PasswordTxt.Load += new System.EventHandler(this.textBoxRedondo2_Load);
             // 
             // IniciarSesionLabel

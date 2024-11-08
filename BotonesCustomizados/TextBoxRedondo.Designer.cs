@@ -1,4 +1,6 @@
-﻿namespace Parcial2_SistemaDeFacturacion.BotonesCustomizados
+﻿using System;
+
+namespace Parcial2_SistemaDeFacturacion.BotonesCustomizados
 {
     partial class TextBoxRedondo
     {

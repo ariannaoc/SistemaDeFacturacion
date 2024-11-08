@@ -32,31 +32,35 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.btnOrdenes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnReportes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panelClientes = new System.Windows.Forms.Panel();
+            this.btnCliente = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panelFacturacion = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panelProductos = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.imagenLogo = new System.Windows.Forms.PictureBox();
-            this.btnOrdenes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.btnReportes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.btnCliente = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.btnVerFacturas = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.btnIniciarVenta = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.btnFacturacion = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelProductos = new System.Windows.Forms.Panel();
             this.btnAnadirCategoria = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.btnInventario = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.btnProductos = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.btnUsuarios = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.btnDashboard = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.imagenLogo = new System.Windows.Forms.PictureBox();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.UserBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.InfoUser = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
+            this.CerrarSesionBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.UserLabel = new System.Windows.Forms.Label();
+            this.UserLabelName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -66,11 +70,13 @@
             this.panelFacturacion.SuspendLayout();
             this.panelProductos.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenLogo)).BeginInit();
+            this.InfoUser.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -150,159 +156,6 @@
             this.panel12.Size = new System.Drawing.Size(357, 20);
             this.panel12.TabIndex = 29;
             // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Transparent;
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 760);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(357, 18);
-            this.panel10.TabIndex = 27;
-            // 
-            // panelClientes
-            // 
-            this.panelClientes.BackColor = System.Drawing.Color.Transparent;
-            this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelClientes.Location = new System.Drawing.Point(0, 677);
-            this.panelClientes.Margin = new System.Windows.Forms.Padding(4);
-            this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(357, 18);
-            this.panelClientes.TabIndex = 25;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 594);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(357, 18);
-            this.panel8.TabIndex = 20;
-            // 
-            // panelFacturacion
-            // 
-            this.panelFacturacion.BackColor = System.Drawing.Color.Transparent;
-            this.panelFacturacion.Controls.Add(this.btnVerFacturas);
-            this.panelFacturacion.Controls.Add(this.btnIniciarVenta);
-            this.panelFacturacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelFacturacion.Location = new System.Drawing.Point(0, 452);
-            this.panelFacturacion.Margin = new System.Windows.Forms.Padding(4);
-            this.panelFacturacion.Name = "panelFacturacion";
-            this.panelFacturacion.Size = new System.Drawing.Size(357, 142);
-            this.panelFacturacion.TabIndex = 19;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 369);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(357, 18);
-            this.panel4.TabIndex = 8;
-            // 
-            // panelProductos
-            // 
-            this.panelProductos.BackColor = System.Drawing.Color.Transparent;
-            this.panelProductos.Controls.Add(this.btnAnadirCategoria);
-            this.panelProductos.Controls.Add(this.btnInventario);
-            this.panelProductos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelProductos.Location = new System.Drawing.Point(0, 231);
-            this.panelProductos.Margin = new System.Windows.Forms.Padding(4);
-            this.panelProductos.Name = "panelProductos";
-            this.panelProductos.Size = new System.Drawing.Size(357, 138);
-            this.panelProductos.TabIndex = 7;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 148);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(357, 18);
-            this.panel7.TabIndex = 5;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 65);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(357, 18);
-            this.panel6.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.imagenLogo);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(366, 161);
-            this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(176, 95);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "LOGO AQUI";
-            // 
-            // splitContainer2
-            // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.splitContainer2.IsSplitterFixed = true;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(1);
-            this.splitContainer2.Name = "splitContainer2";
-            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
-            this.splitContainer2.Panel1.Controls.Add(this.panel5);
-            this.splitContainer2.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel1_Paint);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.splitContainer2.Panel2.ForeColor = System.Drawing.Color.Transparent;
-            this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
-            this.splitContainer2.Size = new System.Drawing.Size(1611, 863);
-            this.splitContainer2.SplitterDistance = 48;
-            this.splitContainer2.SplitterWidth = 1;
-            this.splitContainer2.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.UserBtn);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(1);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1611, 48);
-            this.panel5.TabIndex = 0;
-            // 
-            // imagenLogo
-            // 
-            this.imagenLogo.Location = new System.Drawing.Point(16, 15);
-            this.imagenLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.imagenLogo.Name = "imagenLogo";
-            this.imagenLogo.Size = new System.Drawing.Size(424, 62);
-            this.imagenLogo.TabIndex = 0;
-            this.imagenLogo.TabStop = false;
-            // 
             // btnOrdenes
             // 
             this.btnOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
@@ -327,6 +180,16 @@
             this.btnOrdenes.Text = "Ordenes de Producto";
             this.btnOrdenes.TextColor = System.Drawing.Color.Gray;
             this.btnOrdenes.UseVisualStyleBackColor = false;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 760);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(357, 18);
+            this.panel10.TabIndex = 27;
             // 
             // btnReportes
             // 
@@ -355,6 +218,16 @@
             this.btnReportes.TextColor = System.Drawing.Color.White;
             this.btnReportes.UseVisualStyleBackColor = false;
             // 
+            // panelClientes
+            // 
+            this.panelClientes.BackColor = System.Drawing.Color.Transparent;
+            this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelClientes.Location = new System.Drawing.Point(0, 677);
+            this.panelClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.panelClientes.Name = "panelClientes";
+            this.panelClientes.Size = new System.Drawing.Size(357, 18);
+            this.panelClientes.TabIndex = 25;
+            // 
             // btnCliente
             // 
             this.btnCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
@@ -381,6 +254,28 @@
             this.btnCliente.Text = "Clientes ";
             this.btnCliente.TextColor = System.Drawing.Color.White;
             this.btnCliente.UseVisualStyleBackColor = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 594);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(357, 18);
+            this.panel8.TabIndex = 20;
+            // 
+            // panelFacturacion
+            // 
+            this.panelFacturacion.BackColor = System.Drawing.Color.Transparent;
+            this.panelFacturacion.Controls.Add(this.btnVerFacturas);
+            this.panelFacturacion.Controls.Add(this.btnIniciarVenta);
+            this.panelFacturacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelFacturacion.Location = new System.Drawing.Point(0, 452);
+            this.panelFacturacion.Margin = new System.Windows.Forms.Padding(4);
+            this.panelFacturacion.Name = "panelFacturacion";
+            this.panelFacturacion.Size = new System.Drawing.Size(357, 142);
+            this.panelFacturacion.TabIndex = 19;
             // 
             // btnVerFacturas
             // 
@@ -463,6 +358,28 @@
             this.btnFacturacion.UseVisualStyleBackColor = false;
             this.btnFacturacion.Click += new System.EventHandler(this.btnFacturacion_Click);
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 369);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(357, 18);
+            this.panel4.TabIndex = 8;
+            // 
+            // panelProductos
+            // 
+            this.panelProductos.BackColor = System.Drawing.Color.Transparent;
+            this.panelProductos.Controls.Add(this.btnAnadirCategoria);
+            this.panelProductos.Controls.Add(this.btnInventario);
+            this.panelProductos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelProductos.Location = new System.Drawing.Point(0, 231);
+            this.panelProductos.Margin = new System.Windows.Forms.Padding(4);
+            this.panelProductos.Name = "panelProductos";
+            this.panelProductos.Size = new System.Drawing.Size(357, 138);
+            this.panelProductos.TabIndex = 7;
+            // 
             // btnAnadirCategoria
             // 
             this.btnAnadirCategoria.BackColor = System.Drawing.Color.Transparent;
@@ -544,6 +461,16 @@
             this.btnProductos.UseVisualStyleBackColor = false;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click_1);
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 148);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(357, 18);
+            this.panel7.TabIndex = 5;
+            // 
             // btnUsuarios
             // 
             this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
@@ -571,6 +498,16 @@
             this.btnUsuarios.TextColor = System.Drawing.Color.White;
             this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 65);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(357, 18);
+            this.panel6.TabIndex = 3;
             // 
             // btnDashboard
             // 
@@ -600,6 +537,76 @@
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.imagenLogo);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(366, 161);
+            this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(176, 95);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "LOGO AQUI";
+            // 
+            // imagenLogo
+            // 
+            this.imagenLogo.Location = new System.Drawing.Point(16, 15);
+            this.imagenLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.imagenLogo.Name = "imagenLogo";
+            this.imagenLogo.Size = new System.Drawing.Size(424, 62);
+            this.imagenLogo.TabIndex = 0;
+            this.imagenLogo.TabStop = false;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.splitContainer2.IsSplitterFixed = true;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(1);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
+            this.splitContainer2.Panel1.Controls.Add(this.panel5);
+            this.splitContainer2.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel1_Paint);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.splitContainer2.Panel2.Controls.Add(this.InfoUser);
+            this.splitContainer2.Panel2.ForeColor = System.Drawing.Color.Transparent;
+            this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
+            this.splitContainer2.Size = new System.Drawing.Size(1611, 863);
+            this.splitContainer2.SplitterDistance = 48;
+            this.splitContainer2.SplitterWidth = 1;
+            this.splitContainer2.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.UserBtn);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(1);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1611, 48);
+            this.panel5.TabIndex = 0;
+            // 
             // UserBtn
             // 
             this.UserBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -621,6 +628,65 @@
             this.UserBtn.UseVisualStyleBackColor = false;
             this.UserBtn.Click += new System.EventHandler(this.UserBtn_Click);
             // 
+            // InfoUser
+            // 
+            this.InfoUser.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.InfoUser.BackColor = System.Drawing.Color.Silver;
+            this.InfoUser.BorderColor = System.Drawing.Color.Black;
+            this.InfoUser.BorderRadius = 20;
+            this.InfoUser.BorderSize = 0;
+            this.InfoUser.Controls.Add(this.CerrarSesionBtn);
+            this.InfoUser.Controls.Add(this.UserLabel);
+            this.InfoUser.Controls.Add(this.UserLabelName);
+            this.InfoUser.Location = new System.Drawing.Point(721, 15);
+            this.InfoUser.Name = "InfoUser";
+            this.InfoUser.Size = new System.Drawing.Size(322, 241);
+            this.InfoUser.TabIndex = 0;
+            this.InfoUser.Visible = false;
+            // 
+            // CerrarSesionBtn
+            // 
+            this.CerrarSesionBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(55)))));
+            this.CerrarSesionBtn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(55)))));
+            this.CerrarSesionBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.CerrarSesionBtn.BorderRadius = 15;
+            this.CerrarSesionBtn.BorderSize = 0;
+            this.CerrarSesionBtn.FlatAppearance.BorderSize = 0;
+            this.CerrarSesionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CerrarSesionBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CerrarSesionBtn.ForeColor = System.Drawing.Color.White;
+            this.CerrarSesionBtn.Location = new System.Drawing.Point(149, 160);
+            this.CerrarSesionBtn.Name = "CerrarSesionBtn";
+            this.CerrarSesionBtn.Size = new System.Drawing.Size(150, 49);
+            this.CerrarSesionBtn.TabIndex = 2;
+            this.CerrarSesionBtn.Text = "Cerrar Sesión";
+            this.CerrarSesionBtn.TextColor = System.Drawing.Color.White;
+            this.CerrarSesionBtn.UseVisualStyleBackColor = false;
+            this.CerrarSesionBtn.Click += new System.EventHandler(this.CerrarSesionBtn_Click);
+            // 
+            // UserLabel
+            // 
+            this.UserLabel.AutoSize = true;
+            this.UserLabel.Font = new System.Drawing.Font("Arial", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserLabel.ForeColor = System.Drawing.Color.DimGray;
+            this.UserLabel.Location = new System.Drawing.Point(42, 59);
+            this.UserLabel.Name = "UserLabel";
+            this.UserLabel.Size = new System.Drawing.Size(44, 19);
+            this.UserLabel.TabIndex = 1;
+            this.UserLabel.Text = "user";
+            // 
+            // UserLabelName
+            // 
+            this.UserLabelName.AutoSize = true;
+            this.UserLabelName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserLabelName.ForeColor = System.Drawing.Color.Black;
+            this.UserLabelName.Location = new System.Drawing.Point(42, 28);
+            this.UserLabelName.Name = "UserLabelName";
+            this.UserLabelName.Size = new System.Drawing.Size(71, 19);
+            this.UserLabelName.TabIndex = 0;
+            this.UserLabelName.Text = "Nombre";
+            this.UserLabelName.Click += new System.EventHandler(this.label2_Click);
+            // 
             // PaginaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -634,6 +700,7 @@
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PaginaPrincipal_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PaginaPrincipal_MouseClick);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -644,11 +711,14 @@
             this.panelProductos.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenLogo)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imagenLogo)).EndInit();
+            this.InfoUser.ResumeLayout(false);
+            this.InfoUser.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -688,6 +758,10 @@
         public string usuario = "";
         public string rolU = "";
         public string nombreU = "";
+        private BotonesCustomizados.RoundedPanel InfoUser;
+        private System.Windows.Forms.Label UserLabelName;
+        private BotonesCustomizados.botonRectanguloRedondo CerrarSesionBtn;
+        private System.Windows.Forms.Label UserLabel;
     }
 }
 

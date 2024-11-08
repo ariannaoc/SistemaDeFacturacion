@@ -14,23 +14,17 @@ using Newtonsoft.Json;
 namespace Parcial2_SistemaDeFacturacion
 {
 
-    public class Usuario
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Name { get; set; }
-        public string Rol { get; set; }
-    }
     public partial class Login : Form
     {
-        // Lista de usuarios
-        List<Usuario> userList = new List<Usuario>();
-
         public Login()
         {
             InitializeComponent();
             CargarUsuarios();
         }
+
+        // Lista de usuarios
+        List<Usuario> userList = new List<Usuario>();
+
         private void CargarUsuarios()
         {
             try
@@ -64,26 +58,61 @@ namespace Parcial2_SistemaDeFacturacion
 
         }
 
-
+        private void HabilitarBotonIniciarSesion(object sender, EventArgs e)
+        {
+            IniciarSesionBtn.Enabled = false;
+            //IniciarSesionBtn.Enabled = !string.IsNullOrEmpty(UserTxt.Text) && !string.IsNullOrEmpty(PasswordTxt.Text);
+        }
         private void IniciarSesionBtn_Click(object sender, EventArgs e)
         {
-
             string username = UserTxt.Texts;
             string password = PasswordTxt.Texts;
 
             if (Autenticacion(username, password))
             {
-                // Autenticacion exitosa
-                PaginaPrincipal Dashboard = new PaginaPrincipal();
-                Dashboard.usuario = username;
-                Dashboard.Show();
-                this.Hide();
+                // Autenticación exitosa
+                Usuario authenticatedUser = userList.FirstOrDefault(user => user.Username.ToLower() == username.ToLower());
+
+                if (authenticatedUser != null)
+                {
+                    PaginaPrincipal Dashboard = new PaginaPrincipal();
+                    Dashboard.usuario = authenticatedUser.Username;
+                    Dashboard.nombreU = authenticatedUser.Name; 
+                    Dashboard.rolU = authenticatedUser.Rol; 
+
+                    Dashboard.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Error interno: Usuario no encontrado en la lista autenticada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña inválidos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                UserTxt.Text = "";
+                PasswordTxt.Text = "";
             }
+
+            //if (Autenticacion(username, password))
+            //{
+            //    // Autenticacion exitosa
+            //    PaginaPrincipal Dashboard = new PaginaPrincipal();
+            //    //Dashboard.nombreU = 
+            //    Dashboard.usuario = username;
+            //    Dashboard.Show();
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Usuario o contraseña inválidos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    UserTxt.Texts = "";
+            //    PasswordTxt.Texts = "";
+            //    //IniciarSesionBtn.Enabled = false;
+
+            //}
 
         }
 
@@ -109,11 +138,17 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void Login_Load(object sender, EventArgs e)
         {
+            //IniciarSesionBtn.Enabled = false;
             PasswordTxt.CustomPasswordChar = '*';
             PasswordTxt.Multiline = false;
             UserTxt.Multiline = false;
         }
-
-        
+    }
+    public class Usuario
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Name { get; set; }
+        public string Rol { get; set; }
     }
 }
