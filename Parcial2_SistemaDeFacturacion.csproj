@@ -79,6 +79,19 @@
     <Compile Include="Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionUsuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionUsuarios.Designer.cs">
+      <DependentUpon>GestionUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserData.cs" />
+    <Compile Include="InfoUserEmergente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InfoUserEmergente.Designer.cs">
+      <DependentUpon>InfoUserEmergente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventario.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +132,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Facturacion.resx">
       <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionUsuarios.resx">
+      <DependentUpon>GestionUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoUserEmergente.resx">
+      <DependentUpon>InfoUserEmergente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventario.resx">
       <DependentUpon>Inventario.cs</DependentUpon>
@@ -207,6 +226,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Iconos\config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

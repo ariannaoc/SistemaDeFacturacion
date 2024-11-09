@@ -65,7 +65,7 @@
             // 
             // PasswordImg
             // 
-            this.PasswordImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources._lock;
+            //this.PasswordImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources._lock;
             this.PasswordImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PasswordImg.Location = new System.Drawing.Point(170, 342);
             this.PasswordImg.Name = "PasswordImg";
@@ -74,7 +74,7 @@
             // 
             // UserImg
             // 
-            this.UserImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.user_w;
+            //this.UserImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.user_w;
             this.UserImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.UserImg.Location = new System.Drawing.Point(170, 202);
             this.UserImg.Name = "UserImg";
@@ -150,8 +150,8 @@
             this.PasswordTxt.TabIndex = 2;
             this.PasswordTxt.Texts = "";
             this.PasswordTxt.UnderlinedStyle = false;
-            this.PasswordTxt.TextChanged += new System.EventHandler(this.HabilitarBotonIniciarSesion);
             this.PasswordTxt.Load += new System.EventHandler(this.textBoxRedondo2_Load);
+            this.PasswordTxt.TextChanged += new System.EventHandler(this.HabilitarBotonIniciarSesion);
             // 
             // IniciarSesionLabel
             // 

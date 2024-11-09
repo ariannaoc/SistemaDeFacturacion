@@ -19,38 +19,10 @@ namespace Parcial2_SistemaDeFacturacion
         public Login()
         {
             InitializeComponent();
-            CargarUsuarios();
         }
-
-        // Lista de usuarios
-        List<Usuario> userList = new List<Usuario>();
-
-        private void CargarUsuarios()
-        {
-            try
-            {
-                // Leer archivo JSON
-                string json = File.ReadAllText("C:\\Users\\Arianna\\Desktop\\PR2\\SistemaDeFacturacion\\Data\\usuarios.json");
-                
-                // Deserializar JSON en una lista
-                userList = JsonConvert.DeserializeObject<List<Usuario>>(json);
-
-                if (userList.Count == 0)
-                {
-                    MessageBox.Show("No se encontraron usuarios en el archivo JSON.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al cargar los usuarios: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private bool Autenticacion(string username, string password)
         {
-           
-            
-            return userList.Any(user => user.Username == username.ToLower() && user.Password == password);
+            return GetUserData.UserList.Any(user => user.Username.ToLower() == username.ToLower() && user.Password == password);
         }
 
         private void LoginPanel_Paint(object sender, PaintEventArgs e)
@@ -71,14 +43,14 @@ namespace Parcial2_SistemaDeFacturacion
             if (Autenticacion(username, password))
             {
                 // Autenticación exitosa
-                Usuario authenticatedUser = userList.FirstOrDefault(user => user.Username.ToLower() == username.ToLower());
+                Usuario usuarioAutenticado = GetUserData.UserList.FirstOrDefault(user => user.Username.ToLower() == username.ToLower());
 
-                if (authenticatedUser != null)
+                if (usuarioAutenticado != null)
                 {
                     PaginaPrincipal Dashboard = new PaginaPrincipal();
-                    Dashboard.usuario = authenticatedUser.Username;
-                    Dashboard.nombreU = authenticatedUser.Name; 
-                    Dashboard.rolU = authenticatedUser.Rol; 
+                    Dashboard.usuario = usuarioAutenticado.Username;
+                    Dashboard.nombreU = usuarioAutenticado.Name;
+                    Dashboard.rolU = usuarioAutenticado.Rol;
 
                     Dashboard.Show();
                     this.Hide();
@@ -92,28 +64,10 @@ namespace Parcial2_SistemaDeFacturacion
             {
                 MessageBox.Show("Usuario o contraseña inválidos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+
                 UserTxt.Text = "";
                 PasswordTxt.Text = "";
             }
-
-            //if (Autenticacion(username, password))
-            //{
-            //    // Autenticacion exitosa
-            //    PaginaPrincipal Dashboard = new PaginaPrincipal();
-            //    //Dashboard.nombreU = 
-            //    Dashboard.usuario = username;
-            //    Dashboard.Show();
-            //    this.Hide();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Usuario o contraseña inválidos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    UserTxt.Texts = "";
-            //    PasswordTxt.Texts = "";
-            //    //IniciarSesionBtn.Enabled = false;
-
-            //}
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -143,12 +97,5 @@ namespace Parcial2_SistemaDeFacturacion
             PasswordTxt.Multiline = false;
             UserTxt.Multiline = false;
         }
-    }
-    public class Usuario
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Name { get; set; }
-        public string Rol { get; set; }
     }
 }
