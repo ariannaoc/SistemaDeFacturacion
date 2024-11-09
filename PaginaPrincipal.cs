@@ -137,15 +137,6 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void btnProductos_Click_1(object sender, EventArgs e)
         {
-            //PRUEBA DE COLORES NADA MAS
-            //int red = Convert.ToInt32("28", 16);
-            //int green = Convert.ToInt32("28", 16);
-            //int blue = Convert.ToInt32("36", 16);
-
-            //// Create a Color object with the specified RGB values
-            //Color customColor = Color.FromArgb(red, green, blue);
-            //btnProductos.BackColor = customColor;
-            //btnProductos.ForeColor = Color.Red;
 
             mostrarPanelProductos = !mostrarPanelProductos;
             TooglePanels();
@@ -166,7 +157,11 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
+            GestionUsuarios gestionarUsuarios = GestionUsuarios.Instance;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(gestionarUsuarios);
 
+            gestionarUsuarios.Dock = DockStyle.Fill;
         }
 
 
@@ -267,7 +262,8 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void ConfigUserBtn_Click(object sender, EventArgs e)
         {
-
+            UserForm userForm = new UserForm();
+            userForm.Show();
         }
     }
 }
