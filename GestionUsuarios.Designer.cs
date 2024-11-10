@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Parcial2_SistemaDeFacturacion
 {
@@ -166,5 +167,6 @@ namespace Parcial2_SistemaDeFacturacion
         public string nombreU = "";
         public string password = "";
         public string UserFormAction = "";
+        public List<Usuario> tablausuarios = new List<Usuario>();
     }
 }

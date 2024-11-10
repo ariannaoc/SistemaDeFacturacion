@@ -56,7 +56,7 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void NuevoUsuarioBtn_Click(object sender, EventArgs e)
         {
-            UserFormAction = "crear";
+            UserFormAction = "agregar";
             UserForm formularioUsuarios = new UserForm();
             formularioUsuarios.UserFormAction = UserFormAction;
             formularioUsuarios.rolU = rolU;

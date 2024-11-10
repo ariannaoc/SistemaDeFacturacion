@@ -1,12 +1,18 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+//using Newtonsoft;
+using System.IO;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Parcial2_SistemaDeFacturacion
 {
@@ -20,8 +26,9 @@ namespace Parcial2_SistemaDeFacturacion
         private void UserForm_Load(object sender, EventArgs e)
         {
             ValoresNulosLabel.Visible = false;
-            ValoresNulosLabel.Visible = false;
-            ValoresNulosImg.Visible = false;
+            AdvertenciaPanel.Visible = false;
+            AdvertenciaImg.Visible = false;
+            UsuarioRepetidoLabel.Visible = false;
 
             if (UserFormAction == "edit")
             {
@@ -41,7 +48,8 @@ namespace Parcial2_SistemaDeFacturacion
             if (rolU != "su")
             {
                 RolComboForm.Enabled = false;
-                RolComboForm.SelectedText = "operador";
+                //RolComboForm.SelectedText = "operador";
+                RolComboForm.SelectedItem = "operador";
                 RolComboForm.SelectedValue = "operador";
                 RolComboForm.Text = "operador";
             }
@@ -68,20 +76,46 @@ namespace Parcial2_SistemaDeFacturacion
         private void GuardarUserBtn_Click(object sender, EventArgs e)
         {
             // datos nuevo usuario
-            string newUserUser = UsernameTxtFrom.Texts;
+            string newUserUser = UserTxtForm.Texts;
             string newUserName = UsernameTxtFrom.Texts;
-            string newUserRol = RolComboForm.Text;
+            var newUserRol = RolComboForm.Text;
             string newUserPassword = PasswordTxtForm.Texts;
 
-            if (newUserName != "" && newUserUser != "" && newUserPassword != "" && newUserRol != "")
+            if (newUserName != "" && newUserUser != "" && newUserPassword != "")
             {
-                //Guardar en el archivo 
-                // if action edit or nuevo 
+                 if (UserFormAction == "agregar")
+                {
+                    //MessageBox.Show(newUserRol);
+                    //Validar que el usuario no exista  
+                    GetUserData.CargarUsuarios();
+                    List<Usuario> usuariosExistentes = GetUserData.UserList;
+                    bool usuarioE = usuariosExistentes.Any(u => u.Username == newUserUser);
+
+                    if (usuarioE)
+                    {
+                        AdvertenciaPanel.Visible = true;
+                        AdvertenciaImg.Visible = true;
+                        UsuarioRepetidoLabel.Visible = true;
+                    }
+                    else
+                    {
+
+                        // Gardar datos nuevo usuario 
+                        usuariosExistentes.Add(new Usuario { Username = newUserUser, Name = newUserName, Password = newUserPassword, Rol = newUserRol });
+                        string newJson = JsonSerializer.Serialize(usuariosExistentes, new JsonSerializerOptions { WriteIndented = true });
+
+                        File.WriteAllText("C:\\Users\\Arianna\\Desktop\\PR2\\SistemaDeFacturacion\\Data\\usuarios.json", newJson);
+                        this.Close();
+                        GetUserData.CargarUsuarios();
+                        //List<Usuario> usuariosExistentes = GetUserData.UserList;
+                        MessageBox.Show("Usuario guardado correctamente");
+                    }
+                }
             } else
             {
                 ValoresNulosLabel.Visible = true;
-                ValoresNulosPanel.Visible = true;
-                ValoresNulosImg.Visible = true;
+                AdvertenciaPanel.Visible = true;
+                AdvertenciaImg.Visible = true;
             }
 
         }

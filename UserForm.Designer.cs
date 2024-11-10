@@ -41,9 +41,10 @@
             this.editUserBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.editPasswordBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.ValoresNulosLabel = new System.Windows.Forms.Label();
-            this.ValoresNulosPanel = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
-            this.ValoresNulosImg = new System.Windows.Forms.Panel();
-            this.ValoresNulosPanel.SuspendLayout();
+            this.AdvertenciaPanel = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
+            this.AdvertenciaImg = new System.Windows.Forms.Panel();
+            this.UsuarioRepetidoLabel = new System.Windows.Forms.Label();
+            this.AdvertenciaPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // UsernameTxtFrom
@@ -252,27 +253,40 @@
             this.ValoresNulosLabel.TabIndex = 13;
             this.ValoresNulosLabel.Text = "Todos los campos deben estar llenos";
             // 
-            // ValoresNulosPanel
+            // AdvertenciaPanel
             // 
-            this.ValoresNulosPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(167)))), ((int)(((byte)(36)))));
-            this.ValoresNulosPanel.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.ValoresNulosPanel.BorderRadius = 20;
-            this.ValoresNulosPanel.BorderSize = 0;
-            this.ValoresNulosPanel.Controls.Add(this.ValoresNulosLabel);
-            this.ValoresNulosPanel.Controls.Add(this.ValoresNulosImg);
-            this.ValoresNulosPanel.Location = new System.Drawing.Point(70, 21);
-            this.ValoresNulosPanel.Name = "ValoresNulosPanel";
-            this.ValoresNulosPanel.Size = new System.Drawing.Size(397, 50);
-            this.ValoresNulosPanel.TabIndex = 14;
+            this.AdvertenciaPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(167)))), ((int)(((byte)(36)))));
+            this.AdvertenciaPanel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.AdvertenciaPanel.BorderRadius = 20;
+            this.AdvertenciaPanel.BorderSize = 0;
+            this.AdvertenciaPanel.Controls.Add(this.UsuarioRepetidoLabel);
+            this.AdvertenciaPanel.Controls.Add(this.ValoresNulosLabel);
+            this.AdvertenciaPanel.Controls.Add(this.AdvertenciaImg);
+            this.AdvertenciaPanel.Location = new System.Drawing.Point(70, 21);
+            this.AdvertenciaPanel.Name = "AdvertenciaPanel";
+            this.AdvertenciaPanel.Size = new System.Drawing.Size(397, 50);
+            this.AdvertenciaPanel.TabIndex = 14;
             // 
-            // ValoresNulosImg
+            // AdvertenciaImg
             // 
-            this.ValoresNulosImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.caution;
-            this.ValoresNulosImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ValoresNulosImg.Location = new System.Drawing.Point(27, 5);
-            this.ValoresNulosImg.Name = "ValoresNulosImg";
-            this.ValoresNulosImg.Size = new System.Drawing.Size(40, 40);
-            this.ValoresNulosImg.TabIndex = 14;
+            this.AdvertenciaImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.caution;
+            this.AdvertenciaImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AdvertenciaImg.Location = new System.Drawing.Point(27, 5);
+            this.AdvertenciaImg.Name = "AdvertenciaImg";
+            this.AdvertenciaImg.Size = new System.Drawing.Size(40, 40);
+            this.AdvertenciaImg.TabIndex = 14;
+            // 
+            // UsuarioRepetidoLabel
+            // 
+            this.UsuarioRepetidoLabel.AutoSize = true;
+            this.UsuarioRepetidoLabel.BackColor = System.Drawing.Color.Transparent;
+            this.UsuarioRepetidoLabel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsuarioRepetidoLabel.ForeColor = System.Drawing.Color.Black;
+            this.UsuarioRepetidoLabel.Location = new System.Drawing.Point(73, 15);
+            this.UsuarioRepetidoLabel.Name = "UsuarioRepetidoLabel";
+            this.UsuarioRepetidoLabel.Size = new System.Drawing.Size(261, 19);
+            this.UsuarioRepetidoLabel.TabIndex = 15;
+            this.UsuarioRepetidoLabel.Text = "Este usuario no esta disponible ";
             // 
             // UserForm
             // 
@@ -280,7 +294,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(561, 550);
-            this.Controls.Add(this.ValoresNulosPanel);
+            this.Controls.Add(this.AdvertenciaPanel);
             this.Controls.Add(this.editPasswordBtn);
             this.Controls.Add(this.editUserBtn);
             this.Controls.Add(this.edirUsernameBtn);
@@ -299,8 +313,8 @@
             this.Text = "Gestión de usuario";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.UserForm_Load);
-            this.ValoresNulosPanel.ResumeLayout(false);
-            this.ValoresNulosPanel.PerformLayout();
+            this.AdvertenciaPanel.ResumeLayout(false);
+            this.AdvertenciaPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,7 +340,8 @@
         public string password = "";
         public string UserFormAction = "";
         private System.Windows.Forms.Label ValoresNulosLabel;
-        private BotonesCustomizados.RoundedPanel ValoresNulosPanel;
-        private System.Windows.Forms.Panel ValoresNulosImg;
+        private BotonesCustomizados.RoundedPanel AdvertenciaPanel;
+        private System.Windows.Forms.Panel AdvertenciaImg;
+        private System.Windows.Forms.Label UsuarioRepetidoLabel;
     }
 }

@@ -16,5 +16,11 @@
     "Password": "user",
     "Name": "Juan Lopez",
     "Rol": "operador"
+  },
+  {
+    "Username": "aoc",
+    "Password": "123",
+    "Name": "a",
+    "Rol": "operador"
   }
 ]
