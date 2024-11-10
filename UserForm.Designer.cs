@@ -37,6 +37,13 @@
             this.PasswordLabelForm = new System.Windows.Forms.Label();
             this.RolComboForm = new System.Windows.Forms.ComboBox();
             this.RolLabelForm = new System.Windows.Forms.Label();
+            this.edirUsernameBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.editUserBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.editPasswordBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.ValoresNulosLabel = new System.Windows.Forms.Label();
+            this.ValoresNulosPanel = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
+            this.ValoresNulosImg = new System.Windows.Forms.Panel();
+            this.ValoresNulosPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // UsernameTxtFrom
@@ -50,7 +57,7 @@
             this.UsernameTxtFrom.Location = new System.Drawing.Point(43, 111);
             this.UsernameTxtFrom.Multiline = true;
             this.UsernameTxtFrom.Name = "UsernameTxtFrom";
-            this.UsernameTxtFrom.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.UsernameTxtFrom.Padding = new System.Windows.Forms.Padding(15, 10, 10, 7);
             this.UsernameTxtFrom.PasswordChar = false;
             this.UsernameTxtFrom.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.UsernameTxtFrom.PlaceholderText = "";
@@ -70,7 +77,7 @@
             this.UserTxtForm.Location = new System.Drawing.Point(43, 207);
             this.UserTxtForm.Multiline = true;
             this.UserTxtForm.Name = "UserTxtForm";
-            this.UserTxtForm.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.UserTxtForm.Padding = new System.Windows.Forms.Padding(15, 10, 10, 7);
             this.UserTxtForm.PasswordChar = false;
             this.UserTxtForm.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.UserTxtForm.PlaceholderText = "";
@@ -90,7 +97,7 @@
             this.PasswordTxtForm.Location = new System.Drawing.Point(43, 299);
             this.PasswordTxtForm.Multiline = true;
             this.PasswordTxtForm.Name = "PasswordTxtForm";
-            this.PasswordTxtForm.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.PasswordTxtForm.Padding = new System.Windows.Forms.Padding(15, 10, 10, 7);
             this.PasswordTxtForm.PasswordChar = false;
             this.PasswordTxtForm.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.PasswordTxtForm.PlaceholderText = "";
@@ -117,6 +124,7 @@
             this.GuardarUserBtn.Text = "Guardar";
             this.GuardarUserBtn.TextColor = System.Drawing.Color.White;
             this.GuardarUserBtn.UseVisualStyleBackColor = false;
+            this.GuardarUserBtn.Click += new System.EventHandler(this.GuardarUserBtn_Click);
             // 
             // UserameLabelForm
             // 
@@ -172,11 +180,110 @@
             this.RolLabelForm.TabIndex = 8;
             this.RolLabelForm.Text = "Rol";
             // 
+            // edirUsernameBtn
+            // 
+            this.edirUsernameBtn.BackColor = System.Drawing.Color.Transparent;
+            this.edirUsernameBtn.BackgroundColor = System.Drawing.Color.Transparent;
+            this.edirUsernameBtn.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.edit;
+            this.edirUsernameBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.edirUsernameBtn.BorderColor = System.Drawing.Color.Black;
+            this.edirUsernameBtn.BorderRadius = 10;
+            this.edirUsernameBtn.BorderSize = 1;
+            this.edirUsernameBtn.FlatAppearance.BorderSize = 0;
+            this.edirUsernameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.edirUsernameBtn.ForeColor = System.Drawing.Color.White;
+            this.edirUsernameBtn.Location = new System.Drawing.Point(399, 120);
+            this.edirUsernameBtn.Name = "edirUsernameBtn";
+            this.edirUsernameBtn.Size = new System.Drawing.Size(40, 40);
+            this.edirUsernameBtn.TabIndex = 9;
+            this.edirUsernameBtn.TextColor = System.Drawing.Color.White;
+            this.edirUsernameBtn.UseVisualStyleBackColor = false;
+            this.edirUsernameBtn.Click += new System.EventHandler(this.edirUsernameBtn_Click);
+            // 
+            // editUserBtn
+            // 
+            this.editUserBtn.BackColor = System.Drawing.Color.Transparent;
+            this.editUserBtn.BackgroundColor = System.Drawing.Color.Transparent;
+            this.editUserBtn.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.edit;
+            this.editUserBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.editUserBtn.BorderColor = System.Drawing.Color.Black;
+            this.editUserBtn.BorderRadius = 10;
+            this.editUserBtn.BorderSize = 1;
+            this.editUserBtn.FlatAppearance.BorderSize = 0;
+            this.editUserBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editUserBtn.ForeColor = System.Drawing.Color.White;
+            this.editUserBtn.Location = new System.Drawing.Point(399, 217);
+            this.editUserBtn.Name = "editUserBtn";
+            this.editUserBtn.Size = new System.Drawing.Size(40, 40);
+            this.editUserBtn.TabIndex = 10;
+            this.editUserBtn.TextColor = System.Drawing.Color.White;
+            this.editUserBtn.UseVisualStyleBackColor = false;
+            this.editUserBtn.Click += new System.EventHandler(this.editUserBtn_Click);
+            // 
+            // editPasswordBtn
+            // 
+            this.editPasswordBtn.BackColor = System.Drawing.Color.Transparent;
+            this.editPasswordBtn.BackgroundColor = System.Drawing.Color.Transparent;
+            this.editPasswordBtn.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.edit;
+            this.editPasswordBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.editPasswordBtn.BorderColor = System.Drawing.Color.Black;
+            this.editPasswordBtn.BorderRadius = 10;
+            this.editPasswordBtn.BorderSize = 1;
+            this.editPasswordBtn.FlatAppearance.BorderSize = 0;
+            this.editPasswordBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editPasswordBtn.ForeColor = System.Drawing.Color.White;
+            this.editPasswordBtn.Location = new System.Drawing.Point(399, 308);
+            this.editPasswordBtn.Name = "editPasswordBtn";
+            this.editPasswordBtn.Size = new System.Drawing.Size(40, 40);
+            this.editPasswordBtn.TabIndex = 11;
+            this.editPasswordBtn.TextColor = System.Drawing.Color.White;
+            this.editPasswordBtn.UseVisualStyleBackColor = false;
+            this.editPasswordBtn.Click += new System.EventHandler(this.editPasswordBtn_Click);
+            // 
+            // ValoresNulosLabel
+            // 
+            this.ValoresNulosLabel.AutoSize = true;
+            this.ValoresNulosLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ValoresNulosLabel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ValoresNulosLabel.ForeColor = System.Drawing.Color.Black;
+            this.ValoresNulosLabel.Location = new System.Drawing.Point(73, 15);
+            this.ValoresNulosLabel.Name = "ValoresNulosLabel";
+            this.ValoresNulosLabel.Size = new System.Drawing.Size(300, 19);
+            this.ValoresNulosLabel.TabIndex = 13;
+            this.ValoresNulosLabel.Text = "Todos los campos deben estar llenos";
+            // 
+            // ValoresNulosPanel
+            // 
+            this.ValoresNulosPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(167)))), ((int)(((byte)(36)))));
+            this.ValoresNulosPanel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ValoresNulosPanel.BorderRadius = 20;
+            this.ValoresNulosPanel.BorderSize = 0;
+            this.ValoresNulosPanel.Controls.Add(this.ValoresNulosLabel);
+            this.ValoresNulosPanel.Controls.Add(this.ValoresNulosImg);
+            this.ValoresNulosPanel.Location = new System.Drawing.Point(70, 21);
+            this.ValoresNulosPanel.Name = "ValoresNulosPanel";
+            this.ValoresNulosPanel.Size = new System.Drawing.Size(397, 50);
+            this.ValoresNulosPanel.TabIndex = 14;
+            // 
+            // ValoresNulosImg
+            // 
+            this.ValoresNulosImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.caution;
+            this.ValoresNulosImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ValoresNulosImg.Location = new System.Drawing.Point(27, 5);
+            this.ValoresNulosImg.Name = "ValoresNulosImg";
+            this.ValoresNulosImg.Size = new System.Drawing.Size(40, 40);
+            this.ValoresNulosImg.TabIndex = 14;
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(561, 550);
+            this.Controls.Add(this.ValoresNulosPanel);
+            this.Controls.Add(this.editPasswordBtn);
+            this.Controls.Add(this.editUserBtn);
+            this.Controls.Add(this.edirUsernameBtn);
             this.Controls.Add(this.RolLabelForm);
             this.Controls.Add(this.RolComboForm);
             this.Controls.Add(this.PasswordLabelForm);
@@ -191,6 +298,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de usuario";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.UserForm_Load);
+            this.ValoresNulosPanel.ResumeLayout(false);
+            this.ValoresNulosPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +317,16 @@
         private System.Windows.Forms.Label PasswordLabelForm;
         private System.Windows.Forms.ComboBox RolComboForm;
         private System.Windows.Forms.Label RolLabelForm;
+        private BotonesCustomizados.botonRectanguloRedondo edirUsernameBtn;
+        private BotonesCustomizados.botonRectanguloRedondo editUserBtn;
+        private BotonesCustomizados.botonRectanguloRedondo editPasswordBtn;
+        public string rolU = "";
+        public string usuario = "";
+        public string nombreU = "";
+        public string password = "";
+        public string UserFormAction = "";
+        private System.Windows.Forms.Label ValoresNulosLabel;
+        private BotonesCustomizados.RoundedPanel ValoresNulosPanel;
+        private System.Windows.Forms.Panel ValoresNulosImg;
     }
 }

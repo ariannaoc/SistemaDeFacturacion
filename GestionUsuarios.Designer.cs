@@ -1,4 +1,6 @@
-﻿namespace Parcial2_SistemaDeFacturacion
+﻿using System.Windows.Forms;
+
+namespace Parcial2_SistemaDeFacturacion
 {
     partial class GestionUsuarios
     {
@@ -159,5 +161,10 @@
         private BotonesCustomizados.botonRectanguloRedondo NuevoUsuarioBtn;
         private System.Windows.Forms.Label GestUserLabel;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        public string rolU = "";
+        public string usuario = "";
+        public string nombreU = "";
+        public string password = "";
+        public string UserFormAction = "";
     }
 }

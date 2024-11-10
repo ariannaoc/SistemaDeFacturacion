@@ -799,6 +799,8 @@
         public string usuario = "";
         public string rolU = "";
         public string nombreU = "";
+        public string password = "";
+        public string UserFormAction = "";
         private BotonesCustomizados.RoundedPanel InfoUser;
         private System.Windows.Forms.Label UserLabelName;
         private BotonesCustomizados.botonRectanguloRedondo CerrarSesionBtn;

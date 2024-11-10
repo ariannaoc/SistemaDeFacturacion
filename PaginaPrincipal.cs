@@ -55,7 +55,10 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void PaginaPrincipal_Load(object sender, EventArgs e)
         {
-
+            if (rolU != "administrador")
+            {
+                btnUsuarios.Visible = false;
+            }
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -158,6 +161,10 @@ namespace Parcial2_SistemaDeFacturacion
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             GestionUsuarios gestionarUsuarios = GestionUsuarios.Instance;
+            gestionarUsuarios.usuario = usuario;
+            gestionarUsuarios.nombreU = nombreU;
+            gestionarUsuarios.password = password;
+            gestionarUsuarios.rolU = rolU;
             splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(gestionarUsuarios);
 
@@ -262,7 +269,13 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void ConfigUserBtn_Click(object sender, EventArgs e)
         {
+            UserFormAction = "edit";
             UserForm userForm = new UserForm();
+            userForm.UserFormAction = UserFormAction;
+            userForm.usuario = usuario;
+            userForm.nombreU = nombreU;
+            userForm.password = password;
+            userForm.rolU = rolU;
             userForm.Show();
         }
     }
