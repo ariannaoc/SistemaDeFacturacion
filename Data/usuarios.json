@@ -1,26 +1,37 @@
 [
   {
+    "Id": 1,
     "Username": "dev",
     "Password": "sudev",
     "Name": "Dev",
     "Rol": "su"
   },
   {
+    "Id": 2,
     "Username": "admin",
     "Password": "admin",
     "Name": "administrador",
     "Rol": "administrador"
   },
   {
+    "Id": 3,
     "Username": "user",
     "Password": "user",
     "Name": "Juan Lopez",
     "Rol": "operador"
   },
   {
+    "Id": 4,
     "Username": "aoc",
     "Password": "123",
     "Name": "a",
+    "Rol": "operador"
+  },
+  {
+    "Id": 5,
+    "Username": "alex",
+    "Password": "456",
+    "Name": "ale",
     "Rol": "operador"
   }
 ]

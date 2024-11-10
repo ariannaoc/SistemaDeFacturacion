@@ -1,4 +1,6 @@
-﻿namespace Parcial2_SistemaDeFacturacion
+﻿using System.Collections.Generic;
+
+namespace Parcial2_SistemaDeFacturacion
 {
     partial class UserForm
     {

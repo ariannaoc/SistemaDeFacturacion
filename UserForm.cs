@@ -48,7 +48,6 @@ namespace Parcial2_SistemaDeFacturacion
             if (rolU != "su")
             {
                 RolComboForm.Enabled = false;
-                //RolComboForm.SelectedText = "operador";
                 RolComboForm.SelectedItem = "operador";
                 RolComboForm.SelectedValue = "operador";
                 RolComboForm.Text = "operador";
@@ -75,20 +74,23 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void GuardarUserBtn_Click(object sender, EventArgs e)
         {
-            // datos nuevo usuario
+            // datos nuevos
             string newUserUser = UserTxtForm.Texts;
             string newUserName = UsernameTxtFrom.Texts;
-            var newUserRol = RolComboForm.Text;
+            string newUserRol = RolComboForm.Text;
             string newUserPassword = PasswordTxtForm.Texts;
 
-            if (newUserName != "" && newUserUser != "" && newUserPassword != "")
+
+            if (newUserName != "" && newUserUser != "" && newUserPassword != "" && newUserRol != "")
             {
                  if (UserFormAction == "agregar")
                 {
-                    //MessageBox.Show(newUserRol);
+
                     //Validar que el usuario no exista  
                     GetUserData.CargarUsuarios();
                     List<Usuario> usuariosExistentes = GetUserData.UserList;
+                    int lastId = usuariosExistentes.Any() ? usuariosExistentes.Max(u => u.Id) : 0;
+
                     bool usuarioE = usuariosExistentes.Any(u => u.Username == newUserUser);
 
                     if (usuarioE)
@@ -99,19 +101,17 @@ namespace Parcial2_SistemaDeFacturacion
                     }
                     else
                     {
-
+                        int newId = lastId + 1;
                         // Gardar datos nuevo usuario 
-                        usuariosExistentes.Add(new Usuario { Username = newUserUser, Name = newUserName, Password = newUserPassword, Rol = newUserRol });
+                        usuariosExistentes.Add(new Usuario { Id = newId, Username = newUserUser, Name = newUserName, Password = newUserPassword, Rol = newUserRol });
                         string newJson = JsonSerializer.Serialize(usuariosExistentes, new JsonSerializerOptions { WriteIndented = true });
-
                         File.WriteAllText("C:\\Users\\Arianna\\Desktop\\PR2\\SistemaDeFacturacion\\Data\\usuarios.json", newJson);
                         this.Close();
-                        GetUserData.CargarUsuarios();
-                        //List<Usuario> usuariosExistentes = GetUserData.UserList;
                         MessageBox.Show("Usuario guardado correctamente");
                     }
                 }
-            } else
+            } 
+            else
             {
                 ValoresNulosLabel.Visible = true;
                 AdvertenciaPanel.Visible = true;
