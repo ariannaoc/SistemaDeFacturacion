@@ -251,7 +251,6 @@ namespace Parcial2_SistemaDeFacturacion
             infouser.IdUser = IdUser;
             infouser.rolU = rolU;
             infouser.Show();
-            UserBtn.Visible = false;
         }
 
         private void label2_Click(object sender, EventArgs e)

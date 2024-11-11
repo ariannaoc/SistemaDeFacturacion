@@ -33,30 +33,30 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.btnOrdenes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.btnReportes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panelClientes = new System.Windows.Forms.Panel();
-            this.btnCliente = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panelFacturacion = new System.Windows.Forms.Panel();
-            this.btnVerFacturas = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.btnIniciarVenta = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.btnFacturacion = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelProductos = new System.Windows.Forms.Panel();
-            this.btnAnadirCategoria = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.btnInventario = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.btnProductos = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnUsuarios = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btnDashboard = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.imagenLogo = new System.Windows.Forms.PictureBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnOrdenes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnReportes = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnCliente = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnVerFacturas = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnIniciarVenta = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnFacturacion = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnAnadirCategoria = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnInventario = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnProductos = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnUsuarios = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.btnDashboard = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.UserBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -149,6 +149,161 @@
             this.panel12.Size = new System.Drawing.Size(357, 20);
             this.panel12.TabIndex = 29;
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 760);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(357, 18);
+            this.panel10.TabIndex = 27;
+            // 
+            // panelClientes
+            // 
+            this.panelClientes.BackColor = System.Drawing.Color.Transparent;
+            this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelClientes.Location = new System.Drawing.Point(0, 677);
+            this.panelClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.panelClientes.Name = "panelClientes";
+            this.panelClientes.Size = new System.Drawing.Size(357, 18);
+            this.panelClientes.TabIndex = 25;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 594);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(357, 18);
+            this.panel8.TabIndex = 20;
+            // 
+            // panelFacturacion
+            // 
+            this.panelFacturacion.BackColor = System.Drawing.Color.Transparent;
+            this.panelFacturacion.Controls.Add(this.btnVerFacturas);
+            this.panelFacturacion.Controls.Add(this.btnIniciarVenta);
+            this.panelFacturacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelFacturacion.Location = new System.Drawing.Point(0, 452);
+            this.panelFacturacion.Margin = new System.Windows.Forms.Padding(4);
+            this.panelFacturacion.Name = "panelFacturacion";
+            this.panelFacturacion.Size = new System.Drawing.Size(357, 142);
+            this.panelFacturacion.TabIndex = 19;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 369);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(357, 18);
+            this.panel4.TabIndex = 8;
+            // 
+            // panelProductos
+            // 
+            this.panelProductos.BackColor = System.Drawing.Color.Transparent;
+            this.panelProductos.Controls.Add(this.btnAnadirCategoria);
+            this.panelProductos.Controls.Add(this.btnInventario);
+            this.panelProductos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelProductos.Location = new System.Drawing.Point(0, 231);
+            this.panelProductos.Margin = new System.Windows.Forms.Padding(4);
+            this.panelProductos.Name = "panelProductos";
+            this.panelProductos.Size = new System.Drawing.Size(357, 138);
+            this.panelProductos.TabIndex = 7;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 148);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(357, 18);
+            this.panel7.TabIndex = 5;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 65);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(357, 18);
+            this.panel6.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.imagenLogo);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(263, 161);
+            this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(176, 95);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "LOGO AQUI";
+            // 
+            // imagenLogo
+            // 
+            this.imagenLogo.Location = new System.Drawing.Point(16, 15);
+            this.imagenLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.imagenLogo.Name = "imagenLogo";
+            this.imagenLogo.Size = new System.Drawing.Size(424, 62);
+            this.imagenLogo.TabIndex = 0;
+            this.imagenLogo.TabStop = false;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.splitContainer2.IsSplitterFixed = true;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(1);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
+            this.splitContainer2.Panel1.Controls.Add(this.panel5);
+            this.splitContainer2.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel1_Paint);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.splitContainer2.Panel2.ForeColor = System.Drawing.Color.Transparent;
+            this.splitContainer2.Panel2.Click += new System.EventHandler(this.splitContainer2_Panel2_Click);
+            this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
+            this.splitContainer2.Size = new System.Drawing.Size(1158, 853);
+            this.splitContainer2.SplitterDistance = 46;
+            this.splitContainer2.SplitterWidth = 1;
+            this.splitContainer2.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.UserBtn);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(1);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1158, 46);
+            this.panel5.TabIndex = 0;
+            this.panel5.Click += new System.EventHandler(this.panel5_Click);
+            // 
             // btnOrdenes
             // 
             this.btnOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
@@ -173,16 +328,6 @@
             this.btnOrdenes.Text = "Ordenes de Producto";
             this.btnOrdenes.TextColor = System.Drawing.Color.Gray;
             this.btnOrdenes.UseVisualStyleBackColor = false;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Transparent;
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 760);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(357, 18);
-            this.panel10.TabIndex = 27;
             // 
             // btnReportes
             // 
@@ -211,16 +356,6 @@
             this.btnReportes.TextColor = System.Drawing.Color.White;
             this.btnReportes.UseVisualStyleBackColor = false;
             // 
-            // panelClientes
-            // 
-            this.panelClientes.BackColor = System.Drawing.Color.Transparent;
-            this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelClientes.Location = new System.Drawing.Point(0, 677);
-            this.panelClientes.Margin = new System.Windows.Forms.Padding(4);
-            this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(357, 18);
-            this.panelClientes.TabIndex = 25;
-            // 
             // btnCliente
             // 
             this.btnCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
@@ -247,28 +382,6 @@
             this.btnCliente.Text = "Clientes ";
             this.btnCliente.TextColor = System.Drawing.Color.White;
             this.btnCliente.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 594);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(357, 18);
-            this.panel8.TabIndex = 20;
-            // 
-            // panelFacturacion
-            // 
-            this.panelFacturacion.BackColor = System.Drawing.Color.Transparent;
-            this.panelFacturacion.Controls.Add(this.btnVerFacturas);
-            this.panelFacturacion.Controls.Add(this.btnIniciarVenta);
-            this.panelFacturacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelFacturacion.Location = new System.Drawing.Point(0, 452);
-            this.panelFacturacion.Margin = new System.Windows.Forms.Padding(4);
-            this.panelFacturacion.Name = "panelFacturacion";
-            this.panelFacturacion.Size = new System.Drawing.Size(357, 142);
-            this.panelFacturacion.TabIndex = 19;
             // 
             // btnVerFacturas
             // 
@@ -351,28 +464,6 @@
             this.btnFacturacion.UseVisualStyleBackColor = false;
             this.btnFacturacion.Click += new System.EventHandler(this.btnFacturacion_Click);
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 369);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(357, 18);
-            this.panel4.TabIndex = 8;
-            // 
-            // panelProductos
-            // 
-            this.panelProductos.BackColor = System.Drawing.Color.Transparent;
-            this.panelProductos.Controls.Add(this.btnAnadirCategoria);
-            this.panelProductos.Controls.Add(this.btnInventario);
-            this.panelProductos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelProductos.Location = new System.Drawing.Point(0, 231);
-            this.panelProductos.Margin = new System.Windows.Forms.Padding(4);
-            this.panelProductos.Name = "panelProductos";
-            this.panelProductos.Size = new System.Drawing.Size(357, 138);
-            this.panelProductos.TabIndex = 7;
-            // 
             // btnAnadirCategoria
             // 
             this.btnAnadirCategoria.BackColor = System.Drawing.Color.Transparent;
@@ -454,16 +545,6 @@
             this.btnProductos.UseVisualStyleBackColor = false;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click_1);
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 148);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(357, 18);
-            this.panel7.TabIndex = 5;
-            // 
             // btnUsuarios
             // 
             this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
@@ -491,16 +572,6 @@
             this.btnUsuarios.TextColor = System.Drawing.Color.White;
             this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 65);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(357, 18);
-            this.panel6.TabIndex = 3;
             // 
             // btnDashboard
             // 
@@ -530,77 +601,6 @@
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(33)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.imagenLogo);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(263, 161);
-            this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(176, 95);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "LOGO AQUI";
-            // 
-            // imagenLogo
-            // 
-            this.imagenLogo.Location = new System.Drawing.Point(16, 15);
-            this.imagenLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.imagenLogo.Name = "imagenLogo";
-            this.imagenLogo.Size = new System.Drawing.Size(424, 62);
-            this.imagenLogo.TabIndex = 0;
-            this.imagenLogo.TabStop = false;
-            // 
-            // splitContainer2
-            // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.splitContainer2.IsSplitterFixed = true;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(1);
-            this.splitContainer2.Name = "splitContainer2";
-            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
-            this.splitContainer2.Panel1.Controls.Add(this.panel5);
-            this.splitContainer2.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel1_Paint);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.splitContainer2.Panel2.ForeColor = System.Drawing.Color.Transparent;
-            this.splitContainer2.Panel2.Click += new System.EventHandler(this.splitContainer2_Panel2_Click);
-            this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
-            this.splitContainer2.Size = new System.Drawing.Size(1158, 853);
-            this.splitContainer2.SplitterDistance = 46;
-            this.splitContainer2.SplitterWidth = 1;
-            this.splitContainer2.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.UserBtn);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(1);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1158, 46);
-            this.panel5.TabIndex = 0;
-            this.panel5.Click += new System.EventHandler(this.panel5_Click);
-            // 
             // UserBtn
             // 
             this.UserBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -614,7 +614,7 @@
             this.UserBtn.FlatAppearance.BorderSize = 0;
             this.UserBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UserBtn.ForeColor = System.Drawing.Color.White;
-            this.UserBtn.Location = new System.Drawing.Point(1084, 0);
+            this.UserBtn.Location = new System.Drawing.Point(1051, 1);
             this.UserBtn.Name = "UserBtn";
             this.UserBtn.Size = new System.Drawing.Size(45, 45);
             this.UserBtn.TabIndex = 0;
