@@ -140,17 +140,29 @@ namespace Parcial2_SistemaDeFacturacion.BotonesCustomizados
                     }
                 }
             }
-            protected override void OnHandleCreated(EventArgs e)
+        private static void Container_BackColorChanged(object sender, EventArgs e)
+        {
+            if (sender is Control control)
             {
-                base.OnHandleCreated(e);
-                this.Parent.BackColorChanged += new EventHandler(Container_BackColorChanged);
+                foreach (Control childControl in control.Controls)
+                {
+                    if (childControl is botonRectanguloRedondo button)
+                    {
+                        button.Invalidate();
+                    }
+                }
             }
+        }
 
-            private void Container_BackColorChanged(object sender, EventArgs e)
+        protected override void OnHandleCreated(EventArgs e)
+        {
+            base.OnHandleCreated(e);
+            if (this.Parent != null)
             {
-                this.Invalidate();
+                this.Parent.BackColorChanged += botonRectanguloRedondo.Container_BackColorChanged;
             }
-            private void Button_Resize(object sender, EventArgs e)
+        }
+        private void Button_Resize(object sender, EventArgs e)
             {
                 if (borderRadius > this.Height)
                     borderRadius = this.Height;

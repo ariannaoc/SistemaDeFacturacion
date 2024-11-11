@@ -19,6 +19,7 @@ namespace Parcial2_SistemaDeFacturacion
         private Boolean mostrarPanelFacturacion = false;
         //pongan aqui como atributos sus controles de Usuario
         
+        
         public PaginaPrincipal()
         {
             InitializeComponent();
@@ -113,7 +114,7 @@ namespace Parcial2_SistemaDeFacturacion
         {
             if(mostrarPanelProductos)
             {
-                panelProductos.Height = 110;
+                panelProductos.Height = 130;
             }
             else
             {
@@ -124,7 +125,7 @@ namespace Parcial2_SistemaDeFacturacion
 
             if (mostrarPanelFacturacion)
             {
-                panelFacturacion.Height = 110;
+                panelFacturacion.Height = 130;
             }
             else
             {
@@ -225,6 +226,16 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void UserBtn_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            VerClientes mostrarCompradores = VerClientes.Instance;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(mostrarCompradores);
+
+            mostrarCompradores.Dock = DockStyle.Fill;
 
         }
     }
