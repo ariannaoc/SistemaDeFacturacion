@@ -35,21 +35,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.roundedPanel1 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
+            this.NomEPanel = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.roundedPanel2 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
+            this.DriEPanel = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.roundedPanel3 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
+            this.RifPanel = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.roundedPanel4 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
+            this.EmailEPanel = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
             this.label10 = new System.Windows.Forms.Label();
-            this.roundedPanel5 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
+            this.ContactEPanel = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
             this.label9 = new System.Windows.Forms.Label();
-            this.roundedPanel1.SuspendLayout();
-            this.roundedPanel2.SuspendLayout();
-            this.roundedPanel3.SuspendLayout();
-            this.roundedPanel4.SuspendLayout();
-            this.roundedPanel5.SuspendLayout();
+            this.NomEPanel.SuspendLayout();
+            this.DriEPanel.SuspendLayout();
+            this.RifPanel.SuspendLayout();
+            this.EmailEPanel.SuspendLayout();
+            this.ContactEPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // SCLabel
@@ -136,18 +136,18 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Contacto";
             // 
-            // roundedPanel1
+            // NomEPanel
             // 
-            this.roundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.roundedPanel1.BackColor = System.Drawing.Color.White;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 0;
-            this.roundedPanel1.Controls.Add(this.label6);
-            this.roundedPanel1.Location = new System.Drawing.Point(71, 290);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(678, 38);
-            this.roundedPanel1.TabIndex = 22;
+            this.NomEPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NomEPanel.BackColor = System.Drawing.Color.White;
+            this.NomEPanel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.NomEPanel.BorderRadius = 20;
+            this.NomEPanel.BorderSize = 0;
+            this.NomEPanel.Controls.Add(this.label6);
+            this.NomEPanel.Location = new System.Drawing.Point(71, 290);
+            this.NomEPanel.Name = "NomEPanel";
+            this.NomEPanel.Size = new System.Drawing.Size(678, 38);
+            this.NomEPanel.TabIndex = 22;
             // 
             // label6
             // 
@@ -161,18 +161,18 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "La Tiendita";
             // 
-            // roundedPanel2
+            // DriEPanel
             // 
-            this.roundedPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.roundedPanel2.BackColor = System.Drawing.Color.White;
-            this.roundedPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedPanel2.BorderRadius = 20;
-            this.roundedPanel2.BorderSize = 0;
-            this.roundedPanel2.Controls.Add(this.label7);
-            this.roundedPanel2.Location = new System.Drawing.Point(71, 374);
-            this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(678, 38);
-            this.roundedPanel2.TabIndex = 23;
+            this.DriEPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.DriEPanel.BackColor = System.Drawing.Color.White;
+            this.DriEPanel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.DriEPanel.BorderRadius = 20;
+            this.DriEPanel.BorderSize = 0;
+            this.DriEPanel.Controls.Add(this.label7);
+            this.DriEPanel.Location = new System.Drawing.Point(71, 374);
+            this.DriEPanel.Name = "DriEPanel";
+            this.DriEPanel.Size = new System.Drawing.Size(678, 38);
+            this.DriEPanel.TabIndex = 23;
             // 
             // label7
             // 
@@ -186,18 +186,18 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "Campo Claro N378 - Venezuela";
             // 
-            // roundedPanel3
+            // RifPanel
             // 
-            this.roundedPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.roundedPanel3.BackColor = System.Drawing.Color.White;
-            this.roundedPanel3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedPanel3.BorderRadius = 20;
-            this.roundedPanel3.BorderSize = 0;
-            this.roundedPanel3.Controls.Add(this.label8);
-            this.roundedPanel3.Location = new System.Drawing.Point(71, 465);
-            this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Size = new System.Drawing.Size(298, 38);
-            this.roundedPanel3.TabIndex = 24;
+            this.RifPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.RifPanel.BackColor = System.Drawing.Color.White;
+            this.RifPanel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.RifPanel.BorderRadius = 20;
+            this.RifPanel.BorderSize = 0;
+            this.RifPanel.Controls.Add(this.label8);
+            this.RifPanel.Location = new System.Drawing.Point(71, 465);
+            this.RifPanel.Name = "RifPanel";
+            this.RifPanel.Size = new System.Drawing.Size(298, 38);
+            this.RifPanel.TabIndex = 24;
             // 
             // label8
             // 
@@ -212,18 +212,18 @@
             this.label8.Text = "J-0058744120";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // roundedPanel4
+            // EmailEPanel
             // 
-            this.roundedPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.roundedPanel4.BackColor = System.Drawing.Color.White;
-            this.roundedPanel4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedPanel4.BorderRadius = 20;
-            this.roundedPanel4.BorderSize = 0;
-            this.roundedPanel4.Controls.Add(this.label10);
-            this.roundedPanel4.Location = new System.Drawing.Point(453, 465);
-            this.roundedPanel4.Name = "roundedPanel4";
-            this.roundedPanel4.Size = new System.Drawing.Size(296, 38);
-            this.roundedPanel4.TabIndex = 25;
+            this.EmailEPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.EmailEPanel.BackColor = System.Drawing.Color.White;
+            this.EmailEPanel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.EmailEPanel.BorderRadius = 20;
+            this.EmailEPanel.BorderSize = 0;
+            this.EmailEPanel.Controls.Add(this.label10);
+            this.EmailEPanel.Location = new System.Drawing.Point(453, 465);
+            this.EmailEPanel.Name = "EmailEPanel";
+            this.EmailEPanel.Size = new System.Drawing.Size(296, 38);
+            this.EmailEPanel.TabIndex = 25;
             // 
             // label10
             // 
@@ -237,18 +237,18 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "latiendita@prueba.com";
             // 
-            // roundedPanel5
+            // ContactEPanel
             // 
-            this.roundedPanel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.roundedPanel5.BackColor = System.Drawing.Color.White;
-            this.roundedPanel5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedPanel5.BorderRadius = 20;
-            this.roundedPanel5.BorderSize = 0;
-            this.roundedPanel5.Controls.Add(this.label9);
-            this.roundedPanel5.Location = new System.Drawing.Point(71, 564);
-            this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(298, 38);
-            this.roundedPanel5.TabIndex = 26;
+            this.ContactEPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ContactEPanel.BackColor = System.Drawing.Color.White;
+            this.ContactEPanel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ContactEPanel.BorderRadius = 20;
+            this.ContactEPanel.BorderSize = 0;
+            this.ContactEPanel.Controls.Add(this.label9);
+            this.ContactEPanel.Location = new System.Drawing.Point(71, 564);
+            this.ContactEPanel.Name = "ContactEPanel";
+            this.ContactEPanel.Size = new System.Drawing.Size(298, 38);
+            this.ContactEPanel.TabIndex = 26;
             // 
             // label9
             // 
@@ -266,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.roundedPanel1);
+            this.Controls.Add(this.NomEPanel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -274,23 +274,23 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ConfigImgP);
             this.Controls.Add(this.SCLabel);
-            this.Controls.Add(this.roundedPanel2);
-            this.Controls.Add(this.roundedPanel3);
-            this.Controls.Add(this.roundedPanel4);
-            this.Controls.Add(this.roundedPanel5);
+            this.Controls.Add(this.DriEPanel);
+            this.Controls.Add(this.RifPanel);
+            this.Controls.Add(this.EmailEPanel);
+            this.Controls.Add(this.ContactEPanel);
             this.Name = "SistemConfig";
             this.Size = new System.Drawing.Size(941, 742);
             this.Load += new System.EventHandler(this.SistemConfig_Load);
-            this.roundedPanel1.ResumeLayout(false);
-            this.roundedPanel1.PerformLayout();
-            this.roundedPanel2.ResumeLayout(false);
-            this.roundedPanel2.PerformLayout();
-            this.roundedPanel3.ResumeLayout(false);
-            this.roundedPanel3.PerformLayout();
-            this.roundedPanel4.ResumeLayout(false);
-            this.roundedPanel4.PerformLayout();
-            this.roundedPanel5.ResumeLayout(false);
-            this.roundedPanel5.PerformLayout();
+            this.NomEPanel.ResumeLayout(false);
+            this.NomEPanel.PerformLayout();
+            this.DriEPanel.ResumeLayout(false);
+            this.DriEPanel.PerformLayout();
+            this.RifPanel.ResumeLayout(false);
+            this.RifPanel.PerformLayout();
+            this.EmailEPanel.ResumeLayout(false);
+            this.EmailEPanel.PerformLayout();
+            this.ContactEPanel.ResumeLayout(false);
+            this.ContactEPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,10 +310,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private BotonesCustomizados.RoundedPanel roundedPanel1;
-        private BotonesCustomizados.RoundedPanel roundedPanel2;
-        private BotonesCustomizados.RoundedPanel roundedPanel3;
-        private BotonesCustomizados.RoundedPanel roundedPanel4;
-        private BotonesCustomizados.RoundedPanel roundedPanel5;
+        private BotonesCustomizados.RoundedPanel NomEPanel;
+        private BotonesCustomizados.RoundedPanel DriEPanel;
+        private BotonesCustomizados.RoundedPanel RifPanel;
+        private BotonesCustomizados.RoundedPanel EmailEPanel;
+        private BotonesCustomizados.RoundedPanel ContactEPanel;
     }
 }
