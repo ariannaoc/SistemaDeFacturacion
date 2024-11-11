@@ -60,6 +60,11 @@ namespace Parcial2_SistemaDeFacturacion
                 btnUsuarios.Visible = false;
             } else if (rolU == "superUsuario")
             {
+                btnDashboard.Text = "Sistema";
+                    SistemConfig sistem = new SistemConfig();
+                    this.splitContainer2.Panel2.Controls.Clear();
+                    this.splitContainer2.Panel2.Controls.Add(sistem);
+                    sistem.Dock = DockStyle.Fill;
                 btnAnadirCategoria.Visible = false;
                 btnCliente.Visible = false;
                 btnFacturacion.Visible = false;
@@ -86,7 +91,13 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            if (rolU == "superUsuario")
+            {
+                SistemConfig sistem = new SistemConfig();
+                this.splitContainer2.Panel2.Controls.Clear();
+                this.splitContainer2.Panel2.Controls.Add(sistem);
+                sistem.Dock = DockStyle.Fill;
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

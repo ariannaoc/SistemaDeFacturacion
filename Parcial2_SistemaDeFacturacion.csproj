@@ -113,6 +113,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SistemConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SistemConfig.Designer.cs">
+      <DependentUpon>SistemConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SistemConfig.resx">
+      <DependentUpon>SistemConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +254,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Iconos\caution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

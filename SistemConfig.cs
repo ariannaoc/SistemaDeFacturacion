@@ -51,8 +51,17 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void Empresa_Click(object sender, EventArgs e)
         {
-            EmpresaForm empresaForm = new EmpresaForm();
-            empresaForm.ShowDialog();
+           
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
