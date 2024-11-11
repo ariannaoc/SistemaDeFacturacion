@@ -88,7 +88,7 @@
     </Compile>
     <Compile Include="GetUserData.cs" />
     <Compile Include="InfoUserEmergente.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="InfoUserEmergente.Designer.cs">
       <DependentUpon>InfoUserEmergente.cs</DependentUpon>

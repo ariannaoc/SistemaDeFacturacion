@@ -39,8 +39,8 @@
             // 
             // PanelInfoUser
             // 
-            this.PanelInfoUser.BackColor = System.Drawing.Color.Silver;
-            this.PanelInfoUser.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.PanelInfoUser.BackColor = System.Drawing.Color.White;
+            this.PanelInfoUser.BorderColor = System.Drawing.Color.White;
             this.PanelInfoUser.BorderRadius = 20;
             this.PanelInfoUser.BorderSize = 0;
             this.PanelInfoUser.Controls.Add(this.UserLabel);
@@ -48,9 +48,11 @@
             this.PanelInfoUser.Controls.Add(this.UserNameLabel);
             this.PanelInfoUser.Controls.Add(this.roundedPanel1);
             this.PanelInfoUser.Controls.Add(this.botonRectanguloRedondo1);
-            this.PanelInfoUser.Location = new System.Drawing.Point(3, 3);
+            this.PanelInfoUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelInfoUser.Location = new System.Drawing.Point(0, 0);
+            this.PanelInfoUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PanelInfoUser.Name = "PanelInfoUser";
-            this.PanelInfoUser.Size = new System.Drawing.Size(331, 245);
+            this.PanelInfoUser.Size = new System.Drawing.Size(246, 189);
             this.PanelInfoUser.TabIndex = 1;
             // 
             // UserLabel
@@ -58,9 +60,10 @@
             this.UserLabel.AutoSize = true;
             this.UserLabel.Font = new System.Drawing.Font("Arial", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.UserLabel.Location = new System.Drawing.Point(139, 130);
+            this.UserLabel.Location = new System.Drawing.Point(104, 106);
+            this.UserLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UserLabel.Name = "UserLabel";
-            this.UserLabel.Size = new System.Drawing.Size(44, 19);
+            this.UserLabel.Size = new System.Drawing.Size(37, 16);
             this.UserLabel.TabIndex = 3;
             this.UserLabel.Text = "user";
             this.UserLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -77,9 +80,10 @@
             this.CerrarSesionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CerrarSesionBtn.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CerrarSesionBtn.ForeColor = System.Drawing.Color.White;
-            this.CerrarSesionBtn.Location = new System.Drawing.Point(158, 174);
+            this.CerrarSesionBtn.Location = new System.Drawing.Point(118, 141);
+            this.CerrarSesionBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CerrarSesionBtn.Name = "CerrarSesionBtn";
-            this.CerrarSesionBtn.Size = new System.Drawing.Size(147, 45);
+            this.CerrarSesionBtn.Size = new System.Drawing.Size(110, 37);
             this.CerrarSesionBtn.TabIndex = 0;
             this.CerrarSesionBtn.Text = "Cerrar Sesión";
             this.CerrarSesionBtn.TextColor = System.Drawing.Color.White;
@@ -90,9 +94,10 @@
             // 
             this.UserNameLabel.AutoSize = true;
             this.UserNameLabel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameLabel.Location = new System.Drawing.Point(128, 99);
+            this.UserNameLabel.Location = new System.Drawing.Point(96, 80);
+            this.UserNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UserNameLabel.Name = "UserNameLabel";
-            this.UserNameLabel.Size = new System.Drawing.Size(71, 19);
+            this.UserNameLabel.Size = new System.Drawing.Size(62, 16);
             this.UserNameLabel.TabIndex = 2;
             this.UserNameLabel.Text = "Nombre";
             this.UserNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,16 +110,16 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 2;
-            this.roundedPanel1.Location = new System.Drawing.Point(129, 17);
+            this.roundedPanel1.Location = new System.Drawing.Point(97, 14);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(70, 70);
+            this.roundedPanel1.Size = new System.Drawing.Size(52, 57);
             this.roundedPanel1.TabIndex = 1;
             // 
             // botonRectanguloRedondo1
             // 
             this.botonRectanguloRedondo1.BackColor = System.Drawing.Color.Transparent;
             this.botonRectanguloRedondo1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.botonRectanguloRedondo1.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.config1;
             this.botonRectanguloRedondo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.botonRectanguloRedondo1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.botonRectanguloRedondo1.BorderRadius = 0;
@@ -122,22 +127,29 @@
             this.botonRectanguloRedondo1.FlatAppearance.BorderSize = 0;
             this.botonRectanguloRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonRectanguloRedondo1.ForeColor = System.Drawing.Color.White;
-            this.botonRectanguloRedondo1.Location = new System.Drawing.Point(46, 174);
+            this.botonRectanguloRedondo1.Location = new System.Drawing.Point(34, 141);
+            this.botonRectanguloRedondo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.botonRectanguloRedondo1.Name = "botonRectanguloRedondo1";
-            this.botonRectanguloRedondo1.Size = new System.Drawing.Size(40, 40);
+            this.botonRectanguloRedondo1.Size = new System.Drawing.Size(30, 32);
             this.botonRectanguloRedondo1.TabIndex = 0;
             this.botonRectanguloRedondo1.TextColor = System.Drawing.Color.White;
             this.botonRectanguloRedondo1.UseVisualStyleBackColor = false;
             // 
             // InfoUserEmergente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.IndianRed;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(246, 189);
             this.Controls.Add(this.PanelInfoUser);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Location = new System.Drawing.Point(1024, 50);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "InfoUserEmergente";
-            this.Size = new System.Drawing.Size(337, 251);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.InfoUserEmergente_Load);
             this.PanelInfoUser.ResumeLayout(false);
             this.PanelInfoUser.PerformLayout();
@@ -146,9 +158,11 @@
         }
 
         #endregion
-        public string usuario = "us";
-        public string nombreU = "nom";
-        public string rolU = "rol";
+        public string usuario = "";
+        public int IdUser = 0;
+        public string nombreU = "";
+        public string password = "";
+        public string rolU = "";
         private BotonesCustomizados.botonRectanguloRedondo CerrarSesionBtn;
         private BotonesCustomizados.RoundedPanel PanelInfoUser;
         private System.Windows.Forms.Label UserLabel;

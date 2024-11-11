@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Parcial2_SistemaDeFacturacion
 {
-    public partial class InfoUserEmergente : UserControl
+    public partial class InfoUserEmergente : Form
     {
         private static InfoUserEmergente _instance;
 
@@ -30,7 +30,27 @@ namespace Parcial2_SistemaDeFacturacion
             }
         }
 
+        public void ShowCustomDialog()
+        {
+            using (InfoUserEmergente dialog = new InfoUserEmergente())
+            {
+               
+                dialog.StartPosition = FormStartPosition.Manual;
+                dialog.AutoSize = false;
+                dialog.MaximizeBox = false;
+                dialog.MinimizeBox = false;
+                
+                dialog.Location = new Point(395, 25);
 
+                
+                dialog.Move += (sender, e) => { dialog.Location = new Point(395, 25); };
+
+               
+                dialog.ShowDialog();
+            }
+        }
+
+      
         private void CerrarSesionBtn_Click(object sender, EventArgs e)
         {
             Login loginForm = new Login();

@@ -1,0 +1,58 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Parcial2_SistemaDeFacturacion
+{
+    public partial class SistemConfig : UserControl
+    {
+        private static SistemConfig instance;
+
+        private static readonly object _lock = new object();
+        public SistemConfig()
+        {
+            InitializeComponent();
+        }
+
+        public static SistemConfig Instance
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    if (instance == null)
+                    {
+                        instance = new SistemConfig();
+                    }
+                    return instance;
+                }
+            }
+        }
+        private void SistemConfig_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxRedondo1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NombreEmpresaLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Empresa_Click(object sender, EventArgs e)
+        {
+            EmpresaForm empresaForm = new EmpresaForm();
+            empresaForm.ShowDialog();
+        }
+    }
+}
