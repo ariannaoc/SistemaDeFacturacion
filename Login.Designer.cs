@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.LoginPanel = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
-            this.PasswordImg = new System.Windows.Forms.Panel();
-            this.UserImg = new System.Windows.Forms.Panel();
             this.UserTxt = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.TextBoxRedondo();
             this.UsuarioLabel = new System.Windows.Forms.Label();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.PasswordTxt = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.TextBoxRedondo();
             this.IniciarSesionLabel = new System.Windows.Forms.Label();
             this.IniciarSesionBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
+            this.UserImg = new System.Windows.Forms.Panel();
+            this.PasswordImg = new System.Windows.Forms.Panel();
             this.LoginPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,6 +188,25 @@
             this.IniciarSesionBtn.TextColor = System.Drawing.Color.Black;
             this.IniciarSesionBtn.UseVisualStyleBackColor = false;
             this.IniciarSesionBtn.Click += new System.EventHandler(this.IniciarSesionBtn_Click);
+            // 
+            // UserImg
+            // 
+            this.UserImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.user_w;
+            this.UserImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.UserImg.Location = new System.Drawing.Point(170, 202);
+            this.UserImg.Name = "UserImg";
+            this.UserImg.Size = new System.Drawing.Size(50, 50);
+            this.UserImg.TabIndex = 7;
+            // 
+            // PasswordImg
+            // 
+            this.PasswordImg.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources._lock;
+            this.PasswordImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PasswordImg.Location = new System.Drawing.Point(170, 342);
+            this.PasswordImg.Name = "PasswordImg";
+            this.PasswordImg.Size = new System.Drawing.Size(50, 50);
+            this.PasswordImg.TabIndex = 8;
+            //this.PasswordImg.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Login
             // 

@@ -154,11 +154,41 @@
   <data name="IniciarVenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Iconos\IniciarVenta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Iconos\Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\Reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Facturacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\Facturacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Iconos\user_b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconosCompletoProductos-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\IconosCompletoProductos-10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Producto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\Producto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+	  <data name="AnadirCategoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\AnadirCategoria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\Mas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\Dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IniciarVenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\IniciarVenta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Iconos-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\Iconos-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Usuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Iconos\Usuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

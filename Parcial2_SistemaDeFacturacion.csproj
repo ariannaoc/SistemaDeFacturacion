@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,13 +33,49 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper, Version=33.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>packages\CsvHelper.33.0.1\lib\net47\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="System.Text.Json, Version=8.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.8.0.5\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +87,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarComprador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarComprador.Designer.cs">
+      <DependentUpon>AgregarComprador.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnadirCategoriaProducto.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -73,6 +116,32 @@
     </Compile>
     <Compile Include="BotonesCustomizados\TextBoxRedondo.Designer.cs">
       <DependentUpon>TextBoxRedondo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaClientesFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaClientesFacturacion.Designer.cs">
+      <DependentUpon>BusquedaClientesFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaProductoFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaProductoFacturacion.Designer.cs">
+      <DependentUpon>BusquedaProductoFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="EditarComprador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarComprador.Designer.cs">
+      <DependentUpon>EditarComprador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.cs" />
+    <Compile Include="VerClientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VerClientes.Designer.cs">
+      <DependentUpon>VerClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Facturacion.cs">
       <SubType>UserControl</SubType>
@@ -105,12 +174,14 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManejarListas.cs" />
     <Compile Include="PaginaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PaginaPrincipal.Designer.cs">
       <DependentUpon>PaginaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserForm.cs">
@@ -131,11 +202,23 @@
     <Compile Include="VentanaAggProducto.Designer.cs">
       <DependentUpon>VentanaAggProducto.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AgregarComprador.resx">
+      <DependentUpon>AgregarComprador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnadirCategoriaProducto.resx">
       <DependentUpon>AnadirCategoriaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BotonesCustomizados\TextBoxRedondo.resx">
       <DependentUpon>TextBoxRedondo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaClientesFacturacion.resx">
+      <DependentUpon>BusquedaClientesFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaProductoFacturacion.resx">
+      <DependentUpon>BusquedaProductoFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarComprador.resx">
+      <DependentUpon>EditarComprador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Facturacion.resx">
       <DependentUpon>Facturacion.cs</DependentUpon>
@@ -175,6 +258,13 @@
       <DependentUpon>VentanaAggProducto.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Data\usuarios.json" />
+    <None Include="packages.config" />
+    <EmbeddedResource Include="VerClientes.resx">
+      <DependentUpon>VerClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="JSONS\Ejemplo.csv" />
+    <None Include="JSONS\FileName.json" />
+    <None Include="JSONS\listaDeCompradores.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
