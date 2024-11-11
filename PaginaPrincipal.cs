@@ -233,10 +233,13 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void UserBtn_Click(object sender, EventArgs e)
         {
-            InfoUser.Visible= true;
-            UserLabel.Text = usuario; 
-            UserLabelName.Text = nombreU;
-            //UserBtn.Enabled = false;
+            InfoUserEmergente infouser = new InfoUserEmergente();
+            infouser.usuario = usuario;
+            infouser.nombreU = nombreU;
+            infouser.password = password;
+            infouser.IdUser = IdUser;
+            infouser.rolU = rolU;
+            infouser.Show();
             UserBtn.Visible = false;
         }
 
@@ -254,20 +257,14 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void PaginaPrincipal_Click(object sender, EventArgs e)
         {
-            InfoUser.Visible = false;
-            UserBtn.Visible = true;
         }
 
         private void splitContainer2_Panel2_Click(object sender, EventArgs e)
         {
-            InfoUser.Visible = false;
-            UserBtn.Visible = true;
         }
 
         private void panel5_Click(object sender, EventArgs e)
         {
-            InfoUser.Visible = false;
-            UserBtn.Visible = true;
         }
 
         private void UserLabel_Click(object sender, EventArgs e)

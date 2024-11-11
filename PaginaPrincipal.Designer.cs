@@ -58,12 +58,6 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.panel5 = new System.Windows.Forms.Panel();
             this.UserBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.InfoUser = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
-            this.ConfigUserBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.UserImg_Info = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
-            this.CerrarSesionBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
-            this.UserLabel = new System.Windows.Forms.Label();
-            this.UserLabelName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -76,10 +70,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.InfoUser.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -590,7 +582,6 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
-            this.splitContainer2.Panel2.Controls.Add(this.InfoUser);
             this.splitContainer2.Panel2.ForeColor = System.Drawing.Color.Transparent;
             this.splitContainer2.Panel2.Click += new System.EventHandler(this.splitContainer2_Panel2_Click);
             this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
@@ -631,101 +622,6 @@
             this.UserBtn.UseVisualStyleBackColor = false;
             this.UserBtn.Click += new System.EventHandler(this.UserBtn_Click);
             // 
-            // InfoUser
-            // 
-            this.InfoUser.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.InfoUser.BackColor = System.Drawing.Color.Silver;
-            this.InfoUser.BorderColor = System.Drawing.Color.Black;
-            this.InfoUser.BorderRadius = 20;
-            this.InfoUser.BorderSize = 0;
-            this.InfoUser.Controls.Add(this.ConfigUserBtn);
-            this.InfoUser.Controls.Add(this.UserImg_Info);
-            this.InfoUser.Controls.Add(this.CerrarSesionBtn);
-            this.InfoUser.Controls.Add(this.UserLabel);
-            this.InfoUser.Controls.Add(this.UserLabelName);
-            this.InfoUser.Location = new System.Drawing.Point(807, 14);
-            this.InfoUser.Name = "InfoUser";
-            this.InfoUser.Size = new System.Drawing.Size(322, 241);
-            this.InfoUser.TabIndex = 0;
-            this.InfoUser.Visible = false;
-            // 
-            // ConfigUserBtn
-            // 
-            this.ConfigUserBtn.BackColor = System.Drawing.Color.Transparent;
-            this.ConfigUserBtn.BackgroundColor = System.Drawing.Color.Transparent;
-            this.ConfigUserBtn.BackgroundImage = global::Parcial2_SistemaDeFacturacion.Properties.Resources.config1;
-            this.ConfigUserBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ConfigUserBtn.BorderColor = System.Drawing.Color.Transparent;
-            this.ConfigUserBtn.BorderRadius = 20;
-            this.ConfigUserBtn.BorderSize = 0;
-            this.ConfigUserBtn.FlatAppearance.BorderSize = 0;
-            this.ConfigUserBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfigUserBtn.ForeColor = System.Drawing.Color.White;
-            this.ConfigUserBtn.Location = new System.Drawing.Point(36, 179);
-            this.ConfigUserBtn.Name = "ConfigUserBtn";
-            this.ConfigUserBtn.Size = new System.Drawing.Size(40, 40);
-            this.ConfigUserBtn.TabIndex = 4;
-            this.ConfigUserBtn.TextColor = System.Drawing.Color.White;
-            this.ConfigUserBtn.UseVisualStyleBackColor = false;
-            this.ConfigUserBtn.Click += new System.EventHandler(this.ConfigUserBtn_Click);
-            // 
-            // UserImg_Info
-            // 
-            this.UserImg_Info.BackColor = System.Drawing.Color.Transparent;
-            this.UserImg_Info.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UserImg_Info.BackgroundImage")));
-            this.UserImg_Info.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.UserImg_Info.BorderColor = System.Drawing.Color.Black;
-            this.UserImg_Info.BorderRadius = 20;
-            this.UserImg_Info.BorderSize = 2;
-            this.UserImg_Info.Location = new System.Drawing.Point(135, 27);
-            this.UserImg_Info.Name = "UserImg_Info";
-            this.UserImg_Info.Size = new System.Drawing.Size(70, 70);
-            this.UserImg_Info.TabIndex = 3;
-            // 
-            // CerrarSesionBtn
-            // 
-            this.CerrarSesionBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(55)))));
-            this.CerrarSesionBtn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(55)))));
-            this.CerrarSesionBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.CerrarSesionBtn.BorderRadius = 15;
-            this.CerrarSesionBtn.BorderSize = 0;
-            this.CerrarSesionBtn.FlatAppearance.BorderSize = 0;
-            this.CerrarSesionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CerrarSesionBtn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CerrarSesionBtn.ForeColor = System.Drawing.Color.White;
-            this.CerrarSesionBtn.Location = new System.Drawing.Point(113, 179);
-            this.CerrarSesionBtn.Name = "CerrarSesionBtn";
-            this.CerrarSesionBtn.Size = new System.Drawing.Size(178, 40);
-            this.CerrarSesionBtn.TabIndex = 2;
-            this.CerrarSesionBtn.Text = "Cerrar Sesión";
-            this.CerrarSesionBtn.TextColor = System.Drawing.Color.White;
-            this.CerrarSesionBtn.UseVisualStyleBackColor = false;
-            this.CerrarSesionBtn.Click += new System.EventHandler(this.CerrarSesionBtn_Click);
-            // 
-            // UserLabel
-            // 
-            this.UserLabel.AutoSize = true;
-            this.UserLabel.Font = new System.Drawing.Font("Arial", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserLabel.ForeColor = System.Drawing.Color.DimGray;
-            this.UserLabel.Location = new System.Drawing.Point(147, 132);
-            this.UserLabel.Name = "UserLabel";
-            this.UserLabel.Size = new System.Drawing.Size(44, 19);
-            this.UserLabel.TabIndex = 1;
-            this.UserLabel.Text = "user";
-            this.UserLabel.Click += new System.EventHandler(this.UserLabel_Click);
-            // 
-            // UserLabelName
-            // 
-            this.UserLabelName.AutoSize = true;
-            this.UserLabelName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserLabelName.ForeColor = System.Drawing.Color.Black;
-            this.UserLabelName.Location = new System.Drawing.Point(131, 100);
-            this.UserLabelName.Name = "UserLabelName";
-            this.UserLabelName.Size = new System.Drawing.Size(84, 24);
-            this.UserLabelName.TabIndex = 0;
-            this.UserLabelName.Text = "Nombre";
-            this.UserLabelName.Click += new System.EventHandler(this.label2_Click);
-            // 
             // PaginaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -752,12 +648,9 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenLogo)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.InfoUser.ResumeLayout(false);
-            this.InfoUser.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -800,12 +693,6 @@
         public string nombreU = "";
         public string password = "";
         public string UserFormAction = "";
-        private BotonesCustomizados.RoundedPanel InfoUser;
-        private System.Windows.Forms.Label UserLabelName;
-        private BotonesCustomizados.botonRectanguloRedondo CerrarSesionBtn;
-        private System.Windows.Forms.Label UserLabel;
-        private BotonesCustomizados.RoundedPanel UserImg_Info;
-        private BotonesCustomizados.botonRectanguloRedondo ConfigUserBtn;
     }
 }
 
