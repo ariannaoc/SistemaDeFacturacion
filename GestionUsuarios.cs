@@ -40,16 +40,83 @@ namespace Parcial2_SistemaDeFacturacion
         {
             GetUserData.CargarUsuarios();
             List<Usuario> usuarios = GetUserData.UserList;
-            usuarios = usuarios.Where(u => u.Rol != "su").ToList();
+            if (rolU != "superUsuario")
+            {
+                usuarios = usuarios.Where(u => u.Rol != "superUsuario").ToList();
+            }
             TablaUsuarios.DataSource = usuarios;
         }
         private void GestionUsuarios_Load(object sender, EventArgs e)
         {
            ActualizarListaUsuarios();
+
+            // Anade boton a la columna de editar
+            DataGridViewButtonColumn editarBotonColumna = new DataGridViewButtonColumn
+            {
+                Name = "Editar",
+                HeaderText = "Editar",
+                Text = "Editar",
+                UseColumnTextForButtonValue = true
+            };
+            TablaUsuarios.Columns.Add(editarBotonColumna);
+
+            // Anade boton a la columna de eliminar
+            DataGridViewButtonColumn eliminarBotonColumna = new DataGridViewButtonColumn
+            {
+                Name = "Eliminar",
+                HeaderText = "Eliminar",
+                Text = "Eliminar",
+                UseColumnTextForButtonValue = true,
+            };
+            TablaUsuarios.Columns.Add(eliminarBotonColumna);
         }
+
 
         private void TablaUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0 && e.ColumnIndex == TablaUsuarios.Columns["Editar"].Index)
+            {
+                // Obtener el usuario seleccionado 
+                Usuario usuarioSeleccionado = (Usuario)TablaUsuarios.Rows[e.RowIndex].DataBoundItem;
+                //MessageBox.Show(usuarioSeleccionado.Name);
+
+                UserFormAction = "edit";
+                // Abriendo formulario de edicion
+                UserForm userForm = new UserForm();
+                userForm.UserFormAction = UserFormAction;
+                userForm.usuario = usuarioSeleccionado.Username;
+                userForm.IdUser = usuarioSeleccionado.Id;
+                userForm.nombreU = usuarioSeleccionado.Name;
+                userForm.password = usuarioSeleccionado.Password;
+                userForm.rolU = usuarioSeleccionado.Rol;
+                userForm.Show();
+                userForm.UserUpdated += ActualizarListaUsuarios;
+            }
+            else if (e.RowIndex >= 0 && e.ColumnIndex == TablaUsuarios.Columns["Eliminar"].Index)
+            {
+                // Obtener el usuario seleccionado
+                Usuario usuarioSeleccionado = (Usuario)TablaUsuarios.Rows[e.RowIndex].DataBoundItem;
+
+                if (usuarioSeleccionado.Rol == "superUsuario")
+                {
+                    MessageBox.Show("El Super Usuario no puede ser eliminado");
+                }
+                else
+                {
+                // Confirmar la eliminación
+                var resultado = MessageBox.Show($"¿Estás seguro de que deseas eliminar al usuario {usuarioSeleccionado.Username}?",
+                                                 "Confirmar eliminación",
+                                                 MessageBoxButtons.YesNo,
+                                                 MessageBoxIcon.Question);
+                if (resultado == DialogResult.Yes)
+                {
+                    GetUserData.EliminarUsuario(usuarioSeleccionado.Id);
+                    // Actualizar la lista de usuarios
+                    ActualizarListaUsuarios();
+                }
+                }
+
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

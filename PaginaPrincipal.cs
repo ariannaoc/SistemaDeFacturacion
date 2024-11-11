@@ -55,9 +55,17 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void PaginaPrincipal_Load(object sender, EventArgs e)
         {
-            if (rolU != "administrador")
+            if (rolU == "operador")
             {
                 btnUsuarios.Visible = false;
+            } else if (rolU == "superUsuario")
+            {
+                btnAnadirCategoria.Visible = false;
+                btnCliente.Visible = false;
+                btnFacturacion.Visible = false;
+                btnProductos.Visible = false;
+                btnReportes.Visible = false;
+                btnOrdenes.Visible = false; 
             }
         }
 

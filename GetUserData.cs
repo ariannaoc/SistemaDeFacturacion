@@ -42,6 +42,43 @@ namespace Parcial2_SistemaDeFacturacion
                 MessageBox.Show($"Error al cargar los usuarios: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public static void EliminarUsuario(int id)
+        {
+            try
+            {
+                // Buscar usuario por ID
+                var usuarioAEliminar = _userList.FirstOrDefault(u => u.Id == id);
+
+                if (usuarioAEliminar != null)
+                {
+                    // Eliminar el usuario 
+                    _userList.Remove(usuarioAEliminar);
+
+                    // Guardar la lista en el archivo 
+                    GuardarUsuarios();
+
+                    MessageBox.Show("Usuario eliminado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al eliminar el usuario: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private static void GuardarUsuarios()
+        {
+            try
+            {
+                string json = JsonConvert.SerializeObject(_userList, Formatting.Indented);
+                File.WriteAllText(@"..\..\Data\\usuarios.json", json);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al guardar los usuarios: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 
     public class Usuario

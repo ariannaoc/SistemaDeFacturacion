@@ -3,21 +3,21 @@
     "Id": 1,
     "Username": "dev",
     "Password": "sudev",
-    "Name": "Dev",
-    "Rol": "su"
+    "Name": "Developer",
+    "Rol": "superUsuario"
   },
   {
     "Id": 2,
     "Username": "admin",
     "Password": "admin",
-    "Name": "jefe",
+    "Name": "Jefe",
     "Rol": "administrador"
   },
   {
     "Id": 3,
     "Username": "user",
     "Password": "user",
-    "Name": "Juan Pepe",
+    "Name": "Juan Pablo",
     "Rol": "operador"
   },
   {
@@ -29,23 +29,9 @@
   },
   {
     "Id": 5,
-    "Username": "alex",
-    "Password": "456",
-    "Name": "ale",
-    "Rol": "operador"
-  },
-  {
-    "Id": 6,
-    "Username": "hola",
-    "Password": "14587",
-    "Name": "hola",
-    "Rol": "operador"
-  },
-  {
-    "Id": 7,
-    "Username": "max",
-    "Password": "perro",
-    "Name": "max",
-    "Rol": "operador"
+    "Username": "Maco",
+    "Password": "78954",
+    "Name": "Maria Coco",
+    "Rol": "administrador"
   }
 ]
