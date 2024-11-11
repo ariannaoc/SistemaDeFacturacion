@@ -337,6 +337,7 @@ namespace Parcial2_SistemaDeFacturacion
         private BotonesCustomizados.botonRectanguloRedondo editUserBtn;
         private BotonesCustomizados.botonRectanguloRedondo editPasswordBtn;
         public string rolU = "";
+        public int IdUser = 0;
         public string usuario = "";
         public string nombreU = "";
         public string password = "";

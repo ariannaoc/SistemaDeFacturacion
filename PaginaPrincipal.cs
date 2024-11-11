@@ -273,6 +273,7 @@ namespace Parcial2_SistemaDeFacturacion
             UserForm userForm = new UserForm();
             userForm.UserFormAction = UserFormAction;
             userForm.usuario = usuario;
+            userForm.IdUser = IdUser;
             userForm.nombreU = nombreU;
             userForm.password = password;
             userForm.rolU = rolU;

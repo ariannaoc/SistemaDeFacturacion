@@ -796,6 +796,7 @@
 
         public string usuario = "";
         public string rolU = "";
+        public int IdUser = 0;
         public string nombreU = "";
         public string password = "";
         public string UserFormAction = "";

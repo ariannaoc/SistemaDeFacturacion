@@ -37,9 +37,9 @@ namespace Parcial2_SistemaDeFacturacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TablaUsuarios = new System.Windows.Forms.DataGridView();
-            this.NuevoUsuarioBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.GestUserLabel = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.NuevoUsuarioBtn = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             ((System.ComponentModel.ISupportInitialize)(this.TablaUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +78,7 @@ namespace Parcial2_SistemaDeFacturacion
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.TablaUsuarios.DefaultCellStyle = dataGridViewCellStyle3;
             this.TablaUsuarios.GridColor = System.Drawing.SystemColors.Control;
-            this.TablaUsuarios.Location = new System.Drawing.Point(175, 329);
+            this.TablaUsuarios.Location = new System.Drawing.Point(107, 329);
             this.TablaUsuarios.Name = "TablaUsuarios";
             this.TablaUsuarios.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -99,9 +99,23 @@ namespace Parcial2_SistemaDeFacturacion
             this.TablaUsuarios.RowTemplate.Height = 24;
             this.TablaUsuarios.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TablaUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.TablaUsuarios.Size = new System.Drawing.Size(731, 254);
+            this.TablaUsuarios.Size = new System.Drawing.Size(876, 254);
             this.TablaUsuarios.TabIndex = 0;
             this.TablaUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaUsuarios_CellContentClick);
+            // 
+            // GestUserLabel
+            // 
+            this.GestUserLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GestUserLabel.AutoSize = true;
+            this.GestUserLabel.Font = new System.Drawing.Font("Arial Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GestUserLabel.ForeColor = System.Drawing.Color.Black;
+            this.GestUserLabel.Location = new System.Drawing.Point(395, 86);
+            this.GestUserLabel.Name = "GestUserLabel";
+            this.GestUserLabel.Size = new System.Drawing.Size(326, 40);
+            this.GestUserLabel.TabIndex = 2;
+            this.GestUserLabel.Text = "Gestión de Usuarios";
+            this.GestUserLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // NuevoUsuarioBtn
             // 
@@ -123,20 +137,6 @@ namespace Parcial2_SistemaDeFacturacion
             this.NuevoUsuarioBtn.TextColor = System.Drawing.Color.White;
             this.NuevoUsuarioBtn.UseVisualStyleBackColor = false;
             this.NuevoUsuarioBtn.Click += new System.EventHandler(this.NuevoUsuarioBtn_Click);
-            // 
-            // GestUserLabel
-            // 
-            this.GestUserLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GestUserLabel.AutoSize = true;
-            this.GestUserLabel.Font = new System.Drawing.Font("Arial Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GestUserLabel.ForeColor = System.Drawing.Color.Black;
-            this.GestUserLabel.Location = new System.Drawing.Point(395, 86);
-            this.GestUserLabel.Name = "GestUserLabel";
-            this.GestUserLabel.Size = new System.Drawing.Size(326, 40);
-            this.GestUserLabel.TabIndex = 2;
-            this.GestUserLabel.Text = "Gestión de Usuarios";
-            this.GestUserLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // GestionUsuarios
             // 
@@ -163,6 +163,7 @@ namespace Parcial2_SistemaDeFacturacion
         private System.Windows.Forms.Label GestUserLabel;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         public string rolU = "";
+        public int IdUser = 0;
         public string usuario = "";
         public string nombreU = "";
         public string password = "";

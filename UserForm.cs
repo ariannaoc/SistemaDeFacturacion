@@ -18,6 +18,7 @@ namespace Parcial2_SistemaDeFacturacion
 {
     public partial class UserForm : Form
     {
+        public event Action UserUpdated; // Evento para notificar que usuarios ha sido actualizado
         public UserForm()
         {
             InitializeComponent();
@@ -84,8 +85,7 @@ namespace Parcial2_SistemaDeFacturacion
             if (newUserName != "" && newUserUser != "" && newUserPassword != "" && newUserRol != "")
             {
                  if (UserFormAction == "agregar")
-                {
-
+                 {
                     //Validar que el usuario no exista  
                     GetUserData.CargarUsuarios();
                     List<Usuario> usuariosExistentes = GetUserData.UserList;
@@ -105,9 +105,40 @@ namespace Parcial2_SistemaDeFacturacion
                         // Gardar datos nuevo usuario 
                         usuariosExistentes.Add(new Usuario { Id = newId, Username = newUserUser, Name = newUserName, Password = newUserPassword, Rol = newUserRol });
                         string newJson = JsonSerializer.Serialize(usuariosExistentes, new JsonSerializerOptions { WriteIndented = true });
-                        File.WriteAllText("C:\\Users\\Arianna\\Desktop\\PR2\\SistemaDeFacturacion\\Data\\usuarios.json", newJson);
+                        File.WriteAllText(@"..\..\Data\\usuarios.json", newJson);
+                        UserUpdated?.Invoke();
                         this.Close();
                         MessageBox.Show("Usuario guardado correctamente");
+                    }
+                } else if (UserFormAction == "edit")
+                {
+                    // Editing user logic
+                    GetUserData.CargarUsuarios();
+                    List<Usuario> usuariosExistentes = GetUserData.UserList;
+
+                    // Find the user to edit based on a unique identifier (e.g., Id)
+                    int userIdToEdit = IdUser;
+
+                    int indexOfUserToEdit = usuariosExistentes.FindIndex(u => u.Id == userIdToEdit);
+
+                    if (indexOfUserToEdit != -1)
+                    {
+                        // Update user data
+                        usuariosExistentes[indexOfUserToEdit].Username = newUserUser;
+                        usuariosExistentes[indexOfUserToEdit].Name = newUserName;
+                        usuariosExistentes[indexOfUserToEdit].Password = newUserPassword;
+                        usuariosExistentes[indexOfUserToEdit].Rol = newUserRol;
+
+                        string newJson = JsonSerializer.Serialize(usuariosExistentes, new JsonSerializerOptions { WriteIndented = true });
+                        File.WriteAllText(@"..\..\Data\\usuarios.json", newJson);
+                        UserUpdated?.Invoke();
+                        this.Close(); 
+                        MessageBox.Show("Usuario editado correctamente");
+                    }
+                    else
+                    {
+                        // User to edit not found
+                        MessageBox.Show("Error: Usuario no encontrado para editar");
                     }
                 }
             } 

@@ -13,7 +13,6 @@ namespace Parcial2_SistemaDeFacturacion
     internal class GetUserData
     {
         private static List<Usuario> _userList;
-
         public static List<Usuario> UserList
         {
             get
@@ -30,7 +29,7 @@ namespace Parcial2_SistemaDeFacturacion
         {
             try
             {
-                string json = File.ReadAllText("C:\\Users\\Arianna\\Desktop\\PR2\\SistemaDeFacturacion\\Data\\usuarios.json");
+                string json = File.ReadAllText(@"..\..\Data\\usuarios.json");
                 _userList = JsonConvert.DeserializeObject<List<Usuario>>(json);
 
                 if (_userList.Count == 0)

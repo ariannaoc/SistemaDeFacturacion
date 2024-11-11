@@ -12,10 +12,11 @@ using Newtonsoft.Json;
 
 namespace Parcial2_SistemaDeFacturacion
 {
-    public partial class GestionUsuarios : UserControl
+    public partial class GestionUsuarios : BaseActualizarPanel
     {
         private static GestionUsuarios instance;
         private static readonly object _lock = new object();
+        
         public GestionUsuarios()
         {
             InitializeComponent();
@@ -35,18 +36,20 @@ namespace Parcial2_SistemaDeFacturacion
                 }
             }
         }
-
-        private void GestionUsuarios_Load(object sender, EventArgs e)
+        private void ActualizarListaUsuarios()
         {
             GetUserData.CargarUsuarios();
-            List < Usuario > usuarios = GetUserData.UserList;
+            List<Usuario> usuarios = GetUserData.UserList;
             usuarios = usuarios.Where(u => u.Rol != "su").ToList();
             TablaUsuarios.DataSource = usuarios;
+        }
+        private void GestionUsuarios_Load(object sender, EventArgs e)
+        {
+           ActualizarListaUsuarios();
         }
 
         private void TablaUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -54,11 +57,15 @@ namespace Parcial2_SistemaDeFacturacion
 
         }
 
+
+       
         private void NuevoUsuarioBtn_Click(object sender, EventArgs e)
         {
             UserFormAction = "agregar";
             UserForm formularioUsuarios = new UserForm();
+            formularioUsuarios.UserUpdated += ActualizarListaUsuarios;
             formularioUsuarios.UserFormAction = UserFormAction;
+            formularioUsuarios.IdUser = IdUser;
             formularioUsuarios.rolU = rolU;
             formularioUsuarios.usuario = usuario;
             formularioUsuarios.password = password;

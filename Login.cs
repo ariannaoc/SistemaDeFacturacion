@@ -48,6 +48,7 @@ namespace Parcial2_SistemaDeFacturacion
                 if (usuarioAutenticado != null)
                 {
                     PaginaPrincipal Dashboard = new PaginaPrincipal();
+                    Dashboard.IdUser = usuarioAutenticado.Id;
                     Dashboard.usuario = usuarioAutenticado.Username;
                     Dashboard.nombreU = usuarioAutenticado.Name;
                     Dashboard.password = usuarioAutenticado.Password;

@@ -10,14 +10,14 @@
     "Id": 2,
     "Username": "admin",
     "Password": "admin",
-    "Name": "administrador",
+    "Name": "jefe",
     "Rol": "administrador"
   },
   {
     "Id": 3,
     "Username": "user",
     "Password": "user",
-    "Name": "Juan Lopez",
+    "Name": "Juan Pepe",
     "Rol": "operador"
   },
   {
@@ -32,6 +32,20 @@
     "Username": "alex",
     "Password": "456",
     "Name": "ale",
+    "Rol": "operador"
+  },
+  {
+    "Id": 6,
+    "Username": "hola",
+    "Password": "14587",
+    "Name": "hola",
+    "Rol": "operador"
+  },
+  {
+    "Id": 7,
+    "Username": "max",
+    "Password": "perro",
+    "Name": "max",
     "Rol": "operador"
   }
 ]
