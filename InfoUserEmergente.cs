@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Parcial2_SistemaDeFacturacion
 {
-    public partial class InfoUserEmergente : UserControl
+    public partial class InfoUserEmergente : Form
     {
         private static InfoUserEmergente _instance;
 
@@ -30,19 +30,39 @@ namespace Parcial2_SistemaDeFacturacion
             }
         }
 
+        public void ShowCustomDialog()
+        {
+            using (InfoUserEmergente dialog = new InfoUserEmergente())
+            {
+               
+                dialog.StartPosition = FormStartPosition.Manual;
+                dialog.AutoSize = false;
+                dialog.MaximizeBox = false;
+                dialog.MinimizeBox = false;
+                
+                dialog.Location = new Point(395, 25);
 
+                
+                dialog.Move += (sender, e) => { dialog.Location = new Point(395, 25); };
+
+               
+                dialog.ShowDialog();
+            }
+        }
+
+      
         private void CerrarSesionBtn_Click(object sender, EventArgs e)
         {
             Login loginForm = new Login();
             loginForm.Show();
+            this.Close();
         }
 
         private void InfoUserEmergente_Load(object sender, EventArgs e)
         {
-            UserNameLabel.Text = nombreU;
-            UserNameLabel.ForeColor = Color.Black;
-            //UserLabel.Text = usuario;
 
+            UserNameLabel.Text = nombreU;
+            UserLabel.Text = usuario;
 
         }
 
@@ -55,6 +75,24 @@ namespace Parcial2_SistemaDeFacturacion
         {
             Login login = new Login();
             login.Show();
+            this.Close();
+            Application.OpenForms["PaginaPrincipal"].Close();
+
+        }
+
+       
+
+        private void BtnConfigU_Click(object sender, EventArgs e)
+        {
+            UserFormAction = "edit";
+            UserForm userForm = new UserForm();
+            userForm.UserFormAction = UserFormAction;
+            userForm.usuario = usuario;
+            userForm.IdUser = IdUser;
+            userForm.nombreU = nombreU;
+            userForm.password = password;
+            userForm.rolU = rolU;
+            userForm.Show();
         }
     }
 }

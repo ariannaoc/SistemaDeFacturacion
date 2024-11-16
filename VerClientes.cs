@@ -38,33 +38,39 @@ namespace Parcial2_SistemaDeFacturacion
             dataGridViewClientes1.VirtualMode = true;
             dataGridViewClientes1.AutoGenerateColumns = false;
             dataGridViewClientes1.DefaultCellStyle.ForeColor = Color.Black;
-            dataGridViewClientes1.Columns.Add("NumeroCliente", "#");
-            dataGridViewClientes1.Columns.Add("Nombres", "Nombres");
-            dataGridViewClientes1.Columns.Add("Apellidos", "Apellidos");
-            dataGridViewClientes1.Columns.Add("Cedula", "Cedula");
-            dataGridViewClientes1.Columns.Add("Email", "Email");
-            dataGridViewClientes1.Columns.Add("NumeroTelefono", "Numero Telefono");
 
-            // Anade boton a la columna de editar
+            var columnNumeroCliente = new DataGridViewTextBoxColumn { Name = "NumeroCliente", HeaderText = "#", ReadOnly = true };
+            var columnNombres = new DataGridViewTextBoxColumn { Name = "Nombres", HeaderText = "Nombres", ReadOnly = true };
+            var columnApellidos = new DataGridViewTextBoxColumn { Name = "Apellidos", HeaderText = "Apellidos", ReadOnly = true };
+            var columnCedula = new DataGridViewTextBoxColumn { Name = "Cedula", HeaderText = "Cedula", ReadOnly = true };
+            var columnEmail = new DataGridViewTextBoxColumn { Name = "Email", HeaderText = "Email", ReadOnly = true };
+            var columnNumeroTelefono = new DataGridViewTextBoxColumn { Name = "NumeroTelefono", HeaderText = "Numero Telefono", ReadOnly = true };
+
+            dataGridViewClientes1.Columns.AddRange(columnNumeroCliente, columnNombres, columnApellidos, columnCedula, columnEmail, columnNumeroTelefono);
+
+            // Add button to the edit column
             DataGridViewButtonColumn editarBotonColumna = new DataGridViewButtonColumn
             {
                 Name = "Editar",
                 HeaderText = "Editar",
                 Text = "Editar",
-                UseColumnTextForButtonValue = true
+                UseColumnTextForButtonValue = true,
+                ReadOnly = false // Allow interaction with the button
             };
             dataGridViewClientes1.Columns.Add(editarBotonColumna);
 
-            // Anade boton a la columna de eliminar
+            // Add button to the delete column
             DataGridViewButtonColumn eliminarBotonColumna = new DataGridViewButtonColumn
             {
                 Name = "Eliminar",
                 HeaderText = "Eliminar",
                 Text = "Eliminar",
-                UseColumnTextForButtonValue = true
+                UseColumnTextForButtonValue = true,
+                ReadOnly = false // Allow interaction with the button
             };
             dataGridViewClientes1.Columns.Add(eliminarBotonColumna);
         }
+
 
         private void dataGridViewClientes1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -78,7 +84,8 @@ namespace Parcial2_SistemaDeFacturacion
                         if (form.ShowDialog() == DialogResult.OK)
                         {
                             ClientManager.ActualizarCliente(form.Cliente);
-                            bindingList[e.RowIndex] = form.Cliente; // Actualiza binding list
+                            bindingList[e.RowIndex] = form.Cliente; // Update the binding list
+                            RefreshDataGridView(); // Refresh the DataGridView
                         }
                     }
                 }
@@ -89,10 +96,17 @@ namespace Parcial2_SistemaDeFacturacion
                     if (result == DialogResult.Yes)
                     {
                         ClientManager.EliminarCliente(client);
-                        bindingList.RemoveAt(e.RowIndex); // Actualiza binding list y automaticamente actualiza el DataGridView  
+                        bindingList.RemoveAt(e.RowIndex); // Update the binding list and automatically update the DataGridView
                     }
                 }
             }
+        }
+        private void RefreshDataGridView()
+        {
+            dataGridViewClientes1.VirtualMode = true;
+            dataGridViewClientes1.DataSource = null; // Reset DataSource  
+            dataGridViewClientes1.DataSource = bindingList; // Rebind the DataGridView to the binding list  
+            dataGridViewClientes1.Refresh(); // Refresh to show updates  
         }
 
         public static VerClientes Instance
@@ -112,8 +126,8 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void VerClientes_Load(object sender, EventArgs e)
         {
-            InicializarDataGridView();
-            LoadInitialData();
+            LoadInitialData(); // Initialize data  
+            InicializarDataGridView(); // Set up DataGridView after data has been loaded  
         }
 
         private void InicializarDataGridView()
@@ -125,22 +139,30 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void LoadInitialData()
         {
-            allClients = ClientManager.Clients.ToList();
-            foreach (var client in allClients.Take(pageSize))
-            {
-                bindingList.Add(client); // Llena el binding list  
-            }
+            bindingList.Clear(); // Clear the binding list before loading initial data
+            paginaActual = 0;
+            allClients = ClientManager.Clients
+                           .GroupBy(c => c.ID)
+                           .Select(g => g.First())
+                           .ToList(); // Ensure uniqueness
+            LoadPage(paginaActual);
         }
+
 
         private void LoadPage(int pageNumber)
         {
             int startIndex = pageNumber * pageSize;
             var pageClients = allClients.Skip(startIndex).Take(pageSize).ToList();
+
+            bindingList.Clear(); // Clear the binding list before adding new data
+
             foreach (var client in pageClients)
             {
                 bindingList.Add(client);
             }
         }
+
+
 
         private void dataGridViewClientes1_CellValueNeeded(object sender, DataGridViewCellValueEventArgs e)
         {
@@ -159,6 +181,7 @@ namespace Parcial2_SistemaDeFacturacion
             }
         }
 
+
         private void dataGridViewClientes1_Scroll(object sender, ScrollEventArgs e)
         {
             if (e.ScrollOrientation == ScrollOrientation.VerticalScroll)
@@ -173,15 +196,29 @@ namespace Parcial2_SistemaDeFacturacion
         private void LoadMoreData()
         {
             paginaActual++;
-            if (paginaActual * pageSize < allClients.Count)
+            int startIndex = paginaActual * pageSize;
+
+            // Check if there are more clients to load
+            if (startIndex < allClients.Count)
             {
-                LoadPage(paginaActual);
+                var pageClients = allClients.Skip(startIndex).Take(pageSize).ToList();
+
+                // Add more clients to the BindingList
+                foreach (var client in pageClients)
+                {
+                    bindingList.Add(client);
+                }
+
+                dataGridViewClientes1.Refresh(); // Refresh to show updated data
             }
             else
             {
-                paginaActual--; // Revierte el conteo de pagina si no hay mas cliente
+                paginaActual--; // Revert if no more clients to load
             }
+
+            
         }
+
 
         private void botonRectanguloRedondo1_Click(object sender, EventArgs e)
         {
@@ -189,31 +226,61 @@ namespace Parcial2_SistemaDeFacturacion
             {
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    int conteoInicial = ClientManager.Clients.Count;
                     ClientManager.AddClient(form.Cliente);
-                    if (ClientManager.Clients.Count > conteoInicial)
-                    {
-                        bindingList.Add(form.Cliente); // Anade el cliente mas recientemente anadido al binding list  
-                    }
+                    RefreshClientList(); // Refresh the client list and DataGridView
                 }
             }
         }
 
-       
+
+
+        private void RefreshClientList()
+        {
+            //bindingList.Clear(); // Clear existing data to avoid duplicates
+            LoadInitialData();
+            //// Fetch the complete list again and ensure uniqueness  
+            //allClients = ClientManager.Clients
+            //                    .GroupBy(c => c.ID)
+            //                    .Select(g => g.First())
+            //                    .ToList();
+
+            //// Add all clients to the BindingList  
+            //foreach (var client in allClients)
+            //{
+            //    bindingList.Add(client);
+            //}
+
+            //dataGridViewClientes1.DataSource = null;
+            //dataGridViewClientes1.DataSource = bindingList; // Re-bind the DataGridView to the BindingList
+            //dataGridViewClientes1.Refresh(); // Refresh the DataGridView
+        }
+
+
+
+
+
         private void btnBuscar_Click_1(object sender, EventArgs e)
         {
-                string busquedaID = txtBusqueda.Text.Trim();
-                List<Cliente> filteredClients = string.IsNullOrWhiteSpace(busquedaID)
-                    ? ClientManager.Clients.ToList()
-                    : ClientManager.Clients.Where(c => c.ID.Contains(busquedaID)).ToList();
+            string busquedaID = txtBusqueda.Text.Trim();
+            List<Cliente> filteredClients = string.IsNullOrWhiteSpace(busquedaID)
+              ? ClientManager.Clients.ToList() // All clients if no search term  
+              : ClientManager.Clients.Where(c => c.ID.Contains(busquedaID)).ToList(); // Filtered clients
 
-                bindingList.Clear(); // Limpia data existente en el binding list  
-                foreach (var client in filteredClients)
-                {
-                    bindingList.Add(client); // Llena el binding list con los resultados de filtrado 
-                }
+            bindingList.Clear();
 
-                MessageBox.Show(filteredClients.Any() ? "Cliente(s) encontrado!" : "Cliente no encontrado.", "Resultados de Busqueda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            foreach (var client in filteredClients)
+            {
+                bindingList.Add(client);
+            }
+
+            if (filteredClients.Any())
+            {
+                MessageBox.Show("Cliente(s) encontrado!", "Resultados de Busqueda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Cliente no encontrado.", "Resultados de Busqueda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

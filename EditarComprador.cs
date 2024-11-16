@@ -43,7 +43,6 @@ namespace Parcial2_SistemaDeFacturacion
             // nada aqui
         }
 
-       
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtNombres.Text) ||
@@ -61,12 +60,28 @@ namespace Parcial2_SistemaDeFacturacion
                 return;
             }
 
-            Cliente.Nombres = txtNombres.Text;
-            Cliente.Apellidos = txtApellidos.Text;
-            Cliente.ID = txtCedula.Text;
-            Cliente.Email = txtEmail.Text;
-            Cliente.NumeroTelefono = txtNumeroTelefono.Text;
-            Cliente.Direccion = new Direccion(txtCalle.Text, txtCiudad.Text, txtEstado.Text);
+            // Validate and normalize the input fields
+            string nombres = ValidarPalabra(txtNombres.Text, "Ingrese sus nombres:");
+            string apellidos = ValidarPalabra(txtApellidos.Text, "Ingrese sus apellidos:");
+            string calles = ValidarPalabra(txtCalle.Text, "Ingrese su calle:");
+            string ciudad = ValidarPalabra(txtCiudad.Text, "Ingrese su ciudad:");
+            string estado = ValidarPalabra(txtEstado.Text, "Ingrese su estado:");
+            EstadoLegal nacionalidad = (EstadoLegal)Enum.Parse(typeof(EstadoLegal), cmbEstadoLegal.SelectedItem.ToString());
+            string cedula = ValidarCedula(txtCedula.Text, nacionalidad, "Ingrese su cédula:");
+            string email = ValidarEmail(txtEmail.Text, "Ingrese su email:");
+            string numeroTelefono = ValidarNumeroTelefono(txtNumeroTelefono.Text, "Ingrese su numero de telefono:");
+
+            if (nombres == "-----------" || apellidos == "-----------" || calles == "-----------" || ciudad == "-----------" || estado == "-----------" || cedula == "-----------" || email == "-----------" || numeroTelefono == "-----------")
+            {
+                return; // If any validation failed, return early
+            }
+
+            Cliente.Nombres = nombres;
+            Cliente.Apellidos = apellidos;
+            Cliente.ID = cedula;
+            Cliente.Email = email;
+            Cliente.NumeroTelefono = numeroTelefono;
+            Cliente.Direccion = new Direccion(calles, ciudad, estado);
             Cliente.ContribuyenteEspecial = cmbContribuyenteEspecial.SelectedItem.ToString() == "Si";
             Cliente.EstadoLegal = (EstadoLegal)Enum.Parse(typeof(EstadoLegal), cmbEstadoLegal.SelectedItem.ToString());
 
@@ -82,7 +97,64 @@ namespace Parcial2_SistemaDeFacturacion
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
+        private string ValidarPalabra(string palabra, string mensaje)
+        {
+            palabra = Utils.MayusculaPrimeraLetra(palabra);
+
+            if (palabra == "-----------")
+            {
+                MessageBox.Show(mensaje, "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return palabra;
+            }
+
+            if (!Utils.ChecarPalabras(palabra))
+            {
+                MessageBox.Show("Por favor ingresa solo palabras.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return "-----------";
+            }
+
+            return palabra;
+        }
+
+        private string ValidarCedula(string cedula, EstadoLegal nacionalidad, string mensaje)
+        {
+            string validCedula = Utils.ValidarCedula(cedula, nacionalidad);
+
+            if (validCedula == "-----------")
+            {
+                MessageBox.Show(mensaje, "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return validCedula;
+            }
+
+            return validCedula;
+        }
+
+        private string ValidarEmail(string email, string mensaje)
+        {
+            if (!Utils.ValidarEmail(email))
+            {
+                MessageBox.Show("Por favor ingresa un email válido.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return "-----------";
+            }
+
+            return email;
+        }
+
+        private string ValidarNumeroTelefono(string numeroTelefono, string mensaje)
+        {
+            string validNumber = Utils.ValidarNumeroTelefono(numeroTelefono);
+
+            if (validNumber == "Invalid phone number")
+            {
+                MessageBox.Show("Por favor ingresa un número de teléfono válido.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return "-----------";
+            }
+
+            return validNumber;
+        }
     }
+
 
 
 }

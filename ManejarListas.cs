@@ -33,7 +33,7 @@ namespace Parcial2_SistemaDeFacturacion
         {
             try
             {
-
+                
 
                 if (!File.Exists(filePath))
                 {
@@ -69,7 +69,7 @@ namespace Parcial2_SistemaDeFacturacion
             }
         }
 
-
+        
 
         public static void WriteClientes()
         {
@@ -130,3 +130,5 @@ namespace Parcial2_SistemaDeFacturacion
         }
     }
 }
+
+

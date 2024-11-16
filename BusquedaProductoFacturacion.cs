@@ -10,8 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CsvHelper;
 using CsvHelper.Configuration;
+using CsvHelper.TypeConversion;
 
 
 namespace Parcial2_SistemaDeFacturacion
@@ -74,10 +74,13 @@ namespace Parcial2_SistemaDeFacturacion
         {
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
-                HasHeaderRecord = false // Disable header validation
+                HasHeaderRecord = true, // Enable header validation
+                IgnoreBlankLines = true, // Optionally ignore blank lines
+                TrimOptions = TrimOptions.Trim, // Trim spaces from fields
+                MissingFieldFound = null // Ignore missing fields to prevent exceptions
             };
 
-            using (var reader = new StreamReader(@"..\..\JSONS\Ejemplo.csv"))
+            using (var reader = new StreamReader("Ejemplo.csv"))
             using (var csv = new CsvReader(reader, config))
             {
                 csv.Context.RegisterClassMap<ProductoMap>(); // Register the class map for Productos
@@ -91,6 +94,7 @@ namespace Parcial2_SistemaDeFacturacion
                 bindingList.Add(product);
             }
         }
+
 
         private void LoadPage(int pageNumber)
         {
@@ -166,17 +170,20 @@ namespace Parcial2_SistemaDeFacturacion
     }
 
     // Define a mapping configuration for the class
-    public sealed class ProductoMap : ClassMap<Productos>
+    public  class ProductoMap : ClassMap<Productos>
     {
         public ProductoMap()
         {
             // Map columns by index since there are no headers in the CSV file
             Map(m => m.nombre_productos).Index(0);
-            Map(m => m.descripcion_productos).Index(1);
-            Map(m => m.stock_productos).Index(2);
-            Map(m => m.categoria_productos).Index(3);
-            Map(m => m.marca_productos).Index(4);
+            Map(m => m.estado_productos).Index(1);
+            Map(m => m.descripcion_productos).Index(2);
+            Map(m => m.stock_productos).Index(3);
+            Map(m => m.categoria_productos).Index(4);
+            Map(m => m.marca_productos).Index(5);
+            Map(m => m.precio_productos).Index(6);
         }
+
     }
 
 

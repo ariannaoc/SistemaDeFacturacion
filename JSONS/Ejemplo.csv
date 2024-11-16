@@ -1,45 +1,45 @@
-Laptop Dell Inspiron 15,Portátil con procesador Intel i5,25,Electrónica,Dell
-Camiseta de algodón, camiseta básica de color blanco,100,Ropa,MarcaX
-Galletas de chocolate, Galletas crujientes con trozos de chocolate,200,Alimentos,MarcaY
-Aspiradora Dyson V11,Aspiradora sin cable potente y ligera,30,Hogar,Dyson
-Muñeca Barbie,Mujer muñeca con accesorios y ropa intercambiable,150,Juguetes,Mattel
-Smartphone Samsung Galaxy S21,Teléfono inteligente con cámara de alta resolución,40,Electrónica,Samsung
-Pantalones vaqueros ajustados,Pantalones de mezclilla para hombre y mujer,80,Ropa,Levi's
-Cereal integral,Cereal saludable con avena y frutas secas,120,Alimentos,Kellogg's
-Batidora de mano,Batidora eléctrica para mezclar ingredientes fácilmente,60,Hogar,Braun
-Juego de bloques LEGO,Juego de construcción creativa para niños mayores de 5 años,90,Juguetes,LEGO
-Monitor LG UltraWide 29,Pantalla ultrapanorámica ideal para multitarea,35,Electrónica,LG
-Chaqueta impermeable,Capa ligera y resistente al agua para días lluviosos,50,Ropa,Nike
-Chocolate amargo 70%,Chocolate negro sin azúcares añadidos,250,Alimentos,Ghirardelli
-Sofá de tres plazas,Sofá cómodo y moderno para sala de estar,15,Hogar,IKEA
-Peluche de oso,Tierno peluche de oso para niños y adultos,200,Juguetes,Gund
-Auriculares Bose QuietComfort 35,Auriculares inalámbricos con cancelación de ruido,20,Electrónica,Bose
-Vestido de verano,Vestido ligero y fresco ideal para climas cálidos,70,Ropa,Zara
-Aceite de oliva virgen extra,Aceite de oliva premium para cocina saludable,180,Alimentos,Bertolli
-Lámpara LED regulable,Lámpara moderna con intensidad ajustable para el hogar,45,Hogar,Xiaomi
-Juego de mesa Catan,Juego estratégico para 3-4 jugadores a partir de 10 años,65,Juguetes,Kosmos
-Teclado mecánico Logitech,Gaming teclado mecánico retroiluminado RGB,25,Electrónica,Logitech
-Sudadera con capucha,Sudadera cómoda y suave para uso diario,90,Ropa,H&M
-Té verde orgánico,Té verde en hojas sueltas para infusión natural y saludable,150,Alimentos,Twinings
-Cafetera Nespresso,Cafetera automática para preparar café expreso en casa,40,Hogar,Nespresso
-Set de figuras Marvel,Figuras coleccionables de superhéroes Marvel en miniatura,110,Juguetes,Hasbro
-Proyector portátil,Eproyector compacto ideal para presentaciones y cine en casa ,30,Electronica,Epson 
-Zapatos deportivos Nike,Zapatos cómodos ideales para correr o hacer ejercicio ,60,Ropa,Nike 
-Barra energética,Barras energéticas saludables con proteínas y fibra ,200 ,Alimentos ,Clif 
-Estante modular,Mueble modular ideal para organizar espacios en casa ,25,Hogar,IKEA 
-Rompecabezas 1000 piezas,Rompecabezas colorido para adultos y niños mayores ,40,Juguetes,Ravensburger 
-Cámara digital Canon,Cámara compacta con lente zoom y video Full HD ,15,Electronica ,Canon 
-Bufanda de lana,Bufanda suave y cálida ideal para invierno ,75,Ropa,Zara 
-Frutos secos mixtos,Mix saludable de nueces y almendras sin sal añadida ,300 ,Alimentos ,Planters 
-Silla ergonómica,Silla cómoda y ajustable ideal para oficina en casa ,20,Hogar ,Herman Miller 
-Juego de cartas Uno,Juego clásico de cartas divertido para toda la familia ,50,Juguetes ,Mattel 
-Reloj inteligente Fitbit,Reloj inteligente con seguimiento de actividad física ,35,Electronica ,Fitbit 
-Chaqueta vaquera,Capa clásica en denim que nunca pasa de moda ,45,Ropa ,Levi's 
-Mermelada artesanal,Mermelada sin conservantes elaborada a mano ,150 ,Alimentos ,La Casa del Dulce 
-Cama matrimonial,Cama cómoda con colchón incluido ideal para dormitorio ,10,Hogar ,IKEA 
-Juguete educativo Montessori,Juguete diseñado para desarrollar habilidades motoras en niños pequeños ,80,Juguetes ,Montessori 
-Altavoz Bluetooth JBL,Poderoso altavoz portátil con sonido envolvente ,55,Electronica,JBL 
-Calcetines deportivos,Calcetines cómodos ideales para hacer ejercicio o uso diario ,150,Ropa,Adidas
-Sopa instantánea,Sopa rápida y fácil de preparar en minutos ,200,Alimentos,Nissin 
-Mesa extensible,Mesa moderna que se adapta a diferentes espacios en casa ,20,Hogar,IKEA 
-Muñeco Funko Pop,Famoso muñeco coleccionable basado en personajes populares del cine y la televisión ,100,Juguetes,Funko
+nombre_productos,estado_productos,descripcion_productos,stock_productos,categoria_productos,marca_productos,precio_productos
+Camiseta de algodón,No Disponible,camiseta básica de color blanco,100,Ninguna,MarcaX,12
+Galletas de chocolate,Disponible,Galletas crujientes con trozos de chocolate,200,Ninguna,MarcaY,321
+Aspiradora Dyson V11,No Disponible,Aspiradora sin cable potente y ligera,30,Ninguna,Dyson,3213
+Muñeca Barbie,Disponible,Mujer muñeca con accesorios y ropa intercambiable,150,Ninguna,Mattel,12
+Smartphone Samsung Galaxy S21,No Disponible,Teléfono inteligente con cámara de alta resolución,40,Ninguna,Samsung,21
+Pantalones vaqueros ajustados,Disponible,Pantalones de mezclilla para hombre y mujer,80,Ninguna,Levi's,345
+Cereal integral,No Disponible,Cereal saludable con avena y frutas secas,120,Ninguna,Kellogg's,432
+Batidora de mano,Disponible,Batidora eléctrica para mezclar ingredientes fácilmente,60,Ninguna,Braun,65
+Juego de bloques LEGO,No Disponible,Juego de construcción creativa para niños mayores de 5 años,90,Ninguna,LEGO,675
+Monitor LG UltraWide 29,Disponible,Pantalla ultrapanorámica ideal para multitarea,35,Ninguna,LG,987
+Chaqueta impermeable,No Disponible,Capa ligera y resistente al agua para días lluviosos,50,Ninguna,Nike,986
+Chocolate amargo 70%,Disponible,Chocolate negro sin azúcares añadidos,250,Ninguna,Ghirardelli,34
+Sofá de tres plazas,No Disponible,Sofá cómodo y moderno para sala de estar,15,Ninguna,IKEA,65
+Peluche de oso,Disponible,Tierno peluche de oso para niños y adultos,200,Ninguna,Gund,12
+Auriculares Bose QuietComfort 35,No Disponible,Auriculares inalámbricos con cancelación de ruido,20,Ninguna,Bose,43
+Vestido de verano,Disponible,Vestido ligero y fresco ideal para climas cálidos,70,Ninguna,Zara,54
+Aceite de oliva virgen extra,No Disponible,Aceite de oliva premium para cocina saludable,180,Ninguna,Bertolli,65
+Lámpara LED regulable,Disponible,Lámpara moderna con intensidad ajustable para el hogar,45,Ninguna,Xiaomi,76
+Juego de mesa Catan,No Disponible,Juego estratégico para 3-4 jugadores a partir de 10 años,65,Ninguna,Kosmos,78
+Teclado mecánico Logitech,Disponible,Gaming teclado mecánico retroiluminado RGB,25,Ninguna,Logitech,876
+Sudadera con capucha,No Disponible,Sudadera cómoda y suave para uso diario,90,Ninguna,H&M,67
+Té verde orgánico,Disponible,Té verde en hojas sueltas para infusión natural y saludable,150,Ninguna,Twinings,654
+Cafetera Nespresso,No Disponible,Cafetera automática para preparar café expreso en casa,40,Ninguna,Nespresso,456
+Set de figuras Marvel,Disponible,Figuras coleccionables de superhéroes Marvel en miniatura,110,Ninguna,Hasbro,34
+Proyector portátil,No Disponible,"Eproyector compacto ideal para presentaciones y cine en casa ",30,Ninguna,Epson,234
+Zapatos deportivos Nike,Disponible,"Zapatos cómodos ideales para correr o hacer ejercicio ",60,Ninguna,Nike,123
+Barra energética,No Disponible,Barras energéticas saludables con proteínas y fibra,200,Ninguna,Clif,122
+Estante modular,Disponible,Mueble modular ideal para organizar espacios en casa,25,Ninguna,IKEA,34
+Rompecabezas 1000 piezas,No Disponible,"Rompecabezas colorido para adultos y niños mayores ",40,Ninguna,Ravensburger,543
+Cámara digital Canon,Disponible,Cámara compacta con lente zoom y video Full HD,15,Ninguna,Canon,987
+Bufanda de lana,No Disponible,Bufanda suave y cálida ideal para invierno,75,Ninguna,Zara,453
+Frutos secos mixtos,Disponible,Mix saludable de nueces y almendras sin sal añadida,300,Ninguna,Planters,234
+Silla ergonómica,No Disponible,Silla cómoda y ajustable ideal para oficina en casa,20,Ninguna,Herman Miller,987
+Juego de cartas Uno,Disponible,Juego clásico de cartas divertido para toda la familia,50,Ninguna,Mattel,123
+Reloj inteligente Fitbit,No Disponible,Reloj inteligente con seguimiento de actividad física,35,Ninguna,Fitbit,213
+Chaqueta vaquera,Disponible,Capa clásica en denim que nunca pasa de moda,45,Ninguna,Levi's,23
+Mermelada artesanal,No Disponible,Mermelada sin conservantes elaborada a mano,150,Ninguna,La Casa del Dulce,897
+Cama matrimonial,Disponible,Cama cómoda con colchón incluido ideal para dormitorio,10,Ninguna,IKEA,543
+Juguete educativo Montessori,No Disponible,Juguete diseñado para desarrollar habilidades motoras en niños pequeños,80,Ninguna,Montessori,98
+Altavoz Bluetooth JBL,Disponible,Poderoso altavoz portátil con sonido envolvente,55,Ninguna,JBL,87
+Calcetines deportivos,No Disponible,Calcetines cómodos ideales para hacer ejercicio o uso diario,150,Ninguna,Adidas,98
+Sopa instantánea,Disponible,Sopa rápida y fácil de preparar en minutos,200,Ninguna,Nissin,567
+Mesa extensible,No Disponible,Mesa moderna que se adapta a diferentes espacios en casa,20,Ninguna,IKEA,321
+Muñeco Funko Pop,Disponible,Famoso muñeco coleccionable basado en personajes populares del cine y la televisión,100,Ninguna,Funko,321

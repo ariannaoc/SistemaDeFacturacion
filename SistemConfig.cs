@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace Parcial2_SistemaDeFacturacion
 {
-    public partial class AñadirCatgProducto : UserControl
+    public partial class SistemConfig : UserControl
     {
-        private static AñadirCatgProducto instance;
+        private static SistemConfig instance;
+
         private static readonly object _lock = new object();
-        public AñadirCatgProducto()
+        public SistemConfig()
         {
             InitializeComponent();
         }
 
-        public static AñadirCatgProducto Instance
+        public static SistemConfig Instance
         {
             get
             {
@@ -27,13 +28,33 @@ namespace Parcial2_SistemaDeFacturacion
                 {
                     if (instance == null)
                     {
-                        instance = new AñadirCatgProducto();
+                        instance = new SistemConfig();
                     }
                     return instance;
                 }
             }
         }
-        private void AñadirCatgProducto_Load(object sender, EventArgs e)
+        private void SistemConfig_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxRedondo1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NombreEmpresaLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Empresa_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
@@ -41,18 +62,6 @@ namespace Parcial2_SistemaDeFacturacion
         private void label8_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAgregarCategoria_Click(object sender, EventArgs e)
-        {
-            VTNagregarCategoria vtnagregarcatg = new VTNagregarCategoria();
-            
-            vtnagregarcatg.ShowDialog();
         }
     }
 }

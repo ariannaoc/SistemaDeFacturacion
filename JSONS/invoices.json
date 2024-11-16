@@ -1,0 +1,122 @@
+[
+  {
+    "DocumentNumber": "doc0001",
+    "FilePath": "..\\..\\Facturas\\Invoice_doc0001.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0002",
+    "FilePath": "..\\..\\Facturas\\Invoice_doc0002.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0004",
+    "FilePath": "..\\..\\Facturas\\doc0004.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0005",
+    "FilePath": "..\\..\\Facturas\\doc0005.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0006",
+    "FilePath": "..\\..\\Facturas\\doc0006.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0007",
+    "FilePath": "..\\..\\Facturas\\doc0007.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0008",
+    "FilePath": "..\\..\\Facturas\\doc0008.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0009",
+    "FilePath": "..\\..\\Facturas\\doc0009.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0011",
+    "FilePath": "..\\..\\Facturas\\doc0011.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0012",
+    "FilePath": "..\\..\\Facturas\\doc0012.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0013",
+    "FilePath": "..\\..\\Facturas\\doc0013.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0014",
+    "FilePath": "..\\..\\Facturas\\doc0014.pdf",
+    "Date": "0001-01-01T00:00:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0015",
+    "FilePath": "..\\..\\Facturas\\doc0015.pdf",
+    "Date": "2024-11-11T17:01:30.2789479-04:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0016",
+    "FilePath": "..\\..\\Facturas\\doc0016.pdf",
+    "Date": "2024-11-11T17:04:32.7055908-04:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0017",
+    "FilePath": "..\\..\\Facturas\\doc0017.pdf",
+    "Date": "2024-11-11T17:08:47.6293716-04:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0018",
+    "FilePath": "..\\..\\Facturas\\doc0018.pdf",
+    "Date": "2024-11-11T17:16:04.919477-04:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0019",
+    "FilePath": "..\\..\\Facturas\\doc0019.pdf",
+    "Date": "2024-11-11T17:23:10.9021359-04:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0020",
+    "FilePath": "..\\..\\Facturas\\doc0020.pdf",
+    "Date": "2024-11-11T17:26:45.2950659-04:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0022",
+    "FilePath": "..\\..\\Facturas\\doc0022.pdf",
+    "Date": "2024-11-11T22:25:27.6083352-04:00",
+    "VentasMeses": 0
+  },
+  {
+    "DocumentNumber": "doc0023",
+    "FilePath": "..\\..\\Facturas\\doc0023.pdf",
+    "Date": "2024-11-11T23:48:10.9155071-04:00",
+    "VentasMeses": 0
+  }
+]

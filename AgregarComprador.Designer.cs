@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.roundedPanel1 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.btnAceptar = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.lblNacional = new System.Windows.Forms.Label();
             this.lblContribuyente = new System.Windows.Forms.Label();
@@ -76,10 +77,11 @@
             // 
             // roundedPanel1
             // 
-            this.roundedPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
             this.roundedPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
+            this.roundedPanel1.Controls.Add(this.lblTitulo);
             this.roundedPanel1.Controls.Add(this.btnAceptar);
             this.roundedPanel1.Controls.Add(this.lblNacional);
             this.roundedPanel1.Controls.Add(this.lblContribuyente);
@@ -102,24 +104,35 @@
             this.roundedPanel1.Controls.Add(this.lblApellidos);
             this.roundedPanel1.Controls.Add(this.roundedPanel2);
             this.roundedPanel1.Controls.Add(this.lblNombre);
-            this.roundedPanel1.Location = new System.Drawing.Point(148, 40);
+            this.roundedPanel1.Location = new System.Drawing.Point(38, 28);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(776, 1300);
             this.roundedPanel1.TabIndex = 3;
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Helvetica", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.Black;
+            this.lblTitulo.Location = new System.Drawing.Point(279, 26);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(236, 25);
+            this.lblTitulo.TabIndex = 22;
+            this.lblTitulo.Text = "Agrega un Comprador";
+            // 
             // btnAceptar
             // 
-            this.btnAceptar.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnAceptar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(78)))));
+            this.btnAceptar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(78)))));
             this.btnAceptar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAceptar.BorderRadius = 0;
+            this.btnAceptar.BorderRadius = 8;
             this.btnAceptar.BorderSize = 0;
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Location = new System.Drawing.Point(601, 1250);
+            this.btnAceptar.Location = new System.Drawing.Point(646, 1237);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(150, 40);
+            this.btnAceptar.Size = new System.Drawing.Size(105, 53);
             this.btnAceptar.TabIndex = 21;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.TextColor = System.Drawing.Color.White;
@@ -132,9 +145,9 @@
             this.lblNacional.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNacional.Location = new System.Drawing.Point(66, 1098);
             this.lblNacional.Name = "lblNacional";
-            this.lblNacional.Size = new System.Drawing.Size(231, 24);
+            this.lblNacional.Size = new System.Drawing.Size(119, 24);
             this.lblNacional.TabIndex = 20;
-            this.lblNacional.Text = "Es Contribuyente Especial";
+            this.lblNacional.Text = "Estado Legal";
             // 
             // lblContribuyente
             // 
@@ -149,9 +162,9 @@
             // roundedPanel11
             // 
             this.roundedPanel11.BackColor = System.Drawing.Color.White;
-            this.roundedPanel11.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedPanel11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
             this.roundedPanel11.BorderRadius = 8;
-            this.roundedPanel11.BorderSize = 0;
+            this.roundedPanel11.BorderSize = 2;
             this.roundedPanel11.Controls.Add(this.cmbEstadoLegal);
             this.roundedPanel11.Location = new System.Drawing.Point(68, 1129);
             this.roundedPanel11.Name = "roundedPanel11";
@@ -175,9 +188,9 @@
             // roundedPanel10
             // 
             this.roundedPanel10.BackColor = System.Drawing.Color.White;
-            this.roundedPanel10.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedPanel10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
             this.roundedPanel10.BorderRadius = 8;
-            this.roundedPanel10.BorderSize = 0;
+            this.roundedPanel10.BorderSize = 2;
             this.roundedPanel10.Controls.Add(this.cmbContribuyenteEspecial);
             this.roundedPanel10.Location = new System.Drawing.Point(69, 1037);
             this.roundedPanel10.Name = "roundedPanel10";
@@ -201,9 +214,9 @@
             // roundedPanel9
             // 
             this.roundedPanel9.BackColor = System.Drawing.Color.White;
-            this.roundedPanel9.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedPanel9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
             this.roundedPanel9.BorderRadius = 8;
-            this.roundedPanel9.BorderSize = 0;
+            this.roundedPanel9.BorderSize = 2;
             this.roundedPanel9.Controls.Add(this.txtEstado);
             this.roundedPanel9.Location = new System.Drawing.Point(105, 922);
             this.roundedPanel9.Name = "roundedPanel9";
@@ -220,7 +233,6 @@
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(457, 19);
             this.txtEstado.TabIndex = 0;
-            this.txtEstado.Text = "eeee";
             // 
             // lblEstado
             // 
@@ -235,9 +247,9 @@
             // roundedPanel8
             // 
             this.roundedPanel8.BackColor = System.Drawing.Color.White;
-            this.roundedPanel8.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedPanel8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
             this.roundedPanel8.BorderRadius = 8;
-            this.roundedPanel8.BorderSize = 0;
+            this.roundedPanel8.BorderSize = 2;
             this.roundedPanel8.Controls.Add(this.txtCiudad);
             this.roundedPanel8.Location = new System.Drawing.Point(106, 822);
             this.roundedPanel8.Name = "roundedPanel8";
@@ -254,7 +266,6 @@
             this.txtCiudad.Name = "txtCiudad";
             this.txtCiudad.Size = new System.Drawing.Size(457, 19);
             this.txtCiudad.TabIndex = 0;
-            this.txtCiudad.Text = "eeee";
             // 
             // lblCiudad
             // 
@@ -279,9 +290,9 @@
             // roundedPanel7
             // 
             this.roundedPanel7.BackColor = System.Drawing.Color.White;
-            this.roundedPanel7.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedPanel7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
             this.roundedPanel7.BorderRadius = 8;
-            this.roundedPanel7.BorderSize = 0;
+            this.roundedPanel7.BorderSize = 2;
             this.roundedPanel7.Controls.Add(this.txtCalle);
             this.roundedPanel7.Location = new System.Drawing.Point(105, 727);
             this.roundedPanel7.Name = "roundedPanel7";
@@ -298,7 +309,6 @@
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(457, 19);
             this.txtCalle.TabIndex = 0;
-            this.txtCalle.Text = "eeee";
             // 
             // lblCalle
             // 
@@ -313,9 +323,9 @@
             // roundedPanel6
             // 
             this.roundedPanel6.BackColor = System.Drawing.Color.White;
-            this.roundedPanel6.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedPanel6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
             this.roundedPanel6.BorderRadius = 8;
-            this.roundedPanel6.BorderSize = 0;
+            this.roundedPanel6.BorderSize = 2;
             this.roundedPanel6.Controls.Add(this.txtEmail);
             this.roundedPanel6.Location = new System.Drawing.Point(80, 559);
             this.roundedPanel6.Name = "roundedPanel6";
@@ -332,7 +342,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(647, 19);
             this.txtEmail.TabIndex = 0;
-            this.txtEmail.Text = "eeee";
             // 
             // lblEmail
             // 
@@ -347,9 +356,9 @@
             // roundedPanel5
             // 
             this.roundedPanel5.BackColor = System.Drawing.Color.White;
-            this.roundedPanel5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedPanel5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
             this.roundedPanel5.BorderRadius = 8;
-            this.roundedPanel5.BorderSize = 0;
+            this.roundedPanel5.BorderSize = 2;
             this.roundedPanel5.Controls.Add(this.txtNumeroTelefono);
             this.roundedPanel5.Location = new System.Drawing.Point(81, 439);
             this.roundedPanel5.Name = "roundedPanel5";
@@ -366,7 +375,6 @@
             this.txtNumeroTelefono.Name = "txtNumeroTelefono";
             this.txtNumeroTelefono.Size = new System.Drawing.Size(647, 19);
             this.txtNumeroTelefono.TabIndex = 0;
-            this.txtNumeroTelefono.Text = "eeee";
             // 
             // lblTlf
             // 
@@ -376,14 +384,14 @@
             this.lblTlf.Name = "lblTlf";
             this.lblTlf.Size = new System.Drawing.Size(186, 24);
             this.lblTlf.TabIndex = 6;
-            this.lblTlf.Text = "Numero de Telefono";
+            this.lblTlf.Text = "Número de Telefono";
             // 
             // roundedPanel4
             // 
             this.roundedPanel4.BackColor = System.Drawing.Color.White;
-            this.roundedPanel4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedPanel4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
             this.roundedPanel4.BorderRadius = 8;
-            this.roundedPanel4.BorderSize = 0;
+            this.roundedPanel4.BorderSize = 2;
             this.roundedPanel4.Controls.Add(this.txtCedula);
             this.roundedPanel4.Location = new System.Drawing.Point(83, 331);
             this.roundedPanel4.Name = "roundedPanel4";
@@ -400,7 +408,6 @@
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(647, 19);
             this.txtCedula.TabIndex = 0;
-            this.txtCedula.Text = "eeee";
             // 
             // lblCedula
             // 
@@ -410,14 +417,14 @@
             this.lblCedula.Name = "lblCedula";
             this.lblCedula.Size = new System.Drawing.Size(201, 24);
             this.lblCedula.TabIndex = 4;
-            this.lblCedula.Text = "Cedula del Comprador";
+            this.lblCedula.Text = "Cédula del Comprador";
             // 
             // roundedPanel3
             // 
             this.roundedPanel3.BackColor = System.Drawing.Color.White;
-            this.roundedPanel3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedPanel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
             this.roundedPanel3.BorderRadius = 8;
-            this.roundedPanel3.BorderSize = 0;
+            this.roundedPanel3.BorderSize = 2;
             this.roundedPanel3.Controls.Add(this.txtApellidos);
             this.roundedPanel3.Location = new System.Drawing.Point(82, 217);
             this.roundedPanel3.Name = "roundedPanel3";
@@ -434,7 +441,6 @@
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(647, 19);
             this.txtApellidos.TabIndex = 0;
-            this.txtApellidos.Text = "eeee";
             // 
             // lblApellidos
             // 
@@ -449,9 +455,9 @@
             // roundedPanel2
             // 
             this.roundedPanel2.BackColor = System.Drawing.Color.White;
-            this.roundedPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
             this.roundedPanel2.BorderRadius = 8;
-            this.roundedPanel2.BorderSize = 0;
+            this.roundedPanel2.BorderSize = 2;
             this.roundedPanel2.Controls.Add(this.txtNombres);
             this.roundedPanel2.Location = new System.Drawing.Point(83, 112);
             this.roundedPanel2.Name = "roundedPanel2";
@@ -464,11 +470,11 @@
             this.txtNombres.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombres.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombres.ForeColor = System.Drawing.Color.Black;
             this.txtNombres.Location = new System.Drawing.Point(10, 7);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(647, 19);
             this.txtNombres.TabIndex = 0;
-            this.txtNombres.Text = "eeee";
             // 
             // lblNombre
             // 
@@ -483,9 +489,14 @@
             // AgregarComprador
             // 
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1429, 881);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(867, 881);
             this.Controls.Add(this.roundedPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AgregarComprador";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.AgregarComprador_Load);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
@@ -544,6 +555,7 @@
         private BotonesCustomizados.RoundedPanel roundedPanel2;
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }
 #endregion

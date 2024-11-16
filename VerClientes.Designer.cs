@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewClientes1 = new System.Windows.Forms.DataGridView();
             this.btnAgregarCliente = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.botonRectanguloRedondo();
             this.roundedPanel1 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.roundedPanel2 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes1)).BeginInit();
             this.roundedPanel1.SuspendLayout();
+            this.roundedPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewClientes1
@@ -45,27 +48,38 @@
             this.dataGridViewClientes1.AllowUserToResizeRows = false;
             this.dataGridViewClientes1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewClientes1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dataGridViewClientes1.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Helvetica", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewClientes1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewClientes1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewClientes1.Location = new System.Drawing.Point(51, 148);
+            this.dataGridViewClientes1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
+            this.dataGridViewClientes1.Location = new System.Drawing.Point(23, 148);
             this.dataGridViewClientes1.Name = "dataGridViewClientes1";
-            this.dataGridViewClientes1.Size = new System.Drawing.Size(645, 313);
+            this.dataGridViewClientes1.Size = new System.Drawing.Size(764, 313);
             this.dataGridViewClientes1.TabIndex = 0;
             this.dataGridViewClientes1.CellValueNeeded += new System.Windows.Forms.DataGridViewCellValueEventHandler(this.dataGridViewClientes1_CellValueNeeded);
             this.dataGridViewClientes1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dataGridViewClientes1_Scroll);
             // 
             // btnAgregarCliente
             // 
-            this.btnAgregarCliente.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnAgregarCliente.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnAgregarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            this.btnAgregarCliente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
             this.btnAgregarCliente.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAgregarCliente.BorderRadius = 0;
+            this.btnAgregarCliente.BorderRadius = 8;
             this.btnAgregarCliente.BorderSize = 0;
             this.btnAgregarCliente.FlatAppearance.BorderSize = 0;
             this.btnAgregarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarCliente.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarCliente.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarCliente.Location = new System.Drawing.Point(546, 87);
+            this.btnAgregarCliente.Location = new System.Drawing.Point(637, 6);
             this.btnAgregarCliente.Name = "btnAgregarCliente";
-            this.btnAgregarCliente.Size = new System.Drawing.Size(150, 40);
+            this.btnAgregarCliente.Size = new System.Drawing.Size(113, 40);
             this.btnAgregarCliente.TabIndex = 1;
             this.btnAgregarCliente.Text = "Agregar Cliente +";
             this.btnAgregarCliente.TextColor = System.Drawing.Color.White;
@@ -74,44 +88,59 @@
             // 
             // roundedPanel1
             // 
-            this.roundedPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 0;
+            this.roundedPanel1.BackColor = System.Drawing.Color.White;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
+            this.roundedPanel1.BorderRadius = 15;
+            this.roundedPanel1.BorderSize = 2;
             this.roundedPanel1.Controls.Add(this.txtBusqueda);
-            this.roundedPanel1.Location = new System.Drawing.Point(51, 88);
+            this.roundedPanel1.Location = new System.Drawing.Point(14, 11);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Padding = new System.Windows.Forms.Padding(10);
-            this.roundedPanel1.Size = new System.Drawing.Size(423, 39);
+            this.roundedPanel1.Size = new System.Drawing.Size(536, 31);
             this.roundedPanel1.TabIndex = 2;
             // 
             // txtBusqueda
             // 
+            this.txtBusqueda.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBusqueda.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtBusqueda.Location = new System.Drawing.Point(10, 10);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(403, 20);
+            this.txtBusqueda.Size = new System.Drawing.Size(516, 13);
             this.txtBusqueda.TabIndex = 0;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.Red;
-            this.btnBuscar.Location = new System.Drawing.Point(457, 59);
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            this.btnBuscar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.Location = new System.Drawing.Point(556, 6);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(75, 40);
             this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
+            // 
+            // roundedPanel2
+            // 
+            this.roundedPanel2.BackColor = System.Drawing.Color.White;
+            this.roundedPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
+            this.roundedPanel2.BorderRadius = 11;
+            this.roundedPanel2.BorderSize = 2;
+            this.roundedPanel2.Controls.Add(this.roundedPanel1);
+            this.roundedPanel2.Controls.Add(this.btnBuscar);
+            this.roundedPanel2.Controls.Add(this.btnAgregarCliente);
+            this.roundedPanel2.Location = new System.Drawing.Point(23, 74);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Size = new System.Drawing.Size(764, 54);
+            this.roundedPanel2.TabIndex = 13;
             // 
             // VerClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.roundedPanel1);
-            this.Controls.Add(this.btnAgregarCliente);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.Controls.Add(this.roundedPanel2);
             this.Controls.Add(this.dataGridViewClientes1);
             this.Name = "VerClientes";
             this.Size = new System.Drawing.Size(844, 486);
@@ -119,6 +148,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientes1)).EndInit();
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
+            this.roundedPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -129,5 +159,6 @@
         private BotonesCustomizados.RoundedPanel roundedPanel1;
         private System.Windows.Forms.TextBox txtBusqueda;
         private System.Windows.Forms.Button btnBuscar;
+        private BotonesCustomizados.RoundedPanel roundedPanel2;
     }
 }

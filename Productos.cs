@@ -8,7 +8,6 @@ namespace Parcial2_SistemaDeFacturacion
 {
     public class Productos
     {
-        //agregue aqui unas cosas de prueba, nada mas
         private int ID_Productos;
         private string Nombre_Productos;
         private string Estado_Productos;
@@ -16,8 +15,8 @@ namespace Parcial2_SistemaDeFacturacion
         private int Stock_Productos;
         private string Categoria_Productos;
         private string Marca_Productos;
-        public string Precio {  get; set; }
-        public int cantidad { get; set; }
+        private double Precio_Productos;
+        private int Cantidad_Productos;
 
         public int id_productos
         {
@@ -59,7 +58,17 @@ namespace Parcial2_SistemaDeFacturacion
             get { return Marca_Productos; }
             set { Marca_Productos = value; }
         }
+
+        public double precio_productos
+        {
+            get { return Precio_Productos; }
+            set { Precio_Productos = value; }
+        }
+
+        public int cantidad_productos
+        {
+            get { return Cantidad_Productos; }
+            set { Cantidad_Productos = value; }
+        }
     }
-
-
 }

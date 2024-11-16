@@ -13,6 +13,8 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,6 +50,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QuestPDF, Version=2024.10.3.0, Culture=neutral, PublicKeyToken=0f3c2b2315ff52c8, processorArchitecture=MSIL">
+      <HintPath>packages\QuestPDF.2024.10.3\lib\netstandard2.0\QuestPDF.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -93,11 +98,11 @@
     <Compile Include="AgregarComprador.Designer.cs">
       <DependentUpon>AgregarComprador.cs</DependentUpon>
     </Compile>
-    <Compile Include="AnadirCategoriaProducto.cs">
+    <Compile Include="AñadirCategoriaProducto.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AnadirCategoriaProducto.Designer.cs">
-      <DependentUpon>AnadirCategoriaProducto.cs</DependentUpon>
+    <Compile Include="AñadirCategoriaProducto.Designer.cs">
+      <DependentUpon>AñadirCategoriaProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseActualizarPanel.cs">
       <SubType>UserControl</SubType>
@@ -130,13 +135,60 @@
       <DependentUpon>BusquedaProductoFacturacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditarComprador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditarComprador.Designer.cs">
       <DependentUpon>EditarComprador.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenerarPDF.cs" />
+    <Compile Include="GestionUsuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GestionUsuarios.Designer.cs">
+      <DependentUpon>GestionUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserData.cs" />
+    <Compile Include="InfoUserEmergente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoUserEmergente.Designer.cs">
+      <DependentUpon>InfoUserEmergente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceInfo.cs" />
+    <Compile Include="ListasGlobales.cs" />
     <Compile Include="Productos.cs" />
+    <Compile Include="Reportes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SistemConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SistemConfig.Designer.cs">
+      <DependentUpon>SistemConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
     <Compile Include="VerClientes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,25 +200,6 @@
     </Compile>
     <Compile Include="Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionUsuarios.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GestionUsuarios.Designer.cs">
-      <DependentUpon>GestionUsuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GetUserData.cs" />
-    <Compile Include="InfoUserEmergente.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="InfoUserEmergente.Designer.cs">
-      <DependentUpon>InfoUserEmergente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Inventario.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Inventario.Designer.cs">
-      <DependentUpon>Inventario.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -184,29 +217,11 @@
     <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserForm.Designer.cs">
-      <DependentUpon>UserForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="VentanaAggCategoria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VentanaAggCategoria.Designer.cs">
-      <DependentUpon>VentanaAggCategoria.cs</DependentUpon>
-    </Compile>
-    <Compile Include="VentanaAggProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VentanaAggProducto.Designer.cs">
-      <DependentUpon>VentanaAggProducto.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AgregarComprador.resx">
       <DependentUpon>AgregarComprador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AnadirCategoriaProducto.resx">
-      <DependentUpon>AnadirCategoriaProducto.cs</DependentUpon>
+    <EmbeddedResource Include="AñadirCategoriaProducto.resx">
+      <DependentUpon>AñadirCategoriaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BotonesCustomizados\TextBoxRedondo.resx">
       <DependentUpon>TextBoxRedondo.cs</DependentUpon>
@@ -216,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BusquedaProductoFacturacion.resx">
       <DependentUpon>BusquedaProductoFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarComprador.resx">
       <DependentUpon>EditarComprador.cs</DependentUpon>
@@ -248,23 +266,25 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SistemConfig.resx">
+      <DependentUpon>SistemConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VentanaAggCategoria.resx">
-      <DependentUpon>VentanaAggCategoria.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VentanaAggProducto.resx">
-      <DependentUpon>VentanaAggProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="Data\usuarios.json" />
-    <None Include="packages.config" />
     <EmbeddedResource Include="VerClientes.resx">
       <DependentUpon>VerClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="JSONS\Ejemplo.csv" />
+    <None Include="importarCSV\Ejemplo.csv" />
+    <None Include="importarCSV\listaProductos.csv" />
     <None Include="JSONS\FileName.json" />
+    <None Include="JSONS\invoices.json" />
     <None Include="JSONS\listaDeCompradores.json" />
+    <None Include="JSONS\numeroDeFactura.json" />
+    <None Include="importarCSV\listaCategorias.csv" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -275,6 +295,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Data\usuarios.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -325,16 +346,23 @@
     <None Include="Iconos\user_w.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Iconos\config.png" />
+    <Folder Include="Facturas\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Iconos\edit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Iconos\caution.png" />
+    <Content Include="Iconos\caution.png" />
+    <Content Include="Iconos\config.png" />
+    <Content Include="Iconos\edit.png" />
+    <Content Include="importarCSV\eliminaciones.txt" />
+    <Content Include="Iconos\settings.png" />
+    <None Include="Resources\IconosFINALES2-04.png" />
+    <None Include="Resources\IconosFINALES-01.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\QuestPDF.2024.10.3\build\net4\QuestPDF.targets" Condition="Exists('packages\QuestPDF.2024.10.3\build\net4\QuestPDF.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\QuestPDF.2024.10.3\build\net4\QuestPDF.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\QuestPDF.2024.10.3\build\net4\QuestPDF.targets'))" />
+  </Target>
 </Project>
