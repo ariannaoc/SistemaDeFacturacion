@@ -117,4 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="editPasswordBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAZ9JREFUeF7t
+        2rsuBAEYhuF1SkSCiEpoNFqRSFyDIKGRaBzugaiIjpZroFFQonVs1FotpYJCCO9XbDP57e6MmWT+2f9N
+        ngv4Zndnd2anFkVRFEVRFEVuGsEStrCJWfSj8k3jAl/4SXjDHrpRuTpxgG8khyddolIHoQensMb+ZR+V
+        SOPPYI1s5B3DcF3W8XXLcNt/x8sOXJbHeNmFu/IaLxtwVZ7jZQJuynv8A9yU93iZg4uKGH8MFxUx/hq9
+        KH0afw5rRFZ3cHFFGONhjcjqFvHKl70YD2tEVho/gNIX42GNyOoeMd5Dae/hNeNq/AysEVm5Gq90J8Ya
+        koW78eoG1pi0XI7XD5NPWIPScDleLcAalIbb8eoQ1qhWuR6vnmANa8UjhuC2UVjDWuF+vFqHNa6ZSoxX
+        uhlpDWxEFzaDcF8HXmCNTNJ54gjz6EIlGoc1Vl5xAv1VNYZK1odnaPAHrqBndyahd0dbpO/vKbi4Lx9F
+        2dJZexXbJbaCws47a0ie5ctoEYXU9geg/hHQQ4tlpOcDC/0IRFEURVEURdWpVvsF7y/ZbA/TucEAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="editUserBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAZ9JREFUeF7t
+        2rsuBAEYhuF1SkSCiEpoNFqRSFyDIKGRaBzugaiIjpZroFFQonVs1FotpYJCCO9XbDP57e6MmWT+2f9N
+        ngv4Zndnd2anFkVRFEVRFEVuGsEStrCJWfSj8k3jAl/4SXjDHrpRuTpxgG8khyddolIHoQensMb+ZR+V
+        SOPPYI1s5B3DcF3W8XXLcNt/x8sOXJbHeNmFu/IaLxtwVZ7jZQJuynv8A9yU93iZg4uKGH8MFxUx/hq9
+        KH0afw5rRFZ3cHFFGONhjcjqFvHKl70YD2tEVho/gNIX42GNyOoeMd5Dae/hNeNq/AysEVm5Gq90J8Ya
+        koW78eoG1pi0XI7XD5NPWIPScDleLcAalIbb8eoQ1qhWuR6vnmANa8UjhuC2UVjDWuF+vFqHNa6ZSoxX
+        uhlpDWxEFzaDcF8HXmCNTNJ54gjz6EIlGoc1Vl5xAv1VNYZK1odnaPAHrqBndyahd0dbpO/vKbi4Lx9F
+        2dJZexXbJbaCws47a0ie5ctoEYXU9geg/hHQQ4tlpOcDC/0IRFEURVEURdWpVvsF7y/ZbA/TucEAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="edirUsernameBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAZ9JREFUeF7t
+        2rsuBAEYhuF1SkSCiEpoNFqRSFyDIKGRaBzugaiIjpZroFFQonVs1FotpYJCCO9XbDP57e6MmWT+2f9N
+        ngv4Zndnd2anFkVRFEVRFEVuGsEStrCJWfSj8k3jAl/4SXjDHrpRuTpxgG8khyddolIHoQensMb+ZR+V
+        SOPPYI1s5B3DcF3W8XXLcNt/x8sOXJbHeNmFu/IaLxtwVZ7jZQJuynv8A9yU93iZg4uKGH8MFxUx/hq9
+        KH0afw5rRFZ3cHFFGONhjcjqFvHKl70YD2tEVho/gNIX42GNyOoeMd5Dae/hNeNq/AysEVm5Gq90J8Ya
+        koW78eoG1pi0XI7XD5NPWIPScDleLcAalIbb8eoQ1qhWuR6vnmANa8UjhuC2UVjDWuF+vFqHNa6ZSoxX
+        uhlpDWxEFzaDcF8HXmCNTNJ54gjz6EIlGoc1Vl5xAv1VNYZK1odnaPAHrqBndyahd0dbpO/vKbi4Lx9F
+        2dJZexXbJbaCws47a0ie5ctoEYXU9geg/hHQQ4tlpOcDC/0IRFEURVEURdWpVvsF7y/ZbA/TucEAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
 </root>

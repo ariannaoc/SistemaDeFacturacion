@@ -136,9 +136,6 @@
   <data name="caution" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Iconos\caution.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="config1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Iconos\config.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IconosCompletoProductos-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Iconos\IconosCompletoProductos-10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,6 +157,9 @@
   <data name="Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Iconos\Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Iconos-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Iconos\Iconos-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,7 +175,10 @@
   <data name="IconosCompletoFacturacion-05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Iconos\IconosCompletoFacturacion-05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Iconos\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconosFINALES-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconosFINALES-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconosFINALES2-04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconosFINALES2-04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

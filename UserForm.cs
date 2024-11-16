@@ -46,7 +46,7 @@ namespace Parcial2_SistemaDeFacturacion
                 RolComboForm.Enabled = false;
             } else
             {
-            if (rolU != "su")
+            if (rolU != "superUsuario")
             {
                 RolComboForm.Enabled = false;
                 RolComboForm.SelectedItem = "operador";

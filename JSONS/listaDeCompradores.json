@@ -1,0 +1,86 @@
+[
+  {
+    "Nombres": "Jane",
+    "Apellidos": "Smith",
+    "ID": "654321",
+    "Email": "jane.smith@example.com",
+    "NumeroTelefono": "555-6789"
+  },
+  {
+    "Nombres": "ricardo morales",
+    "Apellidos": "eeeeeeee",
+    "ID": "eeeeeeeee",
+    "Email": "eeeeeeeee",
+    "NumeroTelefono": "222222222222222222"
+  },
+  {
+    "Nombres": "ricardo morales",
+    "Apellidos": "eeeeeeee",
+    "ID": "eeeeeeeee",
+    "Email": "eeeeeeeee",
+    "NumeroTelefono": "222222222222222222"
+  },
+  {
+    "Nombres": "rrrr",
+    "Apellidos": "rrrrr",
+    "ID": "rrrrr",
+    "Email": "rrrrr",
+    "NumeroTelefono": "rrrrrr"
+  },
+  {
+    "Nombres": "ric",
+    "Apellidos": "ric",
+    "ID": "ric",
+    "Email": "ric",
+    "NumeroTelefono": "ric"
+  },
+  {
+    "Nombres": "txtNombre.Text",
+    "Apellidos": "txtApellido.Text",
+    "ID": "txtCedula.Text",
+    "Email": " txtCorreo.Text",
+    "NumeroTelefono": "txtTelefono.Text"
+  },
+  {
+    "Nombres": "txtNombre.Text",
+    "Apellidos": "txtApellido.Text",
+    "ID": "txtCedula.Text",
+    "Email": " txtCorreo.Text",
+    "NumeroTelefono": "txtTelefono.Text"
+  },
+  {
+    "Nombres": "txtNombre.Text",
+    "Apellidos": "txtApellido.Text",
+    "ID": "txtCedula.Text",
+    "Email": " txtCorreo.Text",
+    "NumeroTelefono": "txtTelefono.Text"
+  },
+  {
+    "Nombres": "txtNombre.Text",
+    "Apellidos": "txtApellido.Text",
+    "ID": "txtCedula.Text",
+    "Email": " txtCorreo.Text",
+    "NumeroTelefono": "txtTelefono.Text"
+  },
+  {
+    "Nombres": "txtNombre.Text",
+    "Apellidos": "txtApellido.Text",
+    "ID": "txtCedula.Text",
+    "Email": " txtCorreo.Text",
+    "NumeroTelefono": "txtTelefono.Text"
+  },
+  {
+    "Nombres": "nombres",
+    "Apellidos": "apellidos",
+    "ID": "id",
+    "Email": "email",
+    "NumeroTelefono": "numeroTelefono"
+  },
+  {
+    "Nombres": "",
+    "Apellidos": "",
+    "ID": "",
+    "Email": "",
+    "NumeroTelefono": ""
+  }
+]

@@ -19,9 +19,14 @@ namespace Parcial2_SistemaDeFacturacion
         private Boolean mostrarPanelFacturacion = false;
         //pongan aqui como atributos sus controles de Usuario
         
+        
         public PaginaPrincipal()
         {
             InitializeComponent();
+            Dashboard dashboard = Dashboard.Instance;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(dashboard);
+            dashboard.Dock = DockStyle.Fill;
             TooglePanels();
             
 
@@ -49,29 +54,49 @@ namespace Parcial2_SistemaDeFacturacion
             this.splitContainer2.Panel2.Controls.Clear();
             this.splitContainer2.Panel2.Controls.Add(control);
             control.Dock = DockStyle.Fill;
+            //MessageBox.Show("Control added to the panel and docked.", "Debug Info", MessageBoxButtons.OK, MessageBoxIcon.Information); debugging
         }
+
+
+        public void ActualizarPanelPrincipal(UserControl newControl)
+        {
+            var parentForm = this.FindForm() as PaginaPrincipal;
+            if (parentForm != null)
+            {
+                //MessageBox.Show("Parent form found, updating panel...");
+                parentForm.UpdatePanel(newControl);
+            }
+            else
+            {
+                //MessageBox.Show("Parent form not found.");
+            }
+        }
+
         //***********************************************************************
-       
+
 
         private void PaginaPrincipal_Load(object sender, EventArgs e)
         {
             if (rolU == "operador")
             {
                 btnUsuarios.Visible = false;
-            } else if (rolU == "superUsuario")
+            }
+            else if (rolU == "superUsuario")
             {
                 btnDashboard.Text = "Sistema";
-                    SistemConfig sistem = new SistemConfig();
-                    this.splitContainer2.Panel2.Controls.Clear();
-                    this.splitContainer2.Panel2.Controls.Add(sistem);
-                    sistem.Dock = DockStyle.Fill;
+                SistemConfig sistem = new SistemConfig();
+                this.splitContainer2.Panel2.Controls.Clear();
+                this.splitContainer2.Panel2.Controls.Add(sistem);
+                sistem.Dock = DockStyle.Fill;
                 btnAnadirCategoria.Visible = false;
                 btnCliente.Visible = false;
                 btnFacturacion.Visible = false;
                 btnProductos.Visible = false;
                 btnReportes.Visible = false;
-                btnOrdenes.Visible = false; 
+                //btnOrdenes.Visible = false;
             }
+
+
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -91,6 +116,8 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
+           
+
             if (rolU == "superUsuario")
             {
                 SistemConfig sistem = new SistemConfig();
@@ -98,6 +125,16 @@ namespace Parcial2_SistemaDeFacturacion
                 this.splitContainer2.Panel2.Controls.Add(sistem);
                 sistem.Dock = DockStyle.Fill;
             }
+            else
+            {
+                Dashboard dashboard = Dashboard.Instance;
+
+                splitContainer2.Panel2.Controls.Clear();
+                splitContainer2.Panel2.Controls.Add(dashboard);
+
+                dashboard.Dock = DockStyle.Fill;
+            }
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -133,7 +170,7 @@ namespace Parcial2_SistemaDeFacturacion
         {
             if(mostrarPanelProductos)
             {
-                panelProductos.Height = 110;
+                panelProductos.Height = 130;
             }
             else
             {
@@ -144,7 +181,7 @@ namespace Parcial2_SistemaDeFacturacion
 
             if (mostrarPanelFacturacion)
             {
-                panelFacturacion.Height = 110;
+                panelFacturacion.Height = 130;
             }
             else
             {
@@ -159,6 +196,15 @@ namespace Parcial2_SistemaDeFacturacion
 
         private void btnProductos_Click_1(object sender, EventArgs e)
         {
+            //PRUEBA DE COLORES NADA MAS
+            //int red = Convert.ToInt32("28", 16);
+            //int green = Convert.ToInt32("28", 16);
+            //int blue = Convert.ToInt32("36", 16);
+
+            //// Create a Color object with the specified RGB values
+            //Color customColor = Color.FromArgb(red, green, blue);
+            //btnProductos.BackColor = customColor;
+            //btnProductos.ForeColor = Color.Red;
 
             mostrarPanelProductos = !mostrarPanelProductos;
             TooglePanels();
@@ -253,46 +299,38 @@ namespace Parcial2_SistemaDeFacturacion
             infouser.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnCliente_Click(object sender, EventArgs e)
         {
+            VerClientes mostrarCompradores = VerClientes.Instance;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(mostrarCompradores);
+
+            mostrarCompradores.Dock = DockStyle.Fill;
 
         }
 
-        private void CerrarSesionBtn_Click(object sender, EventArgs e)
+        private void btnOrdenes_Click(object sender, EventArgs e)
         {
-            Login loginForm = new Login();
-            loginForm.Show();
-            this.Close();
+            //GenerarPDF pdf = new GenerarPDF();
+            //pdf.generarPDF();
         }
 
-        private void PaginaPrincipal_Click(object sender, EventArgs e)
+        private void btnReportes_Click(object sender, EventArgs e)
         {
+            Reportes reporte = Reportes.Instance;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(reporte);
+
+            reporte.Dock = DockStyle.Fill;
         }
 
-        private void splitContainer2_Panel2_Click(object sender, EventArgs e)
+        private void btnInventario_Click(object sender, EventArgs e)
         {
-        }
+            Inventario inventario = Inventario.Instance;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(inventario);
 
-        private void panel5_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void UserLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ConfigUserBtn_Click(object sender, EventArgs e)
-        {
-            UserFormAction = "edit";
-            UserForm userForm = new UserForm();
-            userForm.UserFormAction = UserFormAction;
-            userForm.usuario = usuario;
-            userForm.IdUser = IdUser;
-            userForm.nombreU = nombreU;
-            userForm.password = password;
-            userForm.rolU = rolU;
-            userForm.Show();
+            inventario.Dock = DockStyle.Fill;
         }
     }
 }

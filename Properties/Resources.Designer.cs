@@ -113,16 +113,6 @@ namespace Parcial2_SistemaDeFacturacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap config1 {
-            get {
-                object obj = ResourceManager.GetObject("config1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Dashboard {
             get {
                 object obj = ResourceManager.GetObject("Dashboard", resourceCulture);
@@ -176,6 +166,26 @@ namespace Parcial2_SistemaDeFacturacion.Properties {
         internal static System.Drawing.Bitmap IconosCompletoProductos_10 {
             get {
                 object obj = ResourceManager.GetObject("IconosCompletoProductos-10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconosFINALES_01 {
+            get {
+                object obj = ResourceManager.GetObject("IconosFINALES-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconosFINALES2_04 {
+            get {
+                object obj = ResourceManager.GetObject("IconosFINALES2-04", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

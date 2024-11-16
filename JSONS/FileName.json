@@ -1,0 +1,338 @@
+[
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "789 Oak Ave",
+      "Ciudad": "New York",
+      "Estado": "NY"
+    },
+    "Nombres": "Michael",
+    "Apellidos": "Johnson",
+    "ID": "11122236",
+    "Email": "michaeljohnson@example.com",
+    "NumeroTelefono": "\u002B44 20 8123 4567"
+  },
+  {
+    "ContribuyenteEspecial": true,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "123 Maple St",
+      "Ciudad": "Los Angeles",
+      "Estado": "CA"
+    },
+    "Nombres": "Jessica",
+    "Apellidos": "Smith",
+    "ID": "222333449",
+    "Email": "jessicasmith@example.com",
+    "NumeroTelefono": "\u002B1 213-555-6789"
+  },
+  {
+    "ContribuyenteEspecial": true,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "222 Chestnut Dr",
+      "Ciudad": "Seattle",
+      "Estado": "WA"
+    },
+    "Nombres": "William",
+    "Apellidos": "Hernandez",
+    "ID": "777888990",
+    "Email": "williamhernandez@example.com",
+    "NumeroTelefono": "\u002B1 206-555-3456"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "333 Walnut Way",
+      "Ciudad": "Phoenix",
+      "Estado": "AZ"
+    },
+    "Nombres": "Ava",
+    "Apellidos": "Lopez",
+    "ID": "888999001",
+    "Email": "avalopez@example.com",
+    "NumeroTelefono": "\u002B1 602-555-1111"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "444 Elm St",
+      "Ciudad": "Boston",
+      "Estado": "MA"
+    },
+    "Nombres": "James",
+    "Apellidos": "Wilson",
+    "ID": "999000112",
+    "Email": "jameswilson@example.com",
+    "NumeroTelefono": "\u002B1 617-555-2222"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "666 Oak Ct",
+      "Ciudad": "Atlanta",
+      "Estado": "GA"
+    },
+    "Nombres": "Liam",
+    "Apellidos": "Thomas",
+    "ID": "111222334",
+    "Email": "liamthomas@example.com",
+    "NumeroTelefono": "\u002B1 404-555-4444"
+  },
+  {
+    "ContribuyenteEspecial": true,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "101 Walnut Dr",
+      "Ciudad": "Nashville",
+      "Estado": "TN"
+    },
+    "Nombres": "Oliver",
+    "Apellidos": "White",
+    "ID": "555666778",
+    "Email": "oliverwhite@example.com",
+    "NumeroTelefono": "\u002B1 615-555-8888"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "303 Oak St",
+      "Ciudad": "Detroit",
+      "Estado": "MI"
+    },
+    "Nombres": "Ethan",
+    "Apellidos": "Clark",
+    "ID": "7778889902",
+    "Email": "ethanclark@example.com",
+    "NumeroTelefono": "\u002B1 313-555-0000"
+  },
+  {
+    "ContribuyenteEspecial": true,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "404 Maple Ave",
+      "Ciudad": "Baltimore",
+      "Estado": "MD"
+    },
+    "Nombres": "Harper",
+    "Apellidos": "Lewis",
+    "ID": "888999002",
+    "Email": "harperlewis@example.com",
+    "NumeroTelefono": "\u002B1 410-555-1111"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "505 Pine St",
+      "Ciudad": "San Jose",
+      "Estado": "CA"
+    },
+    "Nombres": "Lucas",
+    "Apellidos": "Robinson",
+    "ID": "999000113",
+    "Email": "lucasrobinson@example.com",
+    "NumeroTelefono": "\u002B1 408-555-2222"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "606 Birch Dr",
+      "Ciudad": "Columbus",
+      "Estado": "OH"
+    },
+    "Nombres": "Mason",
+    "Apellidos": "Walker",
+    "ID": "000111224",
+    "Email": "masonwalker@example.com",
+    "NumeroTelefono": "\u002B1 614-555-3333"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "707 Cedar Ave",
+      "Ciudad": "Fort Worth",
+      "Estado": "TX"
+    },
+    "Nombres": "Ella",
+    "Apellidos": "Hall",
+    "ID": "111222335",
+    "Email": "ellahall@example.com",
+    "NumeroTelefono": "\u002B1 817-555-4444"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "808 Oak Ct",
+      "Ciudad": "Charlotte",
+      "Estado": "NC"
+    },
+    "Nombres": "Avery",
+    "Apellidos": "Young",
+    "ID": "222333443",
+    "Email": "averyyoung@example.com",
+    "NumeroTelefono": "\u002B1 704-555-5555"
+  },
+  {
+    "ContribuyenteEspecial": true,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "909 Maple Rd",
+      "Ciudad": "Indianapolis",
+      "Estado": "IN"
+    },
+    "Nombres": "Lillian",
+    "Apellidos": "Hernandez",
+    "ID": "333444556",
+    "Email": "lillianhernandez@example.com",
+    "NumeroTelefono": "\u002B1 317-555-6666"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "101 Pine St",
+      "Ciudad": "Milwaukee",
+      "Estado": "WI"
+    },
+    "Nombres": "Jacob",
+    "Apellidos": "King",
+    "ID": "444555667",
+    "Email": "jacobking@example.com",
+    "NumeroTelefono": "\u002B1 414-555-7777"
+  },
+  {
+    "ContribuyenteEspecial": true,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "202 Birch St",
+      "Ciudad": "Tucson",
+      "Estado": "AZ"
+    },
+    "Nombres": "Zoe",
+    "Apellidos": "Scott",
+    "ID": "5556677",
+    "Email": "zoescott@example.com",
+    "NumeroTelefono": "\u002B1 520-555-8888"
+  },
+  {
+    "ContribuyenteEspecial": true,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "404 Cedar Rd",
+      "Ciudad": "Kansas City",
+      "Estado": "MO"
+    },
+    "Nombres": "Ella",
+    "Apellidos": "Baker",
+    "ID": "777888991",
+    "Email": "ellabaker@example.com",
+    "NumeroTelefono": "\u002B1 816-555-0000"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 2,
+    "Direccion": {
+      "Calle": "12 Pine St",
+      "Ciudad": "Chicago",
+      "Estado": "IL"
+    },
+    "Nombres": "Emily",
+    "Apellidos": "Brown",
+    "ID": "666777889",
+    "Email": "emilybrown@example.com",
+    "NumeroTelefono": "\u002B1 (888) 888-8888"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "123 Main St",
+      "Ciudad": "Anytown",
+      "Estado": "CA"
+    },
+    "Nombres": "John",
+    "Apellidos": "Doe",
+    "ID": "123456790",
+    "Email": "johndoe@example.com",
+    "NumeroTelefono": "\u002B1 (123) 456-7890"
+  },
+  {
+    "ContribuyenteEspecial": true,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "Cali Cali",
+      "Ciudad": "Los Angeles",
+      "Estado": "California"
+    },
+    "Nombres": "Lola",
+    "Apellidos": "Martinez",
+    "ID": "E-76888888",
+    "Email": "loli@outlook.com",
+    "NumeroTelefono": "\u002B18686868"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "Eeee",
+      "Ciudad": "Eeee",
+      "Estado": "Eeee"
+    },
+    "Nombres": "Olgamar",
+    "Apellidos": "Diaz",
+    "ID": "8462833445",
+    "Email": "eeee245",
+    "NumeroTelefono": "02929293"
+  },
+  {
+    "ContribuyenteEspecial": true,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "Eeee",
+      "Ciudad": "Eeee",
+      "Estado": "Eeee"
+    },
+    "Nombres": "Abraham",
+    "Apellidos": "Vergara",
+    "ID": "56755577",
+    "Email": "eeee",
+    "NumeroTelefono": "56755577"
+  },
+  {
+    "ContribuyenteEspecial": true,
+    "EstadoLegal": 0,
+    "Direccion": {
+      "Calle": "Campo Claro",
+      "Ciudad": "Merida",
+      "Estado": "Merida"
+    },
+    "Nombres": "Ricardo",
+    "Apellidos": "Morales",
+    "ID": "28037034",
+    "Email": "ricardomor001@hotmail.com",
+    "NumeroTelefono": "\u002B585432"
+  },
+  {
+    "ContribuyenteEspecial": false,
+    "EstadoLegal": 1,
+    "Direccion": {
+      "Calle": "Campito",
+      "Ciudad": "Merida",
+      "Estado": "Merida"
+    },
+    "Nombres": "Alejandro ",
+    "Apellidos": "Zambrano",
+    "ID": "E-34888999",
+    "Email": "ale@gmail.com",
+    "NumeroTelefono": "\u002B58041233456"
+  }
+]

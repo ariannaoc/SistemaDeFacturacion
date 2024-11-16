@@ -28,53 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ReporteLabel = new System.Windows.Forms.Label();
-            this.TablaReporte = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.TablaReporte)).BeginInit();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.roundedPanel1 = new Parcial2_SistemaDeFacturacion.BotonesCustomizados.RoundedPanel();
+            this.dataGridViewFacturas = new System.Windows.Forms.DataGridView();
+            this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFacturas)).BeginInit();
             this.SuspendLayout();
             // 
-            // ReporteLabel
+            // txtBusqueda
             // 
-            this.ReporteLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ReporteLabel.AutoSize = true;
-            this.ReporteLabel.Font = new System.Drawing.Font("Arial Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReporteLabel.ForeColor = System.Drawing.Color.Black;
-            this.ReporteLabel.Location = new System.Drawing.Point(373, 116);
-            this.ReporteLabel.Name = "ReporteLabel";
-            this.ReporteLabel.Size = new System.Drawing.Size(302, 40);
-            this.ReporteLabel.TabIndex = 0;
-            this.ReporteLabel.Text = "Reporte de Ventas";
+            this.txtBusqueda.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBusqueda.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtBusqueda.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(10, 10);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(544, 15);
+            this.txtBusqueda.TabIndex = 0;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
             // 
-            // TablaReporte
+            // btnBuscar
             // 
-            this.TablaReporte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TablaReporte.BackgroundColor = System.Drawing.Color.White;
-            this.TablaReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TablaReporte.Location = new System.Drawing.Point(115, 237);
-            this.TablaReporte.Name = "TablaReporte";
-            this.TablaReporte.RowHeadersWidth = 51;
-            this.TablaReporte.RowTemplate.Height = 24;
-            this.TablaReporte.Size = new System.Drawing.Size(810, 223);
-            this.TablaReporte.TabIndex = 1;
+            this.btnBuscar.BackColor = System.Drawing.Color.Red;
+            this.btnBuscar.Location = new System.Drawing.Point(603, 51);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 43);
+            this.btnBuscar.TabIndex = 7;
+            this.btnBuscar.Text = "buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.White;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
+            this.roundedPanel1.BorderRadius = 8;
+            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.Controls.Add(this.txtBusqueda);
+            this.roundedPanel1.Location = new System.Drawing.Point(33, 51);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.roundedPanel1.Size = new System.Drawing.Size(564, 39);
+            this.roundedPanel1.TabIndex = 6;
+            // 
+            // dataGridViewFacturas
+            // 
+            this.dataGridViewFacturas.AllowUserToAddRows = false;
+            this.dataGridViewFacturas.AllowUserToDeleteRows = false;
+            this.dataGridViewFacturas.AllowUserToResizeColumns = false;
+            this.dataGridViewFacturas.AllowUserToResizeRows = false;
+            this.dataGridViewFacturas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewFacturas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dataGridViewFacturas.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Helvetica", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewFacturas.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewFacturas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(154)))), ((int)(((byte)(185)))));
+            this.dataGridViewFacturas.Location = new System.Drawing.Point(33, 111);
+            this.dataGridViewFacturas.Name = "dataGridViewFacturas";
+            this.dataGridViewFacturas.Size = new System.Drawing.Size(645, 313);
+            this.dataGridViewFacturas.TabIndex = 4;
+            this.dataGridViewFacturas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewFacturas_CellContentClick);
             // 
             // Reportes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.TablaReporte);
-            this.Controls.Add(this.ReporteLabel);
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(237)))), ((int)(((byte)(245)))));
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.roundedPanel1);
+            this.Controls.Add(this.dataGridViewFacturas);
             this.Name = "Reportes";
-            this.Size = new System.Drawing.Size(1020, 642);
+            this.Size = new System.Drawing.Size(721, 662);
             this.Load += new System.EventHandler(this.Reportes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.TablaReporte)).EndInit();
+            this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFacturas)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label ReporteLabel;
-        private System.Windows.Forms.DataGridView TablaReporte;
+        private System.Windows.Forms.TextBox txtBusqueda;
+        private System.Windows.Forms.Button btnBuscar;
+        private BotonesCustomizados.RoundedPanel roundedPanel1;
+        public System.Windows.Forms.DataGridView dataGridViewFacturas;
     }
 }

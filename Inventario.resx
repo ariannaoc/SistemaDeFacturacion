@@ -117,4 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="DTV_idProductoInv.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DTV_nombreProductoInv.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DTV_estadoProductoInv.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DTV_descripcionProductoInv.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DTV_stockProductoInv.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DTV_categoriaProductoInv.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DTV_marcaProductoInv.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="DTV_precioProductoInv.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="toolTipbtnEditarPrdt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="toolTipbtnAgregarPrdt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>156, 17</value>
+  </metadata>
+  <metadata name="toolTipbtnEliminarPrdt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>307, 17</value>
+  </metadata>
+  <metadata name="toolTipbtnImportar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>490, 21</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pbBuscar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGbSURBVEhLvZTL
+        KkZRGIadQooZ5QpIXIQyMUQZkpFjFBdiotyAMjDhBlyDSMzkWCaiREnxPKtWabX3/ve/wltPu3V61+5b
+        3/e1lKgHFuAQbuETPuABDmAeOiFLHr6DrwZ48SzUVgfsQjQ4gWUYAv/W9WFYg1OI+3agDRoqmr/DIrRC
+        mTRcAvd6ZhsqZVii+bgTNeXeeMmUE0XyQWPM/fNmtQKevYYuJ1KZLW4w5lVhKZPhim8y40SqI3DRB82V
+        D6/HfhglugEXzZZcjYAeF2GUyCJysTB+NeU76vEaRomsUBe7wyhPfaDHSxglugcXLaJcjYEel2GUyN7i
+        4moY5WkT9NgLo0Rz4KKpVqvkE7XDOehRWGz2GRuXG3JSdR08ewX2q0LZFd30Bs20igmISTLpRJXsim60
+        t1j+VeEyLBsQzR9hACqloV3RA+KbWKEWkXneC2bLFsSYR3O/Z9DwEuVD2biiQRnG3LBoqrlztS+xqqfB
+        3mL5P8MTmOemoj9hmKKyLmlW/RC7qj81CL+uf7nkZ7iOnfgLeQnmLaPfkU+CTkPdZDYAAAAASUVORK5C
+        YII=
+</value>
+  </data>
 </root>

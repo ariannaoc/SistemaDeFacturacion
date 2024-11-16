@@ -144,7 +144,7 @@
             this.ClientSize = new System.Drawing.Size(328, 233);
             this.Controls.Add(this.PanelInfoUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Location = new System.Drawing.Point(1120, 100);
+            this.Location = new System.Drawing.Point(800, 100);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
